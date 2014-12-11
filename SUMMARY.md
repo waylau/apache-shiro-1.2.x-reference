@@ -9,6 +9,7 @@ This is the summary of my book.
 	* [4. Configuration 配置](I. Overview 总览/4. Configuration 配置.md) 
 * II. Core 核心
 	* [5. Authentication 认证](II. Core 核心/5. Authentication 认证.md) 
+	* [6. Authorization 授权](II. Core 核心/6. Authorization 授权.md) 
 * III. Web Applications
 * IV. Auxiliary Support 辅助支持
 * V. Integration 整合
