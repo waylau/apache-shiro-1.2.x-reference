@@ -10,3 +10,11 @@ The laset version of Apache Shiro is 1.2.x. You can also see the demos of the re
 [http://waylau.gitbooks.io/apache-shiro-1-2-x-reference/](http://waylau.gitbooks.io/apache-shiro-1-2-x-reference/)
 
 截止现在（2014-10-29）Shiro的最新版本为 1.2.3，利用业余时间对此进行翻译，并在原文的基础上，插入配图，图文并茂方便用户理解。如有勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。如有兴趣，也可以参与到本翻译工作中来 :)
+
+###Contact:
+
+* Blog:[www.waylau.com](http://www.waylau.com)
+* Gmail: [waylau521@gmail.com](mailto:waylau521@gmail.com)
+* Weibo: [waylau521](http://weibo.com/waylau521)
+* Twitter: [waylau521](https://twitter.com/waylau521)
+* Github : [waylau](https://github.com/waylau)
