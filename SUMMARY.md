@@ -17,7 +17,7 @@ This is the summary of my book.
 * III. Web Applications
 	* [10. Web](III. Web Applications/10. Web.md) 
 	   * [10.1. Configuration 配置](III. Web Applications/10.1. Configuration 配置.md) 
-	   * [10.2. [urls] (Path-based security) 基于urls路径的安全](III. Web Applications/10.2. urls Path-based security 基于urls路径的安全.md) 
+	   * [10.2. 基于路径的 url 安全](III. Web Applications/10.2. urls Path based security 基于路径的安全.md) 
 	   * [10.3. Default Filters 默认过滤器](III. Web Applications/10.3. Default Filters 默认过滤器.md) 
 	   * [10.4. Session Management](III. Web Applications/10.4. Session Management.md) 
 	   * [10.5. JSP Tag Library](III. Web Applications/10.5. JSP Tag Library.md) 
