@@ -38,3 +38,5 @@ This is the summary of my book.
 	* [20. 10 Minute Tutorial 十分钟教程](VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.md) 
 	* [21. Beginner's Webapp Tutorial 初学者web应用教程](VIII. Other 其他/21. Beginner's Webapp Tutorial 初学者web应用教程.md) 
 	* [22. Application Security With Apache Shiro 用Shiro保护你的应用安全 ](VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .md) 
+	* [23. CacheManager 缓存管理](VIII. Other 其他/23. CacheManager 缓存管理.md)
+	* [24. Apache Shiro Cryptography Features 加密功能](VIII. Other 其他/24. Apache Shiro Cryptography Features 加密功能.md)
