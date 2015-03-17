@@ -1,0 +1,1028 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>4. Configuration 配置 | apache-shiro-1.2.x-reference</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    
+    <link rel="prev" href="../I. Overview 总览/3. Architecture 架构.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="1.4" data-basepath=".." data-revision="1421282601491">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> I. Overview 总览</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="I. Overview 总览/1. Introduction 介绍.html">
+            
+                
+                    <a href="../I. Overview 总览/1. Introduction 介绍.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         1. Introduction 介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="I. Overview 总览/2. Tutorial 教程.html">
+            
+                
+                    <a href="../I. Overview 总览/2. Tutorial 教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         2. Tutorial 教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="I. Overview 总览/3. Architecture 架构.html">
+            
+                
+                    <a href="../I. Overview 总览/3. Architecture 架构.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         3. Architecture 架构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.4" data-path="I. Overview 总览/4. Configuration 配置.html">
+            
+                
+                    <a href="../I. Overview 总览/4. Configuration 配置.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         4. Configuration 配置
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> II. Core 核心</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="II. Core 核心/5. Authentication 认证.html">
+            
+                
+                    <a href="../II. Core 核心/5. Authentication 认证.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         5. Authentication 认证
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="II. Core 核心/6. Authorization 授权.html">
+            
+                
+                    <a href="../II. Core 核心/6. Authorization 授权.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         6. Authorization 授权
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.2.1" data-path="II. Core 核心/6.1. Permissions 权限.html">
+            
+                
+                    <a href="../II. Core 核心/6.1. Permissions 权限.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                         6.1. Permissions 权限
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="II. Core 核心/7. Realms.html">
+            
+                
+                    <a href="../II. Core 核心/7. Realms.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         7. Realms
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="II. Core 核心/8. Session Management.html">
+            
+                
+                    <a href="../II. Core 核心/8. Session Management.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         8. Session Management
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="II. Core 核心/9. Cryptography 密码.html">
+            
+                
+                    <a href="../II. Core 核心/9. Cryptography 密码.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         9. Cryptography 密码
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> III. Web Applications</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="III. Web Applications/10. Web.html">
+            
+                
+                    <a href="../III. Web Applications/10. Web.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         10. Web
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1.1" data-path="III. Web Applications/10.1. Configuration 配置.html">
+            
+                
+                    <a href="../III. Web Applications/10.1. Configuration 配置.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                         10.1. Configuration 配置
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.2" data-path="III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
+            
+                
+                    <a href="../III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                         10.2. 基于路径的 url 安全
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.3" data-path="III. Web Applications/10.3. Default Filters 默认过滤器.html">
+            
+                
+                    <a href="../III. Web Applications/10.3. Default Filters 默认过滤器.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                         10.3. Default Filters 默认过滤器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.4" data-path="III. Web Applications/10.4. Session Management.html">
+            
+                
+                    <a href="../III. Web Applications/10.4. Session Management.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                         10.4. Session Management
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.5" data-path="III. Web Applications/10.5. JSP Tag Library.html">
+            
+                
+                    <a href="../III. Web Applications/10.5. JSP Tag Library.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.5.</b>
+                        
+                         10.5. JSP Tag Library
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> IV. Auxiliary Support 辅助支持</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         11. Caching 缓存
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         12. Concurrency &amp; Multithreading 并发与多线程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         13. Testing 测试
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         14. Custom Subjects 自定义 Subject
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> V. Integration 整合</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="V. Integration 整合/15. Spring Framework.html">
+            
+                
+                    <a href="../V. Integration 整合/15. Spring Framework.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         15. Spring Framework
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="V. Integration 整合/16. Guice.html">
+            
+                
+                    <a href="../V. Integration 整合/16. Guice.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         16. Guice
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="V. Integration 整合/17. CAS.html">
+            
+                
+                    <a href="../V. Integration 整合/17. CAS.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         17. CAS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> VI. Tools 工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="VI. Tools 工具/18. Command Line Hasher.html">
+            
+                
+                    <a href="../VI. Tools 工具/18. Command Line Hasher.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         18. Command Line Hasher
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> VII. Index 目录</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="VII. Index 目录/19. Terminology 术语.html">
+            
+                
+                    <a href="../VII. Index 目录/19. Terminology 术语.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         19. Terminology 术语
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> VIII. Other 其他</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
+            
+                
+                    <a href="../VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         20. 10 Minute Tutorial 十分钟教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
+            
+                
+                    <a href="../VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         21. Beginner&#39;s Webapp Tutorial 初学者web应用教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
+            
+                
+                    <a href="../VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         22. Application Security With Apache Shiro 用Shiro保护你的应用安全 
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >apache-shiro-1.2.x-reference</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_21">
+                    
+                        <h1 id="4-configuration-">4. Configuration 配置</h1>
+<p>Shiro 可以在任何环境下工作，从简单的命令行程序到大型企业级集群项目，因为环境的多样化，可以通过许多途径来配合当前环境的配置方式进行配置，在本章我们来了解一下 Shiro 核心支持的配置方式。</p>
+<p><em>多种配置选择</em></p>
+<p><em>Shiro 的 SecurityManager 的实现和其所依赖的组件都是 JavaBean，所以可以用多种形式对 Shiro 进行配置，比如XML（Spring, JBoss, Guice, 等等），<a href="http://www.yaml.org/" target="_blank">YAML</a>, JSON, Groovy Builder markup，及其它，INI 只是 Shiro 一种最基本的配置方式，使得其可以在任何环境中进行配置比如在那些没有以上配置形式的环境中。</em></p>
+<h2 id="programmatic-configuration-">Programmatic Configuration 在程序中配置</h2>
+<p>创建一个 SecurityManager 并使之可用最简单的方法就是创建一个org.apache.shiro.mgt.DefaultSecurityManager 对象并写将它写入代码，例如：</p>
+<pre><code>Realm realm = //实例化或获得一个Realm的实例。我们将稍后讨论Realm。
+
+SecurityManager securityManager = new DefaultSecurityManager(realm);
+
+//使SecurityManager实例通过静态存储器对整个应用程序可见：
+SecurityUtils.setSecurityManager(securityManager);
+</code></pre><p>仅仅三行代码，你就可以拥有一个适用于任何程序的功能全面的 Shiro 环境，多么简单。</p>
+<h3 id="securitymanager-object-graph">SecurityManager Object Graph</h3>
+<p>如同我们在架构（<a href="3. Architecture 架构.html">Architecture</a> ）中讨论过的，Shiro SecurityMangger 本质上是一个由一套安全组件组成的对象模块视图（graph），因为与 JavaBean兼容，所以可以对所有这些组件调用的 getter 和 setter 方法来配置SecurityManager 和它的内部对象视图。</p>
+<p>例如，你想用一个自定义的 SessionDAO 来定制 <a href="http://shiro.apache.org/session-management.html" target="_blank">Session Management</a>从而配置一个 SecurityManager 实例，你就可以使用 SessionManager 的 setSessionDAO 方法直接 set 这个 SessionDAO。</p>
+<pre><code>...
+
+DefaultSecurityManager securityManager = new DefaultSecurityManager(realm);
+
+SessionDAO sessionDAO = new CustomSessionDAO();
+
+((DefaultSessionManager)securityManager.getSessionManager()).setSessionDAO(sessionDAO);
+...
+</code></pre><p>使用这些函数，你可以配置 SecurityManager 视图（graph）中的任何一部分。</p>
+<p>虽然在程序中配置很简单，但它并不是我们现实中配置的完美解决方案。在几种情况下这种方法可能并不适合你的程序：</p>
+<ul>
+<li>它需要你确切知道并实例化一个直接实现（direct implementation），然而更好的做法是你并不需要知道这些实现也不需要知道从哪里找到它们。</li>
+<li>因为JAVA类型安全的特性，你必须对通过 get* 获取的对象进行强制类型转换，这么多强制转换非常的丑陋、累赘并且会和你的类紧耦合。</li>
+<li>SecurityUtils.setSecurityManager 方法会将 SecurityManager 实例化为虚拟机的单独静态实例，在大多数程序中没有问题，但如果有多个使用 Shiro 的程序在同一个 JVM 中运行时，各程序有自己独立的实例会更好些，而不是共同引用一块静态内存。</li>
+<li>改变配置就需要重新编译你的程序。</li>
+</ul>
+<p>然而，尽管有这些不足，在程序中定制的这种方法在限制内存（memory-constrained ）的环境中还是很有价值的，像智能电话程序。如果你的程序不是运行在一个限制内存的环境中，你会发现基于文本的配置会更易读易用。</p>
+<h2 id="ini-configuration-">INI Configuration 配置</h2>
+<p>大多数程序已经改为使用基于文本的配置，不需要依靠代码就可进行修改，对于不熟悉Shiro API的人来说，也易于理解。</p>
+<p>为了确保具有共性的基于文本配置的途径适用于任何环境而且减少对第三方的依赖，Shiro 支持使用 INI 创建 SecurityManager 对象视图（graph）以及它支持的组件，INI 易读易配置，很容易创建并且对大多数程序都很适合。</p>
+<h3 id="creating-a-securitymanager-from-ini-ini-securitymanager">Creating a SecurityManager from INI 通过INI资源创建 SecurityManager</h3>
+<p>这里举两个通过INI配置创建SecurityManager的例子。</p>
+<h4 id="securitymanager-from-an-ini-resource-inisecuritymanager">SecurityManager from an INI resource 从INI资源创建SecurityManager</h4>
+<p>我们可以从一个INI资源路径创建一个 SecurityManager 实例，资源可以通过文件系统（前缀为file:）、类路径(classpath:)或者URL(url:)获得，下面的例子使用一个 Factory 从类路径根目录加载 shiro.ini 并返回一个 SecurityManager 实例。</p>
+<pre><code>import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.util.Factory;
+import org.apache.shiro.mgt.SecurityManager;
+import org.apache.shiro.config.IniSecurityManagerFactory;
+
+...
+
+Factory&lt;SecurityManager&gt; factory = new IniSecurityManagerFactory(&quot;classpath:shiro.ini&quot;);
+SecurityManager securityManager = factory.getInstance();
+SecurityUtils.setSecurityManager(securityManager);
+</code></pre><h4 id="securitymanager-from-an-ini-instance-inisecuritymanager">SecurityManager from an INI instance 通过INI实例创建SecurityManager</h4>
+<p>INI 配置可以通过<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/config/Ini.html" target="_blank">org.apache.shiro.config.Ini</a> 类用程序方式创建，这个 INI 类类似于 JDK 的<a href="http://download.oracle.com/javase/6/docs/api/java/util/Properties.html" target="_blank">java.util.Properties</a>类，但支持通过section 名分割。例子如下：</p>
+<pre><code>import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.util.Factory;
+import org.apache.shiro.mgt.SecurityManager;
+import org.apache.shiro.config.Ini;
+import org.apache.shiro.config.IniSecurityManagerFactory;
+
+...
+
+Ini ini = new Ini();
+//populate the Ini instance as necessary
+...
+Factory&lt;SecurityManager&gt; factory = new IniSecurityManagerFactory(ini);
+SecurityManager securityManager = factory.getInstance();
+SecurityUtils.setSecurityManager(securityManager);
+</code></pre><p>现在我们知道如何使用 INI 配置文件创建一个 SecurityManager，让我们仔细了解一下如何定义一个 shiro INI配置文件。</p>
+<h3 id="ini-sections">INI Sections</h3>
+<p>INI　基于文本配置，在独立命名的区域内通过成对的键名/键值组成。键名在每个区域内必须唯一，但在整个配置文件中并不需要这样（这点和JDK的Properties不同），每一个区域（section）可以看作是一个独立的Properties 定义。</p>
+<p>注释行可以用“#”或“;”标识。</p>
+<p>这里是一个 Shiro 可以理解的各 section 的示例。</p>
+<pre><code># =======================
+# Shiro INI configuration
+# =======================
+
+[main]
+# Objects and their properties are defined here, 
+# Such as the securityManager, Realms and anything
+# else needed to build the SecurityManager
+
+[users]
+# The &#39;users&#39; section is for simple deployments
+# when you only need a small number of statically-defined 
+# set of User accounts.
+
+[roles]
+# The &#39;roles&#39; section is for simple deployments
+# when you only need a small number of statically-defined
+# roles.
+
+[urls]
+# The &#39;urls&#39; section is used for url-based security
+# in web applications.  We&#39;ll discuss this section in the
+# Web documentation
+</code></pre><h4 id="main">[main]</h4>
+<p>[main]区域是配置程序 SecurityManager 实例及其支撑组件的地方，如 Realm。 </p>
+<p>通过INI配置像 SecurityManager 的对象实例及其支撑组件听起来是一件很困难的事情，因为在这里我们只能用键名/键值对。但通过定义一些对象视图（graphs）可以理解的惯例，你发现你完全可以这样做。Shiro 利用这些假定的惯例来实现一个简单而简明的配置途径。</p>
+<p>我们经常将这种方法认为是“可怜人的（poor man&#39;s）”的依赖注入，虽然不及成熟的Spring/Guice/JBoss的XML文件强大，但你会发现它可以做很多事情而且并不复杂，当然当那配置途径也可以使用，但对 Shiro 来讲并不是必须的。 </p>
+<p>仅仅吊一下胃口，这里是一个简单的可以使用的[main]配置，下面我们会详细介绍，但你可能发现你仅凭直觉就可以理解一些。</p>
+<pre><code>[main]
+sha256Matcher = org.apache.shiro.authc.credential.Sha256CredentialsMatcher
+
+myRealm = com.company.security.shiro.DatabaseRealm
+myRealm.connectionTimeout = 30000
+myRealm.username = jsmith
+myRealm.password = secret
+myRealm.credentialsMatcher = $sha256Matcher
+
+securityManager.sessionManager.globalSessionTimeout = 1800000
+</code></pre><h5 id="defining-an-object-">Defining an object 定义一个对象</h5>
+<p>在[main]中包含以下片段。</p>
+<pre><code>[main]
+myRealm = com.company.shiro.realm.MyRealm
+...
+</code></pre><p>这一行实例化了一个类型为 com.company.shiro.realm.MyRealm 的对象实例并且使对象使用 myRealm 作为名称以便于将来引用和配置。</p>
+<p>如果对象实例化时实现了 org.apache.shiro.util.Nameable 接口，Nameable.setName方法将被以该名（在此例中为myRealm）命名的对象调用。</p>
+<h5 id="setting-object-properties-">Setting object properties 设置对象属性</h5>
+<h5 id="primitive-values-">Primitive Values 原始值</h5>
+<p>简单的原始值属性可以使用下面的等于符号进行设置：</p>
+<pre><code>...
+myRealm.connectionTimeout = 30000
+myRealm.username = jsmith
+...
+</code></pre><p>这些配置行转换为方法调用就是：</p>
+<pre><code>...
+myRealm.setConnectionTimeout(30000);
+myRealm.setUsername(&quot;jsmith&quot;);
+...
+</code></pre><p>怎么做到的呢？它假定所有对象都是兼容 <a href="http://en.wikipedia.org/wiki/JavaBean" target="_blank">JavaBean</a> 的 <a href="http://en.wikipedia.org/wiki/Plain_Old_Java_Object" target="_blank">POJO</a>。在设置这些属性时，Shiro 默认使用 Apache 通用的 <a href="http://commons.apache.org/beanutils/" target="_blank">BeanUtils</a> 来完成这项复杂的工作，所以虽然 INI 值是文本，BeanUtils 知道如何将这些字符串值转换为适合的原始值类型并调用合适的 JavaBeans 的 setter 方法。</p>
+<h5 id="reference-values-">Reference Values 引用值</h5>
+<p>如果你想设置的值并不是一个原始值，而是另一个对象怎么办呢？你可以使用一个 <code>$</code> 符来引用一个之前定义的实例，如：</p>
+<pre><code>...
+sha256Matcher = org.apache.shiro.authc.credential.Sha256CredentialsMatcher
+...
+myRealm.credentialsMatcher = $sha256Matcher
+...
+</code></pre><p>这定义了名为 sha256Matcher 的对象并且使用 BeanUtils 将其设置到myRealm 的实例中（通过调用 myRealm.setCredentialsMatcher(sha256Matcher) 方法）。</p>
+<h5 id="nested-properties-">Nested Properties 嵌套属性</h5>
+<p>通过在等号左侧使用点符号，你可以得到你希望设置对象视图最终的对象/属性，例如下面这行配置：</p>
+<pre><code>...
+securityManager.sessionManager.globalSessionTimeout = 1800000
+...
+</code></pre><p>转换逻辑为（通过BeanUtils）：</p>
+<pre><code>securityManager.getSessionManager().setGlobalSessionTimeout(1800000);
+</code></pre><p>用这种方法访问的层数需要多深可以有多深：
+object.property1.property2....propertyN.value = blah</p>
+<p><em>BeanUtils 属性支持</em></p>
+<p><em>BeanUtils 支持任何指定的属性操作，在 Shiro [main] 区域中<a href="http://commons.apache.org/beanutils/v1.8.2/apidocs/org/apache/commons/beanutils/BeanUtils.html#setProperty%28java.lang.Object,%20java.lang.String,%20java.lang.Object%29" target="_blank">setProperty</a>方法将被调用，包括集合（set）/列表（list）/图（map），查看<a href="http://commons.apache.org/beanutils/" target="_blank">Apache Commons BeanUtils Website</a>和文档了解更多的信息。</em></p>
+<h5 id="byte-array-values-">Byte Array Values 字节数组值</h5>
+<p>因为原始的字节数组不能直接在文本中定义，我们必须使用字节数组的文本编码。可以使用64位编码（默认）或者16位编码，默认为64位编码因为使用64位编码实际文字会少一些--它拥有很大的编码表，这意味着你的标识会更短（对于文本配置来讲会好一些）。</p>
+<pre><code># The &#39;cipherKey&#39; attribute is a byte array.    By default, text values 
+# for all byte array properties are expected to be Base64 encoded:
+
+securityManager.rememberMeManager.cipherKey = kPH+bIxk5D2deZiIxcaaaA==
+...
+</code></pre><p>如果你想使用16位编码，你必须在字串前面加上 <code>0x</code> 前缀：</p>
+<pre><code>securityManager.rememberMeManager.cipherKey = 0x3707344A4093822299F31D008
+</code></pre><h5 id="collection-properties-">Collection Properties 集合属性</h5>
+<p>列表（Lists）、集合（Sets）、图（Maps）可以像其它属性一样设置--直接设置或者像嵌套属性一样，对于列表和集合，只需指定一个逗号分割的值集或者对象引用集。</p>
+<p>如定义一些SessionListeners：</p>
+<pre><code>sessionListener1 = com.company.my.SessionListenerImplementation
+...
+sessionListener2 = com.company.my.other.SessionListenerImplementation
+...
+securityManager.sessionManager.sessionListeners = $sessionListener1, $sessionListener2
+</code></pre><p>对于图（Maps），你可以指定以逗号分割的键-值对列表，每个键-值之间用冒号分割</p>
+<pre><code>object1 = com.company.some.Class
+object2 = com.company.another.Class
+...
+anObject = some.class.with.a.Map.property
+
+anObject.mapProperty = key1:$object1, key2:$object2
+</code></pre><p>在上面的例子中，$object1 引用的对象将存于键 key1 之下，也就是map.get(&quot;key1&quot;) 将返回 object1。你也可以使用其它对象作为键值：</p>
+<pre><code>anObject.map = $objectKey1:$objectValue1, $objectKey2:$objectValue2
+...
+</code></pre><h5 id="considerations-">Considerations 注意事项</h5>
+<h5 id="order-matters-">Order Matters 顺序问题</h5>
+<p>上述 INI 格式和约定非常方便也非常易懂，但它并没有另外一种 text/XML的配置路径强大，通过上述途径进行配置需要知道非常重要的一件事情就是顺序问题！</p>
+<p><em>小心</em></p>
+<p><em>每一个对象实例以及每一个指定的值都将按照其在 [main] 区域中产生的顺序的执行，这些行最终转换为 JavaBeans 的 getter/setter 方法调用，这些方法按同样的顺序调用。</em></p>
+<p>当你写配置文件的时候要牢记于此。</p>
+<h5 id="overriding-instances-">Overriding Instances 覆盖实例</h5>
+<p>每一个对象都可以被后定义的新实例覆盖，例如，第二个myRealm定义将重写第一个：</p>
+<pre><code>...
+myRealm = com.company.security.MyRealm
+...
+myRealm = com.company.security.DatabaseRealm
+...
+</code></pre><p>这样的结果是 myRealm 是 com.company.security.DatabaseRealm 实例而前面的实例不会被使用（会作为垃圾回收）。</p>
+<h5 id="default-securitymanager-default-securitymanager">Default SecurityManager 默认Default SecurityManager</h5>
+<p>你可能注意到在以上所有例子中都没有定义 SecurityManager，而我们直接设置其嵌套属性</p>
+<pre><code>myRealm = ...
+
+securityManager.sessionManager.globalSessionTimeout = 1800000
+...
+</code></pre><p>这是因为securityManager实例是特殊的--它已经为你实例化过了并且准备好了，所以你并不需要知道指定的实例化SecurityManager的实现类。</p>
+<p>当然，如果你确实想指定你自己的实现类，你可以像上面的覆盖实例那样定义你自己的实现：</p>
+<pre><code>...
+securityManager = com.company.security.shiro.MyCustomSecurityManager
+...
+</code></pre><p>当然，很少需要这样--Shiro 的 SecurityManager 实现可以按需求进行定制，你可能要问一下自己（或者用户群）你是否真的需要这样做。</p>
+<h4 id="users">[users]</h4>
+<p>[users]区域允许你定义一组静态的用户帐号，这对于那些只有少数用户帐号并且用户帐号不需要在运行时动态创建的环境来说非常有用。下面是一个例子：</p>
+<pre><code>[users]
+admin = secret
+lonestarr = vespa, goodguy, schwartz
+darkhelmet = ludicrousspeed, badguy, schwartz
+</code></pre><p><em>自动生成IniRealm</em></p>
+<p>定义非空的[users]或[roles]区域将自动创建org.apache.shiro.realm.text.IniRealm 实例,在[main]区域下生成一个可用的 iniRealm ，你可以像上面配置其它对象那样配置它。</p>
+<h5 id="line-format-">Line Format 格式</h5>
+<p>[users]区域下每一行必须和下面的形式一致：</p>
+<pre><code>username = password, roleName1, roleName2, ..., roleNameN
+</code></pre><ul>
+<li>等号左边的值是用户名；</li>
+<li>等号右侧第一个值是用户密码，密码是必须的；</li>
+<li>密码之后用逗号分割的值是赋予用户的角色名，角色名是可选的。</li>
+</ul>
+<h5 id="encrypting-passwords-">Encrypting Passwords 密码加密</h5>
+<p>如果你不希望[users]区域下的密码以明文显示，你可以用你喜欢的哈希算法（MD5, Sha1, Sha256, 等）来加密它们，将加密后的字符串作为密码值，默认的，密码建议用16位编码算法，但也可以用64位编码算法替代（如下）</p>
+<p><em>简单的安全密码</em></p>
+<p><em>为了节约时间获得最佳实践，你可以使用 Shiro 的 <a href="http://shiro.apache.org/command-line-hasher.html" target="_blank">Command Line Hasher</a>，它可以加密密码和其它类型的资源，尤其使给 INI[user] 密码加密变得非常简单。</em></p>
+<p>一旦你指定了加密后的密码值，你必须告诉 shiro 它们是加密的，你可以通过配置配置在[main]隐含创建的iniRealm相应的CredentialsMatcher 实现来告知你使用的哈希算法：</p>
+<pre><code>[main]
+...
+sha256Matcher = org.apache.shiro.authc.credential.Sha256CredentialsMatcher
+...
+iniRealm.credentialsMatcher = $sha256Matcher
+...
+
+[users]
+# user1 = sha256-hashed-hex-encoded password, role1, role2, ...
+user1 = 2bb80d537b1da3e38bd30361aa855686bde0eacd7162fef6a25fe97bf527a25b, role1, role2, ...
+</code></pre><p>你可以像配置其他对象那样配置 CredentialsMatcher 的所有属性，例如，指定使用salting或者有多少hash iterations执行，可以查看<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/credential/HashedCredentialsMatcher.html" target="_blank">org.apache.shiro.authc.credential.HashedCredentialsMatcher</a> Java文档更好地理解 hashing 策略，可能会很有帮助。</p>
+<p>例如，如果你用64位编码方式取代了16位编码方式，你应该指定：</p>
+<pre><code>[main]
+...
+# true = hex, false = base64:
+sha256Matcher.storedCredentialsHexEncoded = false
+</code></pre><h4 id="roles">[roles]</h4>
+<p>[roles]区域允许你将权限和在[users]定义的角色对应起来，同样的，这对于那些只有少数用户帐号并且用户帐号不需要在运行时动态创建的环境来说非常有用。下面是一个例子：</p>
+<pre><code>[roles]
+# &#39;admin&#39; role has all permissions, indicated by the wildcard &#39;*&#39;
+admin = *
+# The &#39;schwartz&#39; role can do anything (*) with any lightsaber:
+schwartz = lightsaber:*
+# The &#39;goodguy&#39; role is allowed to &#39;drive&#39; (action) the winnebago (type) with
+# license plate &#39;eagle5&#39; (instance specific id)
+goodguy = winnebago:drive:eagle5
+</code></pre><h5 id="line-format-">Line Format 格式</h5>
+<p>[roles]区域下的每一行必须用下面的格式定义角色-权限的键/值对应关系。</p>
+<pre><code>rolename = permissionDefinition1, permissionDefinition2, ..., permissionDefinitionN
+</code></pre><p>权限定义可以是非常随意的字符串，但大部分用户还是希望使用易用而灵活的和 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/WildcardPermission.html" target="_blank">org.apache.shiro.authz.permission.WildcardPermission</a>形式一致的字符串格式。查看 <a href="../II. Core 核心/6.1. Permissions 权限.html">Permissions</a> 文档获取更多关于权限的信息和你可以如何利用它为你服务。</p>
+<p><em>内部用法</em></p>
+<p><em>注意如果一个特定的权限定义需要用到逗号分隔（如：printer:5thFloor:print,info），你需要将该定义用双引号括起来从而避免出错：&quot;printer:5thFloor:print,info&quot;。</em></p>
+<p><em>没有权限的角色</em></p>
+<p><em>如果你有不需要权限的角色，不需要将它们列入[roles]区域，仅仅在 [users]区域定义角色名就可以创建它们（如果它们尚不存在）。</em></p>
+<h4 id="urls">[urls]</h4>
+<p>该区域选项将在<a href="../III. Web Applications/10. Web.html">Web</a>章节讨论。</p>
+<h2 id="">为文档加把手</h2>
+<p>我们希望这篇文档可以帮助你使用 Apache Shiro 进行工作，社区一直在不断地完善和扩展文档，如果你希望帮助 Shiro 项目，请在你认为需要的地方考虑更正、扩展或添加文档，你提供的任何点滴帮助都将扩充社区并且提升 Shiro。</p>
+<p>提供你的文档的最简单的途径是将它发送到用户<a href="http://shiro-user.582556.n2.nabble.com/" target="_blank">论坛</a>或<a href="http://shiro.apache.org/mailing-lists.html" target="_blank">邮件列表</a></p>
+<p><em>译者注：</em>如果对本中文翻译有疑议的或发现勘误欢迎指正，<a href="https://github.com/waylau/apache-shiro-1.2.x-reference/issues" target="_blank">点此</a>提问。</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../I. Overview 总览/3. Architecture 架构.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 3. Architecture 架构"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

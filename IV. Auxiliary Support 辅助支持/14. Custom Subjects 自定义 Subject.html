@@ -1,0 +1,974 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>14. Custom Subjects 自定义 Subject | apache-shiro-1.2.x-reference</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    
+    <link rel="prev" href="../IV. Auxiliary Support 辅助支持/13. Testing 测试.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="4.4" data-basepath=".." data-revision="1421282601491">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> I. Overview 总览</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="I. Overview 总览/1. Introduction 介绍.html">
+            
+                
+                    <a href="../I. Overview 总览/1. Introduction 介绍.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         1. Introduction 介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="I. Overview 总览/2. Tutorial 教程.html">
+            
+                
+                    <a href="../I. Overview 总览/2. Tutorial 教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         2. Tutorial 教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="I. Overview 总览/3. Architecture 架构.html">
+            
+                
+                    <a href="../I. Overview 总览/3. Architecture 架构.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         3. Architecture 架构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="I. Overview 总览/4. Configuration 配置.html">
+            
+                
+                    <a href="../I. Overview 总览/4. Configuration 配置.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         4. Configuration 配置
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> II. Core 核心</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="II. Core 核心/5. Authentication 认证.html">
+            
+                
+                    <a href="../II. Core 核心/5. Authentication 认证.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         5. Authentication 认证
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="II. Core 核心/6. Authorization 授权.html">
+            
+                
+                    <a href="../II. Core 核心/6. Authorization 授权.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         6. Authorization 授权
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.2.1" data-path="II. Core 核心/6.1. Permissions 权限.html">
+            
+                
+                    <a href="../II. Core 核心/6.1. Permissions 权限.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                         6.1. Permissions 权限
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="II. Core 核心/7. Realms.html">
+            
+                
+                    <a href="../II. Core 核心/7. Realms.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         7. Realms
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="II. Core 核心/8. Session Management.html">
+            
+                
+                    <a href="../II. Core 核心/8. Session Management.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         8. Session Management
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="II. Core 核心/9. Cryptography 密码.html">
+            
+                
+                    <a href="../II. Core 核心/9. Cryptography 密码.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         9. Cryptography 密码
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> III. Web Applications</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="III. Web Applications/10. Web.html">
+            
+                
+                    <a href="../III. Web Applications/10. Web.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         10. Web
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1.1" data-path="III. Web Applications/10.1. Configuration 配置.html">
+            
+                
+                    <a href="../III. Web Applications/10.1. Configuration 配置.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                         10.1. Configuration 配置
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.2" data-path="III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
+            
+                
+                    <a href="../III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                         10.2. 基于路径的 url 安全
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.3" data-path="III. Web Applications/10.3. Default Filters 默认过滤器.html">
+            
+                
+                    <a href="../III. Web Applications/10.3. Default Filters 默认过滤器.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                         10.3. Default Filters 默认过滤器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.4" data-path="III. Web Applications/10.4. Session Management.html">
+            
+                
+                    <a href="../III. Web Applications/10.4. Session Management.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                         10.4. Session Management
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.5" data-path="III. Web Applications/10.5. JSP Tag Library.html">
+            
+                
+                    <a href="../III. Web Applications/10.5. JSP Tag Library.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.5.</b>
+                        
+                         10.5. JSP Tag Library
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> IV. Auxiliary Support 辅助支持</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         11. Caching 缓存
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         12. Concurrency &amp; Multithreading 并发与多线程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         13. Testing 测试
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="4.4" data-path="IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         14. Custom Subjects 自定义 Subject
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> V. Integration 整合</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="V. Integration 整合/15. Spring Framework.html">
+            
+                
+                    <a href="../V. Integration 整合/15. Spring Framework.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         15. Spring Framework
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="V. Integration 整合/16. Guice.html">
+            
+                
+                    <a href="../V. Integration 整合/16. Guice.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         16. Guice
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="V. Integration 整合/17. CAS.html">
+            
+                
+                    <a href="../V. Integration 整合/17. CAS.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         17. CAS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> VI. Tools 工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="VI. Tools 工具/18. Command Line Hasher.html">
+            
+                
+                    <a href="../VI. Tools 工具/18. Command Line Hasher.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         18. Command Line Hasher
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> VII. Index 目录</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="VII. Index 目录/19. Terminology 术语.html">
+            
+                
+                    <a href="../VII. Index 目录/19. Terminology 术语.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         19. Terminology 术语
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> VIII. Other 其他</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
+            
+                
+                    <a href="../VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         20. 10 Minute Tutorial 十分钟教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
+            
+                
+                    <a href="../VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         21. Beginner&#39;s Webapp Tutorial 初学者web应用教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
+            
+                
+                    <a href="../VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         22. Application Security With Apache Shiro 用Shiro保护你的应用安全 
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >apache-shiro-1.2.x-reference</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_17">
+                    
+                        <h1 id="14-custom-subjects--subject">14. Custom Subjects 自定义 Subject</h1>
+<p>毫无疑问，在 Apache Shiro 中最重要的概念就是 Subject。 &#39;Subject&#39; 仅仅是一个安全术语，是指应用程序用户的特定安全的“视图”。一个 Shiro Subject 实例代表了一个单一应用程序用户的安全状态和操作。</p>
+<p>这些操作包括：</p>
+<ul>
+<li>authentication(login)</li>
+<li>authorization(access control)</li>
+<li>session access</li>
+<li>logout</li>
+</ul>
+<p>我们原本希望把它称为&quot;User&quot;由于这样“很有意义”，但是我们决定不这样做：太多的应用程序现有的 API 已经有自己的 User classes/frameworks，我们不希望和这些起冲突。此外，在安全领域，&quot;Subject&quot; 这一词实际上是公认的术语。</p>
+<p>Shiro 的 API 为应用程序提供 Subject 为中心的编程范式支持。当编码应用程序逻辑时，大多数应用程序开发人员想知道谁才是当前正在执行的用户。虽然应用程序通常能够通过它们自己的机制（ UserService 等）来查找任何用户，但涉及到安全性时，最重要的问题是“谁才是当前的用户？”。</p>
+<p>虽然通过使用 SecurityManager 可以捕获任何 Subject，但只有基于当前 用户/Subject 的应用程序代码更自然，更直观。</p>
+<h2 id="the-currently-executing-subject-subject">The Currently Executing Subject 当前执行的Subject</h2>
+<p>几乎在所有环境下，你能够获得当前执行的 Subject 通过使用</p>
+<pre><code>org.apache.shiro.SecurityUtils:Subject currentUser
+</code></pre><p>getSubject() 方法调用一个独立的应用程序，该应用程序可以返回一个在应用程序特有位置上基于用户数据的Subject，在服务器环境中（如，Web 应用程序），它基于与当前线程或传入的请求相关的用户数据上获得 Subject 。</p>
+<p>当你获得了当前的 Subject 后，你能够拿它做些什么？</p>
+<p>如果你想在他们当前的 session 中使事情对用户变得可用，你可得的他们的 session:</p>
+<pre><code>Session session = currentUser.getSession();
+session.setAttribute( &quot;someKey&quot;, &quot;aValue&quot; );
+</code></pre><p>Session 是一个 Shiro 的具体实例，它提供了大多数你经常要和HttpSessions 用到的东西，但有一些额外的好处和一个很大的区别：它不需要一个 HTTP 环境！</p>
+<p>如果在 Web 应用程序内部部署，默认的 Session 将会是基于HttpSession 的。但是，在一个非 Web 环境中，像这个简单的 Quickstart，Shiro 将会默认自动地使用它的 Enterprise Session Management。这意味着你可以在你的应用程序中使用相同的 API，在任何层，无论部署环境。这打开了应用程序的全新世界，由于任何需要 session 的应用程序不再被强迫使用 HttpSession 或 EJB Stateful Session Beans。而且，任何客户端技术现在能够共享会话数据。</p>
+<p>所以，你现在可以获取一个 Subject 以及他们的 Session。对于真正有用的东西像检查会怎么样呢，如果他们被允许做某些事——如对角色和权限的检查？</p>
+<p>嗯，我只能对已知的用户做这些检查。我们的 Subject 实例代表了当前的用户，但谁又是实际上的当前用户呢？呃，他们都是匿名的——也就是说，直到他们至少登录一次。那么，让我们像下面这样做：</p>
+<pre><code>if ( !currentUser.isAuthenticated() ) {
+    //collect user principals and credentials in a gui specific manner
+    //such as username/password html form, X509 certificate, OpenID, etc.
+    //We&#39;ll use the username/password example here since it is the most common.
+    //(do you know what movie this is from? ;)
+    UsernamePasswordToken token = new UsernamePasswordToken(&quot;lonestarr&quot;, &quot;vespa&quot;);
+    //this is all you have to do to support &#39;remember me&#39; (no config - built in!):
+    token.setRememberMe(true);
+    currentUser.login(token);
+}
+</code></pre><p>那就是了！它再简单不过了。</p>
+<p>但如果他们的登录尝试失败了会怎么样？你可以捕获各种各样的具体的异常来告诉你到底发生了什么：</p>
+<pre><code>try {
+    currentUser.login( token );
+    //if no exception, that&#39;s it, we&#39;re done!
+} catch ( UnknownAccountException uae ) {
+    //username wasn&#39;t in the system, show them an error message?
+} catch ( IncorrectCredentialsException ice ) {
+    //password didn&#39;t match, try again?
+} catch ( LockedAccountException lae ) {
+    //account for that username is locked - can&#39;t login.  Show them a message?
+} 
+    ... more types exceptions to check if you want ...
+} catch ( AuthenticationException ae ) {
+    //unexpected condition - error?
+}
+</code></pre><p>你，作为 应用程序/GUI 开发人员，可以基于异常选择是否显示消息给终端用户（例如，“在系统中没有与该用户名对应的帐户。”）。有许多不同种类的异常供你检查，或者你可以抛出你自己自定义的异常，这些异常可能是Shiro 还未提供的。有关详情，请查看AuthenticationException 的<a href="http://www.jsecurity.org/api/org/jsecurity/authc/AuthenticationException.html" target="_blank">JavaDoc</a>。</p>
+<p>好了，现在，我们有了一个登录的用户，我们还有什么可以做的呢？</p>
+<p>比方说，他们是谁：</p>
+<pre><code>//print their identifying principal (in this case, a username):
+log.info( &quot;User [&quot; + currentUser.getPrincipal() + &quot;] logged in successfully.&quot; );
+</code></pre><p>我们还可以测试他们是否有特定的角色：</p>
+<pre><code>if ( currentUser.hasRole( &quot;schwartz&quot; ) ) {
+    log.info(&quot;May the Schwartz be with you!&quot; );
+} else {
+    log.info( &quot;Hello, mere mortal.&quot; );
+}
+</code></pre><p>我们还能够判断他们是否有<a href="http://shiro.apache.org/permissions.html" target="_blank">权限</a>对一个确定类型的实体进行操作</p>
+<pre><code>if ( currentUser.isPermitted( &quot;lightsaber:weild&quot; ) ) {
+    log.info(&quot;You may use a lightsaber ring.  Use it wisely.&quot;);
+} else {
+    log.info(&quot;Sorry, lightsaber rings are for schwartz masters only.&quot;);
+}
+</code></pre><p>此外，我们可以执行一个非常强大的实例级权限检查——它能够判断用户是否能够访问一个类型的具体实例：</p>
+<pre><code>if ( currentUser.isPermitted( &quot;winnebago:drive:eagle5&quot; ) ) {
+    log.info(&quot;You are permitted to &#39;drive&#39; the &#39;winnebago&#39; with license plate (id) &#39;eagle5&#39;.  &quot; +
+                &quot;Here are the keys - have fun!&quot;);
+} else {
+    log.info(&quot;Sorry, you aren&#39;t allowed to drive the &#39;eagle5&#39; winnebago!&quot;);
+}
+</code></pre><p>小菜一碟，对吧？
+最后，当用户完成了对应用程序的使用时，他们可以注销：</p>
+<pre><code>currentUser.logout(); //removes all identifying information and invalidates their session too.
+</code></pre><p>这个简单的API 包含了 90% 的 Shiro 终端用户在使用 Shiro 时将会处理的东西。</p>
+<h2 id="custom-subject-instances--subject-">Custom Subject Instances 自定义 Subject 实例</h2>
+<p>Shiro 1.0 中添加了一个新特性，能够在特殊情况下构造 自定义/临时 的subject 实例。</p>
+<p><em>只在特殊情况下使用!</em></p>
+<p><em>你应该总是通过调用 SubjectUtils.getSubject() 来获得当前正在执行的 Subject；
+创建自定义的 Subject 实例只应在特殊情况下进行。</em></p>
+<p>当一些“特殊情况”是，这是可以很有用的：</p>
+<ul>
+<li>系统启动/引导——当没有用户月系统交互时，代码应该作为一&#39;system&#39;或daemon 用户来执行。创建 Subject实例来代表一个特定的用户是值得的，这样引导代码能够以该用户（如admin）来执行。
+鼓励这种做法是由于它能保证 utility/system 代码作为一个普通用户以同样的方式执行，以确保代码是一致的。
+这使得代码更易于维护，因为你不必担心 system/daemon 方案的自定义代码块。</li>
+<li>集成测试——你可能想创建 Subject 实例，在必要时可以在集成测试中使用。请参阅<a href="13. Testing 测试.html">测试</a>文档获取更多的内容。</li>
+<li>Daemon/background 进程的工作——当一个 daemon 或 background 进程执行时，它可能需要作为一个特定的用户来执行。</li>
+</ul>
+<p><em>如果你已经有一个 Subject 的实例，并希望它提供给其他线程，你应该使用 `Subject.associateWith</em>` 方法，而不是创建一个新的Subject 实例。*</p>
+<p>好了，假设你仍然需要创建自定义的Subject 实例的情况下，让我们看看如何来做：</p>
+<h3 id="subjectbuilder">Subject.Builder</h3>
+<p>Subject.Builder 被制定得非常容易创建 Subject 实例，而无需知道构造细节。
+Builder 最简单的用法是构造一个匿名的，session-less（无会话） Subject 的实例。</p>
+<pre><code>Subject subject = new Subject.Builder().buildSubject()
+</code></pre><p>上面所展示的默认的Subject.Builder 无参构造函数将通过SecurityUtils.getSubject() 方法使用应用程序当前可访问的
+SecurityManager 。你也可以指定被额外的构造函数使用的SecurityManager 实例，如果你需要的话：</p>
+<pre><code>SecurityManager securityManager = //acquired from somewhere
+Subject subject = new Subject.Builder(securityManager).buildSubject();
+</code></pre><p>所有其他的 Subject.Builder 方法可以在 buildSubject()方法之前被调用，它们来提供关于如何构造 Subject 实例的上下文。例如，假如你拥有一个 session ID ，想取得“拥有”该 session 的Subject（假设该 session 存在且未过期）：</p>
+<pre><code>Serializable sessionId = //acquired from somewhere
+Subject subject = new Subject.Builder().sessionId(sessionId).buildSubject();
+</code></pre><p>同样地，如你想创建一个Subject 实例来反映一个确定的身份：</p>
+<pre><code>Object userIdentity = //a long ID or String username, or whatever the &quot;myRealm&quot; requires
+String realmName = &quot;myRealm&quot;;
+PrincipalCollection principals = new SimplePrincipalCollection(userIdentity, realmName);
+Subject subject = new Subject.Builder().principals(principals).buildSubject();
+</code></pre><p>然后，你可以使用构造的 Subject 实例，如预期一样对它进行调用。但请注意：</p>
+<p>构造的 Subject 实例不会由于应用程序（线程）的进一步使用而自动地绑定到应用程序（线程）。如果你想让它对于任何代码都能够方便地调用SecurityUtils.getSubject()，你必须确保创建好的 Subject 有一个线程与之关联。</p>
+<h3 id="thread-association-">Thread Association 线程关联</h3>
+<p>如上所述，只是构建一个 Subject 实例，并不与一个线程相关联——一个普通的必要条件是在线程执行期间任何对 SecurityUtils.getSubject() 的调用是否能正常工作。确保一个线程与一个 Subject 关联有三种途径：</p>
+<ul>
+<li>Automatic Association(自动关联)—— 通过 Sujbect.execute* 方法执行一个Callable 或Runnable 方法会自动地绑定和解除绑定到线程的Subject，在Callable/Runnable 异常的前后。</li>
+<li>Manual Association(手动关联)——你可以在当前执行的线程中手动地对Subject 实例进行绑定和解除绑定。这通常对框架开发人员非常有用。</li>
+<li>Different Thread(不同的线程)——通过调用Subject.associateWith* 方法将 Callable 或 Runnable 方法关联到
+Subject，然后返回的 Callable/Runnable 方法在另一个线程中被执行。如果你需要为Subject 在另一个线程上执行工作的话，这是首选的方法。</li>
+</ul>
+<p>了解线程关联最重要的是，两件事情必须始终发生：</p>
+<ol>
+<li>Subject 绑定到线程，所以它在线程的所有执行点都是可用的。Shiro 做到这点通过它的 ThreadState 机制，该机制是在 ThreadLocal 上的一个抽象。</li>
+<li>Subject 将在某点解除绑定，即使线程的执行结果是错误的。这将确保线程保持干净，并在pooled/reusable 线程环境中清除任何之前的Subject 状态。</li>
+</ol>
+<p>这些原则保证在上述三个机制中发生。接下来阐述它们的用法。</p>
+<h4 id="automatic-association-">Automatic Association 自动关联</h4>
+<p>如果你只需要一个 Subject 暂时与当前的线程相关联，同时你希望线程绑定和清理自动发生，Subject 的 Callable 或 Runnable 的直接执行正是你所需要的。在 Subject.execute 调用返回后，当前线程被保证当前状态与执行前的状态是一样的。这个机制是这三个中使用最广泛的。</p>
+<p>例如，让我们假定你有一些逻辑在系统启动时需要执行。你希望作为一个特定用户执行代码块，但一旦逻辑完成后，你想确保 线程/环境 自动地恢复到正常。你可以通过调用 Subject.execute* 方法来做到：</p>
+<pre><code>Subject subject = //build or acquire subject
+subject.execute( new Runnable() {
+    public void run() {
+        //subject is &#39;bound&#39; to the current thread now
+        //any SecurityUtils.getSubject() calls in any
+        //code called from here will work
+    }
+});
+//At this point, the Subject is no longer associated
+//with the current thread and everything is as it was before
+</code></pre><p>当然，Callable 的实例也能够被支持，所以你能够拥有返回值并捕获异常：</p>
+<pre><code>Subject subject = //build or acquire subject
+MyResult result = subject.execute( new Callable&lt;MyResult&gt;() {
+    public MyResult call() throws Exception {
+        //subject is &#39;bound&#39; to the current thread now
+        //any SecurityUtils.getSubject() calls in any
+        //code called from here will work
+        ...
+        //finish logic as this Subject
+        ...
+        return myResult;        
+    }
+});
+//At this point, the Subject is no longer associated
+//with the current thread and everything is as it was before
+</code></pre><p>这种方法在框架开发中也是很有用的。例如，Shiro 对 secure Spring remoting 的支持确保了远程调用能够作为一个特
+定的 Subject 来执行：</p>
+<pre><code>Subject.Builder builder = new Subject.Builder();
+//populate the builder&#39;s attributes based on the incoming RemoteInvocation
+...
+Subject subject = builder.buildSubject();
+
+return subject.execute(new Callable() {
+    public Object call() throws Exception {
+        return invoke(invocation, targetObject);
+    }
+});
+</code></pre><h4 id="manual-association-">Manual Association 手动关联</h4>
+<p>虽然 Subject.execute* 方法能够在它们返回后自动地清理线程的状态，但有可能在一些情况下，你想自己管理 ThreadState。当结合 w/Shiro 时，这几乎总是在框架开发层次使用，但它很少在 bootstrap/daemon 情景下使用（上面 Subject.execute(callable) 例子使用得更为频繁）。</p>
+<p><em>Guarantee Cleanup</em></p>
+<p><em>关于这一机制最重要的是，你必须一直保证当前的线程在逻辑执行完后被清理，以确保在一个可重复使用或线程池的环境中没有一个线程状态腐化。</em></p>
+<p>最好的做法是在try/finally 块保证清理：</p>
+<pre><code>Subject subject = new Subject.Builder()...
+ThreadState threadState = new SubjectThreadState(subject);
+threadState.bind();
+try {
+    //execute work as the built Subject
+} finally {
+    //ensure any state is cleaned so the thread won&#39;t be 
+    //corrupt in a reusable or pooled thread environment
+    threadState.clear();
+}
+</code></pre><p>有趣的是，这正是 Subject.execute* 方法实际上所做的——它们只是在Callable 或 Runnable 执行前后自动地执行这个逻辑。Shiro 的 ShiroFilter 为 Web 应用程序执行几乎相同的逻辑（ShiroFilter 使用 Web 特定的 ThreadState 的实现，超出了本节的范围）</p>
+<p><em>Web Use</em></p>
+<p><em>不要在一个处理 Web 请求的进程中使用上述 ThreadState 代码示例。 Web 特定的 ThreadState 的实现使用 Web 请求代替。相反，确保ShiroFilter 拦截 Web 请求以确保 Subject 的 building/binding/cleanup 能够好好的完成。</em></p>
+<h4 id="a-different-thread">A Different Thread</h4>
+<p>如果你有一个 Callable 或 Runnable 实例要以 Subject 来执行，你将自己执行 Callable 或 Runnable（或这将它移交给线程池或执行者或ExcutorService），你应该使用 Subject.associateWith* 方法。这些方法确保在最终执行的线程中保
+留 Subject，且该 Subject 是可访问的。</p>
+<p>Callable 例子：</p>
+<pre><code>Subject subject = new Subject.Builder()...
+Callable work = //build/acquire a Callable instance.
+//associate the work with the built subject so SecurityUtils.getSubject() calls works properly:
+work = subject.associateWith(work);
+ExecutorService executorService = new java.util.concurrent.Executors.newCachedThreadPool();
+//execute the work on a different thread as the built Subject:
+executor.execute(work);
+</code></pre><p>Runnable 例子：</p>
+<pre><code>Subject subject = new Subject.Builder()...
+Runnable work = //build/acquire a Runnable instance.
+//associate the work with the built subject so SecurityUtils.getSubject() calls works properly:
+work = subject.associateWith(work);
+Executor executor = new java.util.concurrent.Executors.newCachedThreadPool();
+//execute the work on a different thread as the built Subject:
+executor.execute(work);
+</code></pre><p><em>Automatic Cleanup</em></p>
+<p><em>associateWith 方法自动执行必要的线程清理，以取保现在在线程池环境中的clean。</em></p>
+<h2 id="">为文档加把手</h2>
+<p>我们希望这篇文档可以帮助你使用 Apache Shiro 进行工作，社区一直在不断地完善和扩展文档，如果你希望帮助 Shiro 项目，请在你认为需要的地方考虑更正、扩展或添加文档，你提供的任何点滴帮助都将扩充社区并且提升 Shiro。</p>
+<p>提供你的文档的最简单的途径是将它发送到用户<a href="http://shiro-user.582556.n2.nabble.com/" target="_blank">论坛</a>或<a href="http://shiro.apache.org/mailing-lists.html" target="_blank">邮件列表</a></p>
+<p><em>译者注：</em>如果对本中文翻译有疑议的或发现勘误欢迎指正，<a href="https://github.com/waylau/apache-shiro-1.2.x-reference/issues" target="_blank">点此</a>提问。</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../IV. Auxiliary Support 辅助支持/13. Testing 测试.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 13. Testing 测试"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

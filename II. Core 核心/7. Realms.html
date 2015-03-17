@@ -1,0 +1,895 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>7. Realms | apache-shiro-1.2.x-reference</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../II. Core 核心/8. Session Management.html" />
+    
+    
+    <link rel="prev" href="../II. Core 核心/6.1. Permissions 权限.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="2.3" data-basepath=".." data-revision="1421282601491">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> I. Overview 总览</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="I. Overview 总览/1. Introduction 介绍.html">
+            
+                
+                    <a href="../I. Overview 总览/1. Introduction 介绍.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         1. Introduction 介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="I. Overview 总览/2. Tutorial 教程.html">
+            
+                
+                    <a href="../I. Overview 总览/2. Tutorial 教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         2. Tutorial 教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="I. Overview 总览/3. Architecture 架构.html">
+            
+                
+                    <a href="../I. Overview 总览/3. Architecture 架构.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         3. Architecture 架构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="I. Overview 总览/4. Configuration 配置.html">
+            
+                
+                    <a href="../I. Overview 总览/4. Configuration 配置.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         4. Configuration 配置
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> II. Core 核心</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="II. Core 核心/5. Authentication 认证.html">
+            
+                
+                    <a href="../II. Core 核心/5. Authentication 认证.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         5. Authentication 认证
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="II. Core 核心/6. Authorization 授权.html">
+            
+                
+                    <a href="../II. Core 核心/6. Authorization 授权.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         6. Authorization 授权
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.2.1" data-path="II. Core 核心/6.1. Permissions 权限.html">
+            
+                
+                    <a href="../II. Core 核心/6.1. Permissions 权限.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                         6.1. Permissions 权限
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="2.3" data-path="II. Core 核心/7. Realms.html">
+            
+                
+                    <a href="../II. Core 核心/7. Realms.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         7. Realms
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="II. Core 核心/8. Session Management.html">
+            
+                
+                    <a href="../II. Core 核心/8. Session Management.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         8. Session Management
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="II. Core 核心/9. Cryptography 密码.html">
+            
+                
+                    <a href="../II. Core 核心/9. Cryptography 密码.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         9. Cryptography 密码
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> III. Web Applications</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="III. Web Applications/10. Web.html">
+            
+                
+                    <a href="../III. Web Applications/10. Web.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         10. Web
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1.1" data-path="III. Web Applications/10.1. Configuration 配置.html">
+            
+                
+                    <a href="../III. Web Applications/10.1. Configuration 配置.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                         10.1. Configuration 配置
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.2" data-path="III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
+            
+                
+                    <a href="../III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                         10.2. 基于路径的 url 安全
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.3" data-path="III. Web Applications/10.3. Default Filters 默认过滤器.html">
+            
+                
+                    <a href="../III. Web Applications/10.3. Default Filters 默认过滤器.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                         10.3. Default Filters 默认过滤器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.4" data-path="III. Web Applications/10.4. Session Management.html">
+            
+                
+                    <a href="../III. Web Applications/10.4. Session Management.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                         10.4. Session Management
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.5" data-path="III. Web Applications/10.5. JSP Tag Library.html">
+            
+                
+                    <a href="../III. Web Applications/10.5. JSP Tag Library.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.5.</b>
+                        
+                         10.5. JSP Tag Library
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> IV. Auxiliary Support 辅助支持</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         11. Caching 缓存
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         12. Concurrency &amp; Multithreading 并发与多线程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         13. Testing 测试
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         14. Custom Subjects 自定义 Subject
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> V. Integration 整合</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="V. Integration 整合/15. Spring Framework.html">
+            
+                
+                    <a href="../V. Integration 整合/15. Spring Framework.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         15. Spring Framework
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="V. Integration 整合/16. Guice.html">
+            
+                
+                    <a href="../V. Integration 整合/16. Guice.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         16. Guice
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="V. Integration 整合/17. CAS.html">
+            
+                
+                    <a href="../V. Integration 整合/17. CAS.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         17. CAS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> VI. Tools 工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="VI. Tools 工具/18. Command Line Hasher.html">
+            
+                
+                    <a href="../VI. Tools 工具/18. Command Line Hasher.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         18. Command Line Hasher
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> VII. Index 目录</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="VII. Index 目录/19. Terminology 术语.html">
+            
+                
+                    <a href="../VII. Index 目录/19. Terminology 术语.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         19. Terminology 术语
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> VIII. Other 其他</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
+            
+                
+                    <a href="../VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         20. 10 Minute Tutorial 十分钟教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
+            
+                
+                    <a href="../VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         21. Beginner&#39;s Webapp Tutorial 初学者web应用教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
+            
+                
+                    <a href="../VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         22. Application Security With Apache Shiro 用Shiro保护你的应用安全 
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >apache-shiro-1.2.x-reference</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_5">
+                    
+                        <h1 id="7-realms">7. Realms</h1>
+<p>Realm 是可以访问程序特定的安全数据如用户、角色、权限等的一个组件。Realm 会将这些程序特定的安全数据转换成一种 Shiro 可以理解的形式，Shiro 就可以依次提供容易理解的 <a href="../IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">Subject</a> 程序API而不管有多少数据源或者程序中你的数据如何组织。</p>
+<p>Realm 通常和数据源是一对一的对应关系，如关系数据库，LDAP 目录，文件系统，或其他类似资源。因此，Realm 接口的实现使用数据源特定的API 来展示授权数据（角色，权限等），如JDBC，文件IO，Hibernate 或JPA，或其他数据访问API。</p>
+<p><em>Realm 实质上就是一个特定安全的 <a href="http://en.wikipedia.org/wiki/Data_Access_Object" target="_blank">DAO</a></em></p>
+<p>因为这些数据源大多通常存储身份验证数据（如密码的凭证）以及授权数据（如角色或权限），每个 Shiro Realm 能够执行身份验证和授权操作。</p>
+<h2 id="realm-configuration">Realm Configuration</h2>
+<p>如果使用 Shiro 的 ini 配置文件，你可以在[main]区域内像配置其它对象一样定义和引用Realms，但是 Realm 在 secrityManager上的配置有两种方式：明确方式和隐含方式。 </p>
+<h3 id="explicit-assignment-">Explicit Assignment 明确指定(显式)</h3>
+<p>在迄今所知的INI配置文件的相关知识中，这是一种显示的配置方式。在定义一个或多个Realm后，再将它们在securityManager上进行统一配置。</p>
+<p>例如：</p>
+<pre><code>fooRealm = com.company.foo.Realm
+barRealm = com.company.another.Realm
+bazRealm = com.company.baz.Realm
+
+securityManager.realms = $fooRealm, $barRealm, $bazRealm
+</code></pre><p>明确设置是确定性的，你可以非常确切地知道哪个 realm 在使用并且知道它们执行的顺序。可以查看<a href="5. Authentication 认证.html">认证</a>章节的 Authentication Sequence 了解 Realm 的执行顺序的影响效果</p>
+<h3 id="implicit-assignment">Implicit Assignment隐含方式(隐式)</h3>
+<p><em>Not Preferred(不推荐)</em></p>
+<p><em>这种方法可能引发意想不到的行为，如果你改变 realm 定义的顺序的话。建议你避免使用此方法，并使用显式分配，它拥有确定的行为。该功能很可能在未来的 Shiro 版本中被废弃或移除。</em></p>
+<p>如果出于某些原因你不想显式地配置 securityManager.realms 的属性，你可以允许 Shiro 检测所有配置好的 realm 并直接将它们指派给securityManager。</p>
+<p>使用这种方法，realm 将会按照它们预先定义好的顺序来指派给 securityManager 实例。</p>
+<p>也就是说，对于下面的 shiro.ini 示例：</p>
+<pre><code>blahRealm = com.company.blah.Realm
+fooRealm = com.company.foo.Realm
+barRealm = com.company.another.Realm
+
+# no securityManager.realms assignment here
+</code></pre><p>基本上和下面这一行具有相同的效果：</p>
+<pre><code>securityManager.realms = $blahRealm, $fooRealm, $barRealm
+</code></pre><p>然而，实现隐式分配，只是 realm 定义的顺序直接影响到了它们在身份验证和授权尝试中的访问顺序。如果你改变它们定义的顺序，你将改变主要的<a href="5. Authentication 认证.html">认证</a>章节的 Authentication Sequence 的Authentication Sequence 是如何起作用的。由于这个原因，以及保证明确的行为，我们推荐使用显式分配而不是隐式分配。</p>
+<h2 id="realm-authentication">Realm Authentication</h2>
+<p>当你理解了Shiro 的主要 <a href="https://github.com/waylau/apache-shiro-1.2.x-reference/blob/master/II.%20Core%20%E6%A0%B8%E5%BF%83/5.%20Authentication%20%E8%AE%A4%E8%AF%81.md" target="_blank">认证</a> 工作流后，了解在一个授权尝试中当 Authenticator 与 Realm 交互时到底发生了什么是很重要的。</p>
+<h3 id="supporting-authenticationtokens">Supporting AuthenticationTokens</h3>
+<p>正如在认证流程中提到的，在一个 Realm 执行一个验证尝试之前，它的<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/Realm.html#supports(org.apache.shiro.authc.AuthenticationToken" target="_blank">supports</a>)方法被调用。只有在返回值为 true 的时候它的getAuthenticationInfo(token) 方法才会执行。</p>
+<p>通常情况下，一个 realm 将检查提交的令牌类型（接口或类）确定自己是否可以处理它，例如，一个处理生物特性数据的Realm 可能一点也不理解 UsernamePasswordTokens，在这种情况下它将从支持函数中返回 false。</p>
+<h3 id="handling-supported-authenticationtokens">Handling supported AuthenticationTokens</h3>
+<p>如果一个Realm支持提交的验证令牌，验证将调用 Realm 的<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/Realm.html#getAuthenticationInfo(org.apache.shiro.authc.AuthenticationToken" target="_blank">getAuthenticationInfo(token)</a>) 方法，这是Realm 使用后台数据进行验证的一次有效尝试，顺序执行以下动作：</p>
+<p>1.检查主要 principal (身份)令牌（用户身份信息）；</p>
+<p>2.基于主要 principal (信息)，在数据源中查找对应的用户数据；</p>
+<p>3.确定令牌支持的 credentials (凭证数据)和存储的数据相符；</p>
+<p>4.如果凭证相符，返回一个<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/AuthenticationInfo.html" target="_blank">AuthenticationInfo</a>实例，里面封装了 Shiro 可以理解的用户数据。</p>
+<p>5.如果证据不符，抛出 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/AuthenticationException.html" target="_blank">AuthenticationException</a>异常。</p>
+<p>这是所有Realm getAuthenticationInfo 实现的最高级别工作流，Realm 在这个过程中可以自由做自己想做的事情，比如记录日志，修改数据，以及其他，只要对于存储的数据和验证尝试来讲是合理的就行。</p>
+<p>仅有一件事情是必须的，如果 credentials （凭证）和给定的 principal （主要信息）匹配，需要返回一个非空的 AuthenticationInfo 实例，用来表示来自数据源的 Subject 账户信息。</p>
+<p><em>节约时间</em></p>
+<p><em>直接实现 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/Realm.html" target="_blank">Realm</a> 接口也许需要时间并容易出错，大部分用户选择继承 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthorizingRealm.html" target="_blank">AuthorizingRealm</a> 虚拟类，这个类实现了常用的认证和授权工作流，这会节省你的时间而且不易出错。</em></p>
+<h3 id="credentials-matching-">Credentials Matching 凭证匹配</h3>
+<p>在上述 realm 认证工作流中，一个 Realm 必须较验 Subject 提交的凭证（如密码）是否与存储在数据中的凭证相匹配，如果匹配，验证成功，系统保留已认证的终端用户身份。</p>
+<p><em>Realm凭证匹配</em></p>
+<p><em>检查提交的凭证是否与后台存储数据相匹配是每一个 Realm 的责任而不是 Authenticator 的责任，每一个 Realm 都具备与凭证形式及存储密切相关的技能，可以执行详细的凭证比对，而 Authenticator 只是一个普通的工作流组件。</em></p>
+<p>凭证匹配的过程在所有程序中基本上是一样的，通常只是对比数据方式不同。要确保这个过程在必要时是可插拔和可定制的，<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthenticatingRealm.html" target="_blank">AuthenticatingRealm</a> 以及它的子类支持用 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/credential/CredentialsMatcher.html" target="_blank">CredentialsMatcher</a> 来执行一个凭证对比。</p>
+<p>在找到用户数据之后，它和提交的 AuthenticationToken 一起传递给一个 CredentialsMatcher ，后者用来检查提交的数据和存储的数据是否相匹配。</p>
+<p>Shiro某些 CredentialsMatcher 实现可以使你开箱即用，比如 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/credential/SimpleCredentialsMatcher.html" target="_blank">SimpleCredentialsMatcher</a> 和 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/credential/HashedCredentialsMatcher.html" target="_blank">HashedCredentialsMatcher</a> 实现，但如果你想配置一个自定义的实现来完成特定的对比逻辑，你可以这样做：</p>
+<pre><code>Realm myRealm = new com.company.shiro.realm.MyRealm();
+CredentialsMatcher customMatcher = new com.company.shiro.realm.CustomCredentialsMatcher();
+myRealm.setCredentialsMatcher(customMatcher);
+</code></pre><p>或者，使用 Shiro 的 INI<a href="../I. Overview 总览/4. Configuration 配置.html">配置</a>文件</p>
+<pre><code>[main]
+...
+customMatcher = com.company.shiro.realm.CustomCredentialsMatcher
+myRealm = com.company.shiro.realm.MyRealm
+myRealm.credentialsMatcher = $customMatcher
+...
+</code></pre><h4 id="simple-equality-check-">Simple Equality Check 简单证明匹配</h4>
+<p>所有 Shiro 的开箱即用 Realm 默认使用一个 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/credential/SimpleCredentialsMatcher.html" target="_blank">SimpleCredentialsMatcher</a>， SimpleCredentialsMatcher 对存储的用户凭证和从 AuthenticationToken 提交的用户凭证直接执行相等检查。</p>
+<p>例如，如果提交了一个<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/UsernamePasswordToken.html" target="_blank">UsernamePasswordToken</a>，SimpleCredentialsMatcher 检查提交的密码与存储的密码是否完全相等。</p>
+<p>SimpleCredentialsMatcher 不仅仅对字符串执行相同对比，它可以对大多数常用类型，如字符串、字符数组、字节数组、文件和输入流等执行对比，查看 JavaDoc 获取更多的信息。</p>
+<h4 id="hashing-credentials-">Hashing Credentials 哈希凭证：</h4>
+<p>取代将凭证按它们原始形式存储并执行原始数据的对比，存储终端用户的凭证（如密码）更安全的办法是在存储数据之前，先进行 hash 运算。</p>
+<p>这确保终端用户的凭证不会以他们原始的形式存储，没有人能知道其原始值。与明文原始比较相比这是一种更为安全的做法，有安全意识的程序会更喜欢这种方法。</p>
+<p>要支持这种加密的 hash 策略，Shiro 为 Realm 配置提供了一个<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/credential/HashedCredentialsMatcher.html" target="_blank">HashedCredentialsMatcher</a> 实现替代之前的 SimpleCredentialsMatcher。</p>
+<p>Hashing 凭证以及 hash 迭代的好处超出了该 Realm 文档的范围，可以在<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/credential/HashedCredentialsMatcher.html" target="_blank">HashedCredentialsMatcher JavaDoc</a>更详细地了解这些主要内容。</p>
+<h5 id="hashing-and-corresponding-matchers-">Hashing and Corresponding Matchers 哈希以及相符合的匹配</h5>
+<p>对于一个使用 Shiro 的程序，如何配置才能简单地做到这些？</p>
+<p>Shiro 提供了多个 HashedCredentialsMatcher 子类实现，你必须在你的 Realm 上配置指定的实现来匹配你的凭证所使用的 hash 算法。</p>
+<p>例发，假设你的程序使用用户名/密码对来进行验证，基于上述 hash 凭证的好处，你希望当创建用户时以 <a href="http://en.wikipedia.org/wiki/SHA_hash_functions" target="_blank">SHA-265</a> 方式加密用户的密码，你可以加密用户输入的明文密码并保存加密值：</p>
+<pre><code>import org.apache.shiro.crypto.hash.Sha256Hash;
+import org.apache.shiro.crypto.RandomNumberGenerator;
+import org.apache.shiro.crypto.SecureRandomNumberGenerator;
+...
+
+//我们将使用一个随机数发生器产生的盐。
+//这比使用一个用户名作为盐或不使用盐更加安全。
+//Shiro使这个实现变得容易。
+//
+//注意一个正常的应用程序将引用属性而
+//不是每次创建一个新的RNG：
+RandomNumberGenerator rng = new SecureRandomNumberGenerator();
+Object salt = rng.nextBytes();
+
+//我们的纯文本密码经过散列随机盐和多次迭代，
+//得到Base64编码的值（比Hex需要较少的空间）：
+String hashedPasswordBase64 = new Sha256Hash(plainTextPassword, salt, 1024).toBase64();
+
+User user = new User(username, hashedPasswordBase64);
+//在新帐户保存盐。该 HashedCredentialsMatcher
+//稍后再的登录尝试的时候会处理它：
+user.setPasswordSalt(salt);
+userDAO.create(user);
+</code></pre><p>由于你使用 SHA-256 加密你的密码，你需要告诉 Shiro 使用相应的 HashedCredentialsMatcher 来检查你的 hashing 值，在这个例子中，我们为了加强安全创建了一个随机的 salt 并且执行 1024 Hash 迭代（查看HashedCredentialsMatcher JAVADoc了解为什么），下面的Shiro INI 配置来做这件工作。</p>
+<pre><code>[main]
+...
+credentialsMatcher = org.apache.shiro.authc.credential.Sha256CredentialsMatcher
+# base64 编码, 例子中没有 hex:
+credentialsMatcher.storedCredentialsHexEncoded = false
+credentialsMatcher.hashIterations = 1024
+# 下面属性只在 Shiro 1.0 需要，在 1.1 及以后版本移除了:
+credentialsMatcher.hashSalted = true
+
+...
+myRealm = com.company.....
+myRealm.credentialsMatcher = $credentialsMatcher
+...
+</code></pre><h5 id="hsaltedauthenticationinfo">HSaltedAuthenticationInfo</h5>
+<p>确保正常运行的最后一件要做的事情是你的Realm实现必须返回一个 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/SaltedAuthenticationInfo.html" target="_blank">SaltedAuthenticationInfo</a> 实例而不是普通的AuthenticationInfo，SaltedAuthenticationInfo 接口确保你在创建用户帐户时使用的salt（如上面调用的 user.setPasswordSalt(salt);）能被 HashedCredentialsMatcher 引用。</p>
+<p>HashedCredentialsMatcher 需要使用 salt 来对提交的 AuthenticationToken 执行相同的 hashing 技术来对比提交的令牌是否与存储的数据相匹配，所以如果你对用户密码使用 salting（你应该这么做），确保你的 Realm 实现在返回 SaltedAuthenticationInfo 实例时引用它。</p>
+<h3 id="disabling-authentication-">Disabling Authentication 禁用</h3>
+<p>如果有理由，你不希望某个 Realm 对某个资源执行验证（或者因为你只想 Realm 去执行授权检查），你可以完全禁用 Realm 的认证支持，方法就是在 Realm 的 supports 方法中始终返回 false,这样，你的 Realm 将在整个验证过程中不再被使用。 </p>
+<p>当然如果你想验证 Subject，至少要配置一个支持 AuthenticationTokens 的 Realm。</p>
+<h2 id="realm-authorization">Realm Authorization</h2>
+<p>待定。</p>
+<h2 id="">为文档加把手</h2>
+<p>我们希望这篇文档可以帮助你使用 Apache Shiro 进行工作，社区一直在不断地完善和扩展文档，如果你希望帮助 Shiro 项目，请在你认为需要的地方考虑更正、扩展或添加文档，你提供的任何点滴帮助都将扩充社区并且提升 Shiro。</p>
+<p>提供你的文档的最简单的途径是将它发送到用户<a href="http://shiro-user.582556.n2.nabble.com/" target="_blank">论坛</a>或<a href="http://shiro.apache.org/mailing-lists.html" target="_blank">邮件列表</a></p>
+<p><em>译者注：</em>如果对本中文翻译有疑议的或发现勘误欢迎指正，<a href="https://github.com/waylau/apache-shiro-1.2.x-reference/issues" target="_blank">点此</a>提问。</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../II. Core 核心/6.1. Permissions 权限.html" class="navigation navigation-prev " aria-label="Previous page: 6.1. Permissions 权限"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../II. Core 核心/8. Session Management.html" class="navigation navigation-next " aria-label="Next page: 8. Session Management"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

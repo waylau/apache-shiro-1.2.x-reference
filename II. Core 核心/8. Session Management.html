@@ -1,0 +1,1166 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>8. Session Management | apache-shiro-1.2.x-reference</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../II. Core 核心/9. Cryptography 密码.html" />
+    
+    
+    <link rel="prev" href="../II. Core 核心/7. Realms.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="2.4" data-basepath=".." data-revision="1421282601491">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> I. Overview 总览</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="I. Overview 总览/1. Introduction 介绍.html">
+            
+                
+                    <a href="../I. Overview 总览/1. Introduction 介绍.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         1. Introduction 介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="I. Overview 总览/2. Tutorial 教程.html">
+            
+                
+                    <a href="../I. Overview 总览/2. Tutorial 教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         2. Tutorial 教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="I. Overview 总览/3. Architecture 架构.html">
+            
+                
+                    <a href="../I. Overview 总览/3. Architecture 架构.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         3. Architecture 架构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="I. Overview 总览/4. Configuration 配置.html">
+            
+                
+                    <a href="../I. Overview 总览/4. Configuration 配置.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         4. Configuration 配置
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> II. Core 核心</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="II. Core 核心/5. Authentication 认证.html">
+            
+                
+                    <a href="../II. Core 核心/5. Authentication 认证.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         5. Authentication 认证
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="II. Core 核心/6. Authorization 授权.html">
+            
+                
+                    <a href="../II. Core 核心/6. Authorization 授权.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         6. Authorization 授权
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.2.1" data-path="II. Core 核心/6.1. Permissions 权限.html">
+            
+                
+                    <a href="../II. Core 核心/6.1. Permissions 权限.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                         6.1. Permissions 权限
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="II. Core 核心/7. Realms.html">
+            
+                
+                    <a href="../II. Core 核心/7. Realms.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         7. Realms
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="2.4" data-path="II. Core 核心/8. Session Management.html">
+            
+                
+                    <a href="../II. Core 核心/8. Session Management.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         8. Session Management
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="II. Core 核心/9. Cryptography 密码.html">
+            
+                
+                    <a href="../II. Core 核心/9. Cryptography 密码.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         9. Cryptography 密码
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> III. Web Applications</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="III. Web Applications/10. Web.html">
+            
+                
+                    <a href="../III. Web Applications/10. Web.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         10. Web
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1.1" data-path="III. Web Applications/10.1. Configuration 配置.html">
+            
+                
+                    <a href="../III. Web Applications/10.1. Configuration 配置.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                         10.1. Configuration 配置
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.2" data-path="III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
+            
+                
+                    <a href="../III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                         10.2. 基于路径的 url 安全
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.3" data-path="III. Web Applications/10.3. Default Filters 默认过滤器.html">
+            
+                
+                    <a href="../III. Web Applications/10.3. Default Filters 默认过滤器.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                         10.3. Default Filters 默认过滤器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.4" data-path="III. Web Applications/10.4. Session Management.html">
+            
+                
+                    <a href="../III. Web Applications/10.4. Session Management.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                         10.4. Session Management
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.5" data-path="III. Web Applications/10.5. JSP Tag Library.html">
+            
+                
+                    <a href="../III. Web Applications/10.5. JSP Tag Library.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.5.</b>
+                        
+                         10.5. JSP Tag Library
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> IV. Auxiliary Support 辅助支持</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         11. Caching 缓存
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         12. Concurrency &amp; Multithreading 并发与多线程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         13. Testing 测试
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
+            
+                
+                    <a href="../IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         14. Custom Subjects 自定义 Subject
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> V. Integration 整合</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="V. Integration 整合/15. Spring Framework.html">
+            
+                
+                    <a href="../V. Integration 整合/15. Spring Framework.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         15. Spring Framework
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="V. Integration 整合/16. Guice.html">
+            
+                
+                    <a href="../V. Integration 整合/16. Guice.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         16. Guice
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="V. Integration 整合/17. CAS.html">
+            
+                
+                    <a href="../V. Integration 整合/17. CAS.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         17. CAS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> VI. Tools 工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="VI. Tools 工具/18. Command Line Hasher.html">
+            
+                
+                    <a href="../VI. Tools 工具/18. Command Line Hasher.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         18. Command Line Hasher
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> VII. Index 目录</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="VII. Index 目录/19. Terminology 术语.html">
+            
+                
+                    <a href="../VII. Index 目录/19. Terminology 术语.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         19. Terminology 术语
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> VIII. Other 其他</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
+            
+                
+                    <a href="../VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         20. 10 Minute Tutorial 十分钟教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
+            
+                
+                    <a href="../VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         21. Beginner&#39;s Webapp Tutorial 初学者web应用教程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
+            
+                
+                    <a href="../VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         22. Application Security With Apache Shiro 用Shiro保护你的应用安全 
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >apache-shiro-1.2.x-reference</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_6">
+                    
+                        <h1 id="8-session-management">8. Session Management</h1>
+<p>Apache Shiro 提供安全框架界独一无二的东西：一个完整的企业级Session 解决方案，从最简单的命令行及智能手机应用到最大的集群企业Web 应用程序。</p>
+<p>这对许多应用有着很大的影响——直到 Shiro 出现，如果你需要 session 支持，你需要部署你的应用程序到 Web 容器或使用EJB 有状态会话Bean。Shiro 的 Session 支持比这两种机制的使用和管理更为简单，而且它在适用于任何程序，不论容器。</p>
+<p>即使你在一个 Servlet 或 EJB 容器中部署你的应用程序，仍然有令人信服的理由来使用 Shiro 的Session 支持而不是容器的。下面是一个
+Shiro 的 Session 支持的最可取的功能列表：</p>
+<p>特性</p>
+<ul>
+<li><strong>POJO/J2SE based(IoC friendly)</strong> - Shiro 的一切（包括所有Session 和Session Management 方面）都是基于接口和
+POJO 实现。这可以让你轻松地配置所有拥有任何 JavaBeans 兼容配置格式（如JSON，YAML，Spring XML 或类
+似的机制）的会话组件。你也可以轻松地扩展 Shiro 的组件或编写你自己所需的来完全自定义 session management。</li>
+<li><strong>Easy Custom Session Storage</strong> - 因为Shiro 的Session 对象是基于 POJO 的，会话数据可以很容易地存储在任意数量的数据源。这允许你自定义你的应用程序会话数据的确切位置——例如，文件系统，联网的分布式缓存，关系数据库，或专有的数据存储。</li>
+<li><strong>Container-Independent Clustering!</strong> - Shiro 的会话可以很容易地聚集通过使用任何随手可用的网络缓存产品，像 Ehcache + Terracotta，Coherence，GigaSpaces，等等。这意味着你可以为Shiro 配置会话群集一次且仅一次，无论你部署到什么容器中，你的会话将以相同的方式聚集。不需要容器的具体配置！</li>
+<li><strong>Heterogeneous Client Access</strong> - 与 EJB 或 web 会话不同，Shiro 会话可以被各种客户端技术“共享”。例如，一个桌面应用程序可以“看到”和“共享”同一个被使用的物理会话通过在 Web 应用程序中的同一用户。我们不知道除了 Shiro 以外的其他框架能够支持这一点。</li>
+<li><strong>Event Listeners</strong> - 事件监听器允许你在会话生命周期监听生命周期事件。你可以侦听这些事件和对自定义应用程序的行为作出反应——例如，更新用户记录当他们的会话过期时。</li>
+<li><strong>Host Address Retention</strong> - Shiro Sessions 从会话发起地方保留IP 地址或主机名。这允许你确定用户所在，并作出相应的反应（通常是在IP 分配确定的企业内部网络环境）。</li>
+<li><strong>Inactivity/Expiration Support</strong> - 由于不活动导致会话过期如预期的那样，但它们可以延续很久通过 touch() 方法来保持它们“活着”，如果你希望的话。这在 RIA (富互联网应用)环境非常有用，用户可能会使用桌面应用程序，但可能不会经常与服务器进行通信，但该服务器的会话不应过期。</li>
+<li><strong>Transparent Web Use</strong> - Shiro 的网络支持，充分地实现和支持关于Sessions（HttpSession 接口和它的所有相关的API）的 Servlet2.5 规范.这意味着你可以使用在现有 Web 应用程序中使用Shiro 会话，并且你不需要改变任何现有的 Web 代码。</li>
+<li><strong>Can be used for SSO</strong> - 由于 Shiro 会话是基于POJO 的，它们可以很容易地存储在任何数据源，而且它们可以跨
+程序“共享”如果需要的话。我们称之为&quot;poor man&#39;s SSO&quot;，并它可以用来提供简单的登录体验，由于共享的会话能够保留身份验证状态。</li>
+</ul>
+<h2 id="using-sessions-">Using Sessions 使用</h2>
+<p>几乎与所有其他在Shiro 中的东西一样，你通过与当前执行的Subject 交互来获取Session：</p>
+<pre><code>Subject currentUser = SecurityUtils.getSubject();
+
+Session session = currentUser.getSession();
+session.setAttribute( &quot;someKey&quot;, someValue);
+</code></pre><p>subject.getSession() 方法是调用 currentUser.getSubject(true)的快捷方式。</p>
+<p>对于那些熟悉 HttpServletRequest API 的，Subject.getSession(boolean create) 方法与 HttpServletRequest.getSession(boolean create) 方法有着异曲同工之效。</p>
+<ul>
+<li>如果该Subject 已经拥有一个Session，则boolean 参数被忽略且Session 被立即返回。</li>
+<li>如果该Subject 还没有一个Session 且create 参数为true，则创建一个新的会话并返回该会话。</li>
+<li>如果该Subject 还没有一个Session 且create 参数为false，则不会创建新的会话且返回null。</li>
+</ul>
+<p><em>Any Application 任何应用</em></p>
+<p><em>getSession 要求能够在任何应用程序工作，甚至是非 Web 应用程序。</em></p>
+<p>当开发框架代码来确保一个 Session 没有被创建是没有必要的时候，subject.getSession(false) 可以起到很好的作用。
+当你获取了一个 Subject 的 Session 后，你可以用它来做许多事情，像设置或取得 attribute，设置其超时时间，以及
+更多。请参见 Session 的 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/session/Session.html" target="_blank">JavaDoc</a>来了解一个单独的会话能够做什么。</p>
+<h2 id="the-sessionmanager">The SessionManager</h2>
+<p>SessionManager，名如其意，在应用程序中为所有的 subject 管理Session —— 创建，删除，inactivity(失效)及验证，等等。如同其他在Shiro 中的核心结构组件一样，SessionManager 也是一个由
+SecurityManager 维护的顶级组件。</p>
+<p>默认的 SecurityManger 实现是默认使用开箱即用的<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/mgt/DefaultSecurityManager.html" target="_blank">DefaultSessionManager</a>。DefaultSessionManager 的实现提供一个应用程序所需的所有企业级会话管理，如 Session 验证，orphan cleanup，等等。这可以在任何应用程序中使用。</p>
+<p><em>Web Applications</em>
+<em>Web 应用程序使用不同SessionManager 实现。请参见 <a href="https://github.com/waylau/apache-shiro-1.2.x-reference/blob/master/III.%20Web%20Applications/10.%20Web.md" target="_blank">Web</a> 文档获取web-specific Session Management 信息。</em></p>
+<p>像其他被 SecurityManager 管理的组件一样，SessionManager 可以通过 JavaBean 风格的 getter/setter 方法在所有Shiro
+默认 SecurityManager 实现（getSessionManager()/setSessionManager()）上获取或设置值。或者例如，如果在使用
+shiro.ini 配置：</p>
+<pre><code>[main]
+...
+sessionManager = com.foo.my.SessionManagerImplementation
+securityManager.sessionManager = $sessionManager
+</code></pre><p>但从头开始创建一个 SessionManager 是一个复杂的任务且是大多数人不想亲自做的事情。Shiro 的开箱即用的SessionManager 实现是高度可定制的和可配置的，并满足大多数的需要。本文档的其余部分假定你将使用 Shiro 的默认 SessionManager 实现，当覆盖配置选项时。但请注意，你基本上可以创建或插入任何你想要的东西。</p>
+<h3 id="session-timeout-">Session Timeout 超时</h3>
+<p>默认地，Shiro 的 SessionManager 实现默认是 30 分钟会话超时。也就是说，如果任何 Session 创建后闲置（未被使用，它的<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/session/Session.html#getLastAccessTime(" target="_blank">lastAccessedTime</a>)未被更新）的时间超过了 30 分钟，那么该 Session 就被认为是过期的，且不允许再被使用。</p>
+<p>你可以设置 SessionManager 默认实现的 globalSessionTimeout 属性来为所有的会话定义默认的超时时间。例如，如果你想超时时间是一个小时而不是 30 分钟：</p>
+<pre><code>[main]
+...
+# 3,600,000 milliseconds = 1 hour
+securityManager.sessionManager.globalSessionTimeout = 3600000
+</code></pre><h4 id="per-session-timeout">Per-Session Timeout</h4>
+<p>上面的 globalSessionTimeout 值默认是为新建的 Session 使用的。你可以在每一个会话的基础上控制超时时间通过设置单独的会话 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/session/Session.html#setTimeout(long" target="_blank">timeout</a>)值。与上面的 globalSessionTimeout 一样，该值以毫秒（不是秒）为时间单位。</p>
+<h3 id="session-listeners">Session Listeners</h3>
+<p>Shiro 支持 SessionListener 概念来允许你对发生的重要会话作出反应。你可以实现 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/session/SessionListener.html" target="_blank">SessionListener</a> 接口（或扩展易用的SessionListenerAdapter ）并与相应的会话操作作出反应。
+由于默认的 SessionManager sessionListeners 属性是一个集合，你可以对 SessionManager 配置一个或多个 listener 实
+现，就像其他在 shiro.ini 中的集合一样：</p>
+<pre><code>[main]
+...
+aSessionListener = com.foo.my.SessionListener
+anotherSessionListener = com.foo.my.OtherSessionListener
+
+securityManager.sessionManager.sessionListeners = $aSessionListener, $anotherSessionListener, etc.
+</code></pre><p><em>All Session Events 所有Session 事件</em></p>
+<p><em>当任何会话发生事件时，SessionListeners 都会被通知——不仅仅是对一个特定的会话</em></p>
+<h3 id="session-storage-">Session Storage 存储</h3>
+<p>每当一个会话被创建或更新时，它的数据需要持久化到一个存储位置以便它能够被稍后的应用程序访问。同样地，当一个会话失效且不再被使用时，它需要从存储中删除以便会话数据存储空间不会被耗尽。SessionManager 实现委托这些 Create/Read/Update/Delete(CRUD) 操作为内部组件，同时，<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/session/mgt/eis/SessionDAO.html" target="_blank">SessionDAO</a>，反映了数据访问对象（<a href="http://en.wikipedia.org/wiki/Data_access_object" target="_blank">DAO</a>）设计模式。</p>
+<p>SessionDAO 的权力是你能够实现该接口来与你想要的任何数据存储进行通信。这意味着你的会话数据可以驻留在内存中，文件系统，关系数据库或NoSQL 的数据存储，或其他任何你需要的位置。你得控制持久性行为。</p>
+<p>你可以将任何 SessionDAO 实现作为一个属性配置在默认的SessionManager 实例上。例如，在shiro.ini 中：</p>
+<pre><code>[main]
+...
+sessionDAO = com.foo.my.SessionDAO
+securityManager.sessionManager.sessionDAO = $sessionDAO
+</code></pre><p>然而，正如你可能期望的那样，Shiro 已经有一些很好的SessionDAO 实现，你可以立即使用或实现你需要的子类。</p>
+<p><em>Web Applications</em></p>
+<p><em>上述的 securityManager.sessionManager.sessionDAO = $sessionDAO 作业仅在使用一个本地的 Shiro 会话管理器时才
+工作。Web 应用程序默认不会使用本地的会话管理器，而是保持不支持SessionDAO 的 Servlet Container 的默认会话
+管理器。如果你想基于 Web 应用程序启用 SessionDAO 来自定义会话存储或会话群集，你将不得不首先配置一个本
+地的Web 会话管理器。例如：</em></p>
+<pre><code>[main]
+...
+sessionManager = org.apache.shiro.web.session.mgt.DefaultWebSessionManager
+securityManager.sessionManager = $sessionManager
+
+# Configure a SessionDAO and then set it:
+securityManager.sessionManager.sessionDAO = $sessionDAO
+</code></pre><p><em>Configure a SessionDAO! 配置</em></p>
+<p><em>Shiro 的默认配置本地 SessionManagers 使用仅内存 Session 存储。这是不适合大多数应用程序的。大多数生产应用程序想要配置提供的 EHCache（见下文）支持或提供自己的SessionDAO 实现。</em></p>
+<p><em>请注意 Web 应用程序默认使用基于 servlet 容器的 SessionManager，且没有这个问题。这也是使用 Shiro 本地
+SessionManager 的唯一问题。</em></p>
+<h3 id="ehcache-sessiondao">EHCache SessionDAO</h3>
+<p>EHCache 默认是没有启用的，但如果你不打算实现你自己的 SessionDAO，那么强烈地建议你为 Shiro 的 SessionManagerment 启用 EHCache 支持。EHCache SessionDAO 将会在内存中保存会话，并支持溢出到磁盘，若内存成为制约。这对生产程序确保你在运行时不会随机地“丢失”会话是非常好的。</p>
+<p><em>Use EHCache as your default 设置 EHCache 为默认</em></p>
+<p><em>如果你不准备编写一个自定义的 SessionDAO，则明确地在你的 Shiro 配置中启用 EHCache。EHCache 带来的好处远不止在 Sessions，缓存验证和授权数据方面。更多信息，请参见 <a href="../IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">Caching</a> 文档。</em></p>
+<p><em>Container-Independent Session Clustering 独立容器的Session聚类</em></p>
+<p>*如果你急需独立的容器会话集群，EHCache 会是一个不错的选择。你可以显式地在 EHCache 之后插入<a href="http://www.terracotta.org/" target="_blank">TerraCotta</a>，并拥有一个独立于容器集群的会话缓存。不必再担心 Tomcat，JBoss，Jetty，WebSphere 或WebLogic 特定的会话集群！</p>
+<p>为会话启用 EHCache 是非常容易的。首先，确保在你的 classpath 中有shiro-ehcache-<version>.jar 文件（请参见
+<a href="http://shiro.apache.org/download.html" target="_blank">Download</a> 页面或使用 Maven 或 Ant+Ivy）。*</p>
+<p>当在 classpath 中后，这第一个 shiro.ini 实例向你演示怎样为所有Shiro 的缓存需要（不只是会话支持）使用 EHCache：</p>
+<pre><code>[main]
+
+sessionDAO = org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO
+securityManager.sessionManager.sessionDAO = $sessionDAO
+
+cacheManager = org.apache.shiro.cache.ehcache.EhCacheManager
+securityManager.cacheManager = $cacheManager
+</code></pre><p>最后一行，securityManager.cacheManager = $cacheManager，为所有 Shiro 的需要配置了一个 CacheManager。该CacheManager 实例会自动地直接传送到 SessionDAO（通过 EnterpriseCacheSessionDAO 实现 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/CacheManagerAware.html" target="_blank">CacheManagerAware</a> 接口的性质）。</p>
+<p>然后，当 SessionManager 要求 EnterpriseCacheSessionDAO 去持久化一个 Session 时，它使用一个 EHCache 支持的 Cache 实现去存储Session 数据。</p>
+<p><em>Web Applications</em></p>
+<p><em>当使用 Shiro 本地的 SessionManager 实现时不要忘了分配SessionDAO 是一项功能。Web 应用程序默认使用基于容器的 SessionManager，它不支持 SessionDAO。如果你想在 Web 应用程序中使用基于 EHCache 的会话存储，配置一个
+如上所述的 Web SessionManager。</em></p>
+<h4 id="ehcache-session-cache-configuration">EHCache Session Cache Configuration</h4>
+<p>默认地，EhCacheManager 使用一个 Shiro 特定的 <a href="https://svn.apache.org/repos/asf/shiro/trunk/support/ehcache/src/main/resources/org/apache/shiro/cache/ehcache/ehcache.xml" target="_blank">ehcache.xml</a> 文件来建立 Session 缓存区以及确保 Sessions 正常存取的必要设置。</p>
+<p>然而，如果你想改变缓存设置，或想配置你自己的 ehcache.xml 或EHCache net.sf.ehcache.CacheManager 实例，你需要配置缓存区来确保Sessions 被正确地处理。</p>
+<p>如果你查看默认的 <a href="https://svn.apache.org/repos/asf/shiro/trunk/support/ehcache/src/main/resources/org/apache/shiro/cache/ehcache/ehcache.xml" target="_blank">ehcache.xml</a> 文件，你会看到接下来的 shiro-activeSessionCache 缓存配置：</p>
+<pre><code>&lt;cache name=&quot;shiro-activeSessionCache&quot;
+       maxElementsInMemory=&quot;10000&quot;
+       overflowToDisk=&quot;true&quot;
+       eternal=&quot;true&quot;
+       timeToLiveSeconds=&quot;0&quot;
+       timeToIdleSeconds=&quot;0&quot;
+       diskPersistent=&quot;true&quot;
+       diskExpiryThreadIntervalSeconds=&quot;600&quot;/&gt;
+</code></pre><p>如果你希望使用你自己的 ehcache.xml 文件，那么请确保你已经为 Shiro 所需的定义了一个类似的缓存项。很有可能
+你会改变 maxElementsInMemory 的属性值来吻合你的需要。然而，至少下面两个存在于你自己配置中的属性是非常重要的：</p>
+<ul>
+<li>overflowToDisk=&quot;true&quot; - 这确保当你溢出进程内存时，会话不丢失且能够被序列化到磁盘上。</li>
+<li>eternal=&quot;true&quot; - 确保缓存项（ Session 实例）永不过期或被缓存自动清除。这是很有必要的，因为 Shiro 基于计划过程完成自己的验证。如果我们关掉这项，缓存将会在 Shiro 不知道的情况下清扫这些 Sessions，这可能引起麻烦</li>
+</ul>
+<h4 id="ehcache-session-cache-name">EHCache Session Cache Name</h4>
+<p>默认地，EnterpriseCacheSessionDAO 向 CacheManager 寻求一个名为&quot;shiro-activeSessionCache&quot;的 Cache。该缓存的 name/region 将在 ehcache.xml 中配置，如上所述。</p>
+<p>如果你想使用一个不同的名字而不是默认的，你可以在EnterpriseCacheSessionDAO 上配置名字，例如：</p>
+<pre><code>[main]
+...
+sessionDAO = org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO
+sessionDAO.activeSessionsCacheName = myname
+...
+</code></pre><p>只要确保在 ehcahe.xml 中有一项与名字匹配且你已经配置好了如上所述的 overflowToDisk=&quot;true&quot; 和 eternal=&quot;true&quot;。</p>
+<h4 id="custom-session-ids">Custom Session IDs</h4>
+<p>Shiro 的 SessionDAO 实现使用一个内置的 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/session/mgt/eis/SessionIdGenerator.html" target="_blank">SessionIdGenerator</a> 组件来产生一个新的 Session ID 当每次创建一个新的会话的时候。该 ID 生成后，被指派给新近创建的Session 实例，然后该Session 通过SessionDAO 被保存下来。</p>
+<p>默认的SessionIdGenerator 是一个 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/session/mgt/eis/JavaUuidSessionIdGenerator.html" target="_blank">JavaUuidSessionIdGenerator</a>，它能产生基于Java <a href="http://download.oracle.com/javase/6/docs/api/java/util/UUID.html" target="_blank">UUIDs</a> 的 String IDs。该实现能够支持所有的生产环境。</p>
+<p>如果它不符合你的需要，你可以实现 SessionIdGenerator 接口并在Shiro 的 SessionDAO 实例上配置该实现。例如，
+在 shiro.ini 中：</p>
+<pre><code>[main]
+...
+sessionIdGenerator = com.my.session.SessionIdGenerator
+securityManager.sessionManager.sessionDAO.sessionIdGenerator = $sessionIdGenerator
+</code></pre><h3 id="session-validation--scheduling-">Session Validation &amp; Scheduling 验证和计划</h3>
+<p>Sessions 必须被验证，这样任何无效(过期或停止)的会话能够从会话数据存储中删除。这保证了数据存储不会由于不能再次使用的会话而导致写入超时。</p>
+<p>由于性能上的原因，仅仅在Sessions 被访问（也就是subject.getSession()）时验证它们是否停止或过期。这意味着，
+如果没有额外的定期验证，Session orphans(孤儿)将会开始填充会话数据存储。</p>
+<p>一个常见的说明孤儿的例子是 Web 浏览器中的场景：比方说，用户登录到Web 应用程序并创建了一个会话来保留
+数据（身份验证状态，购物车等）。如果用户不注销，并在应用程序不知道的情况下关闭了浏览器，则他们的会话
+实质上是“躺在”会话数据存储的（孤儿）。SessionManager 没有办法检测用户不再使用他们的浏览器，同时该会话永远不会被再次访问（它是孤儿了）。</p>
+<p>会话孤儿，如果它们没有定期清除，将会填充会话数据存储（这是很糟糕的）。因此，为了防止丢放孤儿，SessionManager 实现支持 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/session/mgt/SessionValidationScheduler.html" target="_blank">SessionValidationScheduler</a> 的概念。SessionValidationScheduler 负责定期地验证会话以确保
+它们是否需要清理。</p>
+<h4 id="default-sessionvalidationscheduler-">Default SessionValidationScheduler 默认</h4>
+<p>默认可用的 SessionValidationScheduler 在所有环境中都是<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/session/mgt/ExecutorServiceSessionValidationScheduler.html" target="_blank">ExecutorServiceSessionValidationScheduler</a>，它使用 JDK
+<a href="http://download.oracle.com/javase/6/docs/api/java/util/concurrent/ScheduledExecutorService.html" target="_blank">ScheduledExecutorService</a> 来控制验证频率。</p>
+<p>默认地，该实现每小时执行一次验证。你可以通过指定一个新的 ExecutorServiceSessionValidationScheduler 实例并指
+定不同的间隔（以毫秒为单位）改变速率来更改验证频率：</p>
+<pre><code>[main]
+...
+sessionValidationScheduler = org.apache.shiro.session.mgt.ExecutorServiceSessionValidationScheduler
+# Default is 3,600,000 millis = 1 hour:
+sessionValidationScheduler.interval = 3600000
+
+securityManager.sessionManager.sessionValidationScheduler = $sessionValidationScheduler
+</code></pre><h4 id="custom-sessionvalidationscheduler-">Custom SessionValidationScheduler 自定义</h4>
+<p>如果你希望提供一个自定义的 SessionValidationScheduler 实现，你可以指定它作为默认的 SessionManager 实例的一个属性。例如，在shiro.ini 中：</p>
+<pre><code>[main]
+…
+sessionValidationScheduler = com.foo.my.SessionValidationScheduler
+securityManager.sessionManager.sessionValidationScheduler = $sessionValidationScheduler
+</code></pre><h4 id="disabling-session-validation-">Disabling Session Validation 禁用</h4>
+<p>在某些情况下，你可能希望禁用会话验证项，由于你建立了一个超出了Shiro 控制的进程来为你执行验证。例如，也许你正在使用一个企业的 Cache 并依赖于缓存的Time To Live 设置来自动地去除旧的会话。或者也许你已经制定了一个计划任务来自动清理一个自定义的数据存储。在这些情况下你可以关掉 session validation scheduling：</p>
+<pre><code>[main]
+...
+securityManager.sessionManager.sessionValidationSchedulerEnabled = false
+</code></pre><p>当会话从会话数据存储取回数据时它仍然会被验证，但这会禁用掉 Shiro 的定期验证。</p>
+<p><em>Enable Session Validation somewhere</em></p>
+<p><em>如果你关闭了 Shiro 的session validation scheduler，你必须通过其他的机制（计划任务等）来执行定期的会话验证。
+这是保证会话孤儿不会填充数据存储的唯一方法。</em></p>
+<h4 id="invalid-session-deletion-session">Invalid Session Deletion 删除无效的Session</h4>
+<p>正如我们上面所说的，进行定期的会话验证主要目的是为了删除任何无效的（过期或停止）会话来确保它们不会占用会话数据存储。</p>
+<p>默认地，某些应用程序可能不希望 Shiro 自动地删除会话。例如，如果一个应用程序已经提供了一个 SessionDAO 备份数据存储查询，也许是应用程序团队希望旧的或无效的会话在一定的时间内可用。这将允许团队对数据存储运行查询来判断，例如，在上周某个用户创建了多少个会话，或一个用户会话的持续时间，或与之类似报告类型的查询。</p>
+<p>在这些情形中，你可以关闭 invalid session deletion 项。例如，在shiro.ini 中：</p>
+<pre><code>[main]
+...
+securityManager.sessionManager.deleteInvalidSessions = false
+</code></pre><p>请注意！如果你关闭了它，你得为确保你的会话数据存储不耗尽它的空间。你必须自己从你的数据存储中删除无效的会话！</p>
+<p>还要注意，即使你阻止了 Shiro 删除无效的会话，你仍然应该使用某种会话验证方式——要没通过 Shiro 的现有验证机制，要么通过一个你自己提供的自定义的机制（见上述的&quot;Disabling Session Validation&quot;获取更多）。验证机制将会更新你的会话记录以反映无效的状态（例如，什么时候它是无效的，它最后一次被访问是什么时候，等等），即使你在其他的一些时间将手动删除它们。</p>
+<p><em>如果你配置 Shiro 来让它不会删除无效的会话，你得为确保你的会话数据存储不会耗尽它的空间负责。你必须亲自从你的数据存储删除无效的会话！
+另外请注意，禁用会话删除并不等同于禁用 session validation schedule（会话验证调度）。你应该总是使用一个会话验证调度机制——无论是 Shiro 直接支持或者是你自己的。</em></p>
+<h2 id="session-clustering-">Session Clustering 会话集群</h2>
+<p>Apache Shiro 会话能力一个非常令人兴奋的事情是,你可以原生的集群 Subject 会话,不需要再担心你的容器环境。也就是说,如果您使用 Shiro 的原生会话并配置一个会话集群,可以,说,部署到 Jetty 和 Tomcat 开发环境,JBoss 或 Geronimo 的生产环境,或任何其他环境，不用担心容器/特定于环境的集群安装或配置。 Shiro 会话集群配置一次，无论您的部署环境如何，都能正常运行</p>
+<p>因为 Shiro 的基于 pojo 的 n 层体系结构,使会话集群的集群机制非常简单,使会话持久性的水平。 也就是说,如果您配置集群 SessionDAO ,DAO 可以与集群交互机制, Shiro 的 SessionManager 不需要知道集群的问题。</p>
+<h3 id="distributed-caches-">Distributed Caches 分布式缓存</h3>
+<p>分布式缓存比如 <a href="http://ehcache.org/documentation/get-started/about-distributed-cache" target="_blank">Ehcache + TerraCotta</a> , <a href="http://www.gigaspaces.com/" target="_blank">GigaSpaces</a> <a href="http://www.oracle.com/technetwork/middleware/coherence/overview/index.html" target="_blank">Oracle Coherence</a> , <a href="http://memcached.org/" target="_blank">memcached</a> (和许多其他)已经解决 distributed-data-at-the-persistence-level(分布式数据持久层) 问题。 因此在 Shiro 会话使用集群配置如同使用分布式缓存一样简单。</p>
+<p>这使您的灵活性选择确切的集群机制,适用于你的环境。</p>
+<p><em>缓存</em></p>
+<p><em>请注意,当启用分布式/企业缓存在您的会话集群数据存储,下列两种情况之一必须是 true 的:</em></p>
+<ul>
+<li><p><em>整个集群范围的分布式缓存有足够内存来保留所有的 活动/当前 会话</em></p>
+</li>
+<li><p><em>如果整个集群范围的分布式缓存没有足够的内存保留所有活动会话,它必须支持磁盘溢出,会话是不会丢失。</em></p>
+</li>
+</ul>
+<p><em>如果这两种情况都失败，会导致会话被随机丢失,对于终端用户来说这可能令人沮丧。</em></p>
+<h3 id="enterprisecachesessiondao">EnterpriseCacheSessionDAO</h3>
+<p>如您所料,Shiro 已经提供了 SessionDAO 的实现，将保存数据到 企业/分布式缓存。 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/session/mgt/eis/EnterpriseCacheSessionDAO.html" target="_blank">EnterpriseCacheSessionDAO</a> 预计 Shiro 缓存 或 缓存管理器已经配置，所以它可以利用缓存机制。</p>
+<p>例如,在 shiro.ini :</p>
+<pre><code>#This implementation would use your preferred distributed caching product&#39;s APIs:
+activeSessionsCache = my.org.apache.shiro.cache.CacheImplementation
+
+sessionDAO = org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO
+sessionDAO.activeSessionsCache = $activeSessionsCache
+
+securityManager.sessionManager.sessionDAO = $sessionDAO
+</code></pre><p>虽然你可以将缓存实例直接注入到 SessionDAO 如上所示,它通常是更常见的配置一般是缓存管理器 使用 Shiro 的所有缓存的需求(会话以及身份验证和授权数据)。 在这种情况下,而不是 直接配置 缓存实例,您会告诉 EnterpriseCacheSessionDAO 缓存管理器 中的缓存的名称，应该用于存储活动会话。
+例如:</p>
+<pre><code># This implementation would use your caching product&#39;s APIs:
+cacheManager = my.org.apache.shiro.cache.CacheManagerImplementation
+
+# Now configure the EnterpriseCacheSessionDAO and tell it what
+# cache in the CacheManager should be used to store active sessions:
+sessionDAO = org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO
+# This is the default value.  Change it if your CacheManager configured a different name:
+sessionDAO.activeSessionsCacheName = shiro-activeSessionsCache
+# Now have the native SessionManager use that DAO:
+securityManager.sessionManager.sessionDAO = $sessionDAO
+
+# Configure the above CacheManager on Shiro&#39;s SecurityManager
+# to use it for all of Shiro&#39;s caching needs:
+securityManager.cacheManager = $cacheManager
+</code></pre><p>但是上面的配置有一些有点奇怪。 你注意到吗?</p>
+<p>有趣的关于这个配置,在配置我们实际上告诉 SessionDAO 实例使用一个 缓存 或 缓存管理器 ! 所以如何 SessionDAO 使用分布式缓存吗?</p>
+<p>当 Shiro 初始化 SecurityManager ,它将检查看看 SessionDAO 是否 实现了 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/CacheManagerAware.html" target="_blank">CacheManagerAware</a> 接口。 如果是这样,它将自动提供任何可用的全局配置 缓存管理器 。</p>
+<p>所以,当 Shiro 评估 securityManager.cacheManager = $cacheManager  行,它就会发现 EnterpriseCacheSessionDAO 实现了 CacheManagerAware 接口和调用 setCacheManager 和你的配置方法 缓存管理器 作为方法的参数。</p>
+<p>然后在运行时,当 EnterpriseCacheSessionDAO 需要 activeSessionsCache 它会问 缓存管理器 使用实例返回它 activeSessionsCacheName 作为查找得到的关键 缓存 实例。 那 缓存 实例(支持分布式缓存/企业产品的API)将用于存储和检索会话的所有 SessionDAO CRUD 操作。</p>
+<h3 id="ehcache--terracotta">Ehcache + Terracotta</h3>
+<p>这样一个分布式缓存解决方案,人们取得了成功在使用 Shiro 的Ehcache + Terracotta 配对。 看到 Ehcache-hosted <a href="http://ehcache.org/documentation/get-started/about-distributed-cache" target="_blank">分布式缓存与Terracotta </a>文档的全部细节和 Ehcache 如何启用分布式缓存。</p>
+<p>一旦你得到 Terracotta 集群处理 Ehcache ,Shiro-specific 部分非常简单。 阅读并遵守 EHCache SessionDAO 文档,但是我们需要做出一些改变</p>
+<p>Ehcache 会话缓存配置 引用之前 不工作 —— Terracotta 特定的配置是必要的。 下面是一个示例配置,测试正常工作。 其内容保存在一个文件并将其保存在一个 ehcache.xml 文件:</p>
+<pre><code>&lt;ehcache&gt;
+    &lt;terracottaConfig url=&quot;localhost:9510&quot;/&gt;
+    &lt;diskStore path=&quot;java.io.tmpdir/shiro-ehcache&quot;/&gt;
+    &lt;defaultCache
+        maxElementsInMemory=&quot;10000&quot;
+        eternal=&quot;false&quot;
+        timeToIdleSeconds=&quot;120&quot;
+        timeToLiveSeconds=&quot;120&quot;
+        overflowToDisk=&quot;false&quot;
+        diskPersistent=&quot;false&quot;
+        diskExpiryThreadIntervalSeconds=&quot;120&quot;&gt;
+        &lt;terracotta/&gt;
+   &lt;/defaultCache&gt;
+   &lt;cache name=&quot;shiro-activeSessionCache&quot;
+       maxElementsInMemory=&quot;10000&quot;
+       eternal=&quot;true&quot;
+       timeToLiveSeconds=&quot;0&quot;
+       timeToIdleSeconds=&quot;0&quot;
+       diskPersistent=&quot;false&quot;
+       overflowToDisk=&quot;false&quot;
+       diskExpiryThreadIntervalSeconds=&quot;600&quot;&gt;
+       &lt;terracotta/&gt;
+   &lt;/cache&gt;
+   &lt;!-- Add more cache entries as desired, for example,
+        Realm authc/authz caching: --&gt;
+&lt;/ehcache&gt;
+</code></pre><p>当然你想要改变你 <terracottaConfig url="localhost:9510"/> e 条目引用适当的主机/端口 Terracotta 服务器阵列。 还要注意,与 以前的 配置中, ehcache-activeSessionCache 元素不设置 diskPersistent 或 overflowToDisk 属性为 true 的。他们都应该是 假 作为真实值不支持在集群配置。</p>
+<p>在你保存了 ehcache.xml 文件,我们需要在 Shiro 的配置中引用它。 假设你已经作了 terracotta 特定 ehcache.xml 文件在类路径的根,这是最后的 Shiro 配置,使 Terracotta + Ehcache 集群的 Shiro 的需要(包括会话):</p>
+<pre><code>sessionDAO = org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO
+# This name matches a cache name in ehcache.xml:
+sessionDAO.activeSessionsCacheName = shiro-activeSessionsCache
+securityManager.sessionManager.sessionDAO = $sessionDAO
+
+# Configure The EhCacheManager:
+cacheManager = org.apache.shiro.cache.ehcache.EhCacheManager
+cacheManager.cacheManagerConfigFile = classpath:ehcache.xml
+
+# Configure the above CacheManager on Shiro&#39;s SecurityManager
+# to use it for all of Shiro&#39;s caching needs:
+securityManager.cacheManager = $cacheManager
+</code></pre><p>请记住, 顺序很重要 。 通过配置 缓存管理器 在 SecurityManager 最后,我们确保可以传播到所有之前配置缓存管理器 CacheManagerAware 组件(如 EnterpriseCachingSessionDAO )。</p>
+<h3 id="zookeeper">Zookeeper</h3>
+<p>用户报告使用  <a href="http://zookeeper.apache.org/" target="_blank">Apache Zookeeper</a> 来管理/协调分布式会话。 如果你有任何文档/评论关于这个工作,请提交到到 <a href="http://shiro.apache.org/mailing-lists.html" target="_blank">Shiro 邮件列表</a></p>
+<h2 id="sessions-and-subject-state-">Sessions and Subject State 状态</h2>
+<h3 id="stateful-applications-sessions-allowed-">Stateful Applications (Sessions allowed) 有状态</h3>
+<p>默认地，Shiro 的SecurityManager 实现使用一个Subject 的Session 作为一种策略来为接下来的引用存储Subject 的身份 ID（PrincipalCollection）和验证状态（subject.isAuthenticated()）。这通常发生在一个Subject 登录后或当一个 Subject
+的身份 ID 通过Remember 服务被发现后。</p>
+<p>这个默认的方法有几个好处:</p>
+<ul>
+<li><p>任何服务于请求，调用或消息的应用程序可以用请求/调用/消息的有效载荷关联会话ID，且这是Shiro 用入站
+请求关联用户所有所必须的。例如，如果使用Subject.Builder，这是需要获取相关的Subject 所需的一切：</p>
+<p>  Serializable sessionId = //get from the inbound request or remote method invocation payload
+  Subject requestSubject = new Subject.Builder().sessionId(sessionId).buildSubject();</p>
+</li>
+</ul>
+<p>这给大多数Web 应用程序及任何编写远程处理或消息框架的人带来了令人难以置信的方便（这事实上是Shiro
+的Web 支持在自己的框架代码内关联Subject 和ServletRequest）。</p>
+<ul>
+<li>任何&quot;RememberMe&quot;身份基于一个能够在第一次访问就能持久化到会话的初始请求。这确保了Subject 被记住的身份可以跨请求保存而不需要反序列化及将它解释到每个请求。例如，在一个 Web 应用程序中，没有必要去读取每一个请求的加密RememberMe Cookie，如果该身份在会话中是已知的。这可是一个很好的性能提升。</li>
+</ul>
+<h3 id="stateless-applications-sessionless-">Stateless Applications (Sessionless) 无状态</h3>
+<p>虽然上述的默认策略对于大多数应用程序而言是很好的（通常是可取的），但这对于尝试尽可能无状态的应用程序来说是不合适的。许多无状态的架构规定在请求中不能存在持久状态，这种情况下的 Sessions 不会被允许（一个会话其本质代表了持久状态）。</p>
+<p>但这一要求带来一个便利的代价—— Subject 状态不能跨请求保留。这意味着有这一要求的应用程序必须确保 Subject 状态可以在每一个请求中以其他的方式代表。</p>
+<p>这几乎总是通过验证每个由应用程序处理的请求/调用/消息来完成的。例如，大多数无状态 Web 应用程序通常支持这一点通过执行 HTTP 基本验证，允许浏览器验证每一个代表最终用户的请求</p>
+<h4 id="disabling-subject-state-session-storage--subject-">Disabling Subject State Session Storage 禁用 Subject 状态会话存储</h4>
+<p>在 Shiro 1.2 及以后开始，应用程序想禁用 Shiro 的内部实现策略——将Subject 状态持久化到会话，可以禁用所有 Subject 的这一项，通过下面的操作：</p>
+<p>在shiro.ini 中，在 securityManager 上配置下面的属性：</p>
+<pre><code>[main]
+...
+securityManager.subjectDAO.sessionStorageEvaluator.sessionStorageEnabled = false
+...
+</code></pre><p>这将防止 Shiro 使用 Subject 的会话来存储所有跨请求/调用/消息的Subject 状态。只要确保你对每个请求进行了身份验证，这样 Shiro 将会对给定的请求/调用/消息知道它的 Subject 是谁。</p>
+<p><em>Shiro的需求 vs. 你的需求</em></p>
+<p><em>使用 Sessions 作为存储策略将禁用 Shiro 本身的实现。它没有完全地禁用 Sessions。如果你的任何代码显式地调用
+subject.getSession() 或 subject.getSession(true) ，一个session 仍然会被创建。</em></p>
+<h3 id="a-hybrid-approach-">A Hybrid Approach 一个混合的方法</h3>
+<p>上面的shiro.ini 配置中的(securityManager.subjectDAO.sessionStorageEvaluator.sessionStorageEnabled = false) 这一行将会禁用Shiro 为所有的Subject 使用Session 作为一种实现策略。</p>
+<p>但，如果你想使用混合的方法呢？如果某些对象应该有会话而某些没有？这种混合法方法能够给许多应用程序带来好处。例如：</p>
+<ul>
+<li>也许 human Subject（如 Web 浏览器用户）由于上面提供的好处能够使用Session。</li>
+<li>也许non-human Subject（如 API 客户端或第三方应用程序）不应该创建session 由于它们与软件的交互可能会
+间歇或不稳定。</li>
+<li>也许所有某种确定类型的 Subject 或从某一确定位置访问系统的应该将状态保持在会话中，但所有其他的不应
+该。
+如果你需要这个混合方法，你可以实现一个 SessionStorageEvaluator。</li>
+</ul>
+<h4 id="sessionstorageevaluator">SessionStorageEvaluator</h4>
+<p>在你想究竟控制哪个 Subject 能够在它们的 Session 中保存它们的状态的情况下，你可以实现</p>
+<p>org.apache.shiro.mgt.SessionStorageEvaluator 接口，并告诉Shiro 哪个 Subject 支持会话存储。</p>
+<p>该接口只有一个方法：</p>
+<pre><code>public interface SessionStorageEvaluator {
+
+    public boolean isSessionStorageEnabled(Subject subject);
+
+}
+</code></pre><p>关于更详细的API 说明，请参见 SessionStorageEvaluator 的<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/mgt/SessionStorageEvaluator.html" target="_blank">JavaDoc</a>。
+你可以实现这一接口，并检查 Subject，为了你可能做出这一决定的任何信息</p>
+<h5 id="subject-inspection">Subject Inspection</h5>
+<p>但实现 isSessionStorageEnabled(subject)接口方法时，你可以一直查看 Subject 并访问任何你需要用来作出决定的东西。</p>
+<p>当然所有期望的 Subject 方法都是可用的（gePrincipals()等），但特定环境的 Subject 实例也是有价值的。</p>
+<p>例如，在 Web 应用程序中，如果该决定必须基于当前 ServletRequest 中的数据，你可以获取该 request 或该 response，因为运行时的Subjce 实例实际上就是一个 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/web/subject/WebSubject.html" target="_blank">WebSubject</a> 实例：</p>
+<pre><code>...
+public boolean isSessionStorageEnabled(Subject subject) {
+    boolean enabled = false;
+    if (WebUtils.isWeb(Subject)) {
+        HttpServletRequest request = WebUtils.getHttpRequest(subject);
+        //set &#39;enabled&#39; based on the current request.
+    } else {
+        //not a web request - maybe a RMI or daemon invocation?
+        //set &#39;enabled&#39; another way...
+    }
+
+    return enabled;
+}
+</code></pre><p>N.B.框架开发人员应该考虑到这种类型的访问，并确保任何请求/调用/消息上下文对象可用是同过特定环境下的 Subject 实现的。联系 Shiro 用户邮件列表，如果你想帮助设置它，为了你的框架/环境。</p>
+<h4 id="configuration-">Configuration 配置</h4>
+<p>在你实现了 SessionStorageEvaluator 接口后，你可以在 shiro.ini 中配置它：</p>
+<pre><code>[main]
+...
+sessionStorageEvaluator = com.mycompany.shiro.subject.mgt.MySessionStorageEvaluator
+securityManager.subjectDAO.sessionStorageEvaluator = $sessionStorageEvaluator
+
+...
+</code></pre><h3 id="web-applications">Web Applications</h3>
+<p>通常 Web 应用程序希望在每一个请求的基础上容易地启用或禁用会话的创建，不管是哪个 Subject 正在执行请求。这经常在支持 REST 及Messaging/RMI 构架上使用来产生很好的效果。例如，也许正常的终端用户（使用浏览器的人）被允许创建和使用会话，但远程的 API 客户端使用REST 或 SOAP，不该拥有会话（因为它们在每一个请求上验证，
+常见于 REST/SOAP 体系结构）。</p>
+<p>为了支持这种 hybrid/per-request （混合/每次请求）的能力，noSessionCreation 过滤器被添加到 Shiro 的默认“池”g过滤器中，为 Web 应用程序启用的。该过滤器将会阻止在请求期间创建新的会话来保证无状态的体验。在shiro.ini 的[urls]项中，你通常定义该过滤器在所有其它过滤器之前来确保会话永远不会被使用。</p>
+<p>举例：</p>
+<pre><code>[urls]
+...
+/rest/** = noSessionCreation, authcBasic, ...
+</code></pre><p>这个过滤器允许现有会话的任何会话操作，但不允许在过滤的请求创建新的会话。也就是说，在请求或没有会话存在的Subject 调用下面四个方法中的任何一个时，将会自动地触发一个 DisabledSessionException 异常：</p>
+<ul>
+<li>httpServletRequest.getSession()</li>
+<li>httpServletRequest.getSession(true)</li>
+<li>subject.getSession()</li>
+<li>subject.getSession(true)</li>
+</ul>
+<p>如果一个 Subject 在访问 noSessionCreation-protected-URL（无会话创建保护的 URL） 之前已经有一个会话，则上述的四种调用仍然会如预期工作。</p>
+<p>最后，在所有情况下，下面的调用将始终被允许：</p>
+<ul>
+<li>httpServletRequest.getSession(false)</li>
+<li>subject.getSession(false)</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../II. Core 核心/7. Realms.html" class="navigation navigation-prev " aria-label="Previous page: 7. Realms"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../II. Core 核心/9. Cryptography 密码.html" class="navigation navigation-next " aria-label="Next page: 9. Cryptography 密码"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
