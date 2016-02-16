@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en-US" >
+<html lang="en" >
     
     <head>
         
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>23. CacheManager 缓存管理 | apache-shiro-1.2.x-reference</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="generator" content="GitBook 2.6.6">
+        
+        
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,6 +18,22 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
         
     
     
@@ -30,42 +48,40 @@
     <body>
         
         
-<link rel="stylesheet" href="../gitbook/style.css">
-
-
-        
-    <div class="book" data-level="8.4" data-basepath=".." data-revision="1426562387353">
+    <div class="book"
+        data-level="8.4"
+        data-chapter-title="23. CacheManager 缓存管理"
+        data-filepath="VIII. Other 其他/23. CacheManager 缓存管理.md"
+        data-basepath=".."
+        data-revision="Tue Feb 16 2016 18:15:31 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
     
 
 <div class="book-summary">
-    <div class="book-search">
-        <input type="text" placeholder="Type to search" class="form-control" />
-    </div>
-    <ul class="summary">
-        
-    	
-    	
-    	
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
 
-        
+            
 
-        
+            
     
-        
         <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="../index.html">
+                
                         <i class="fa fa-check"></i>
                         
-                         Introduction
+                        Introduction
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1" >
             
             <span><b>1.</b> I. Overview 总览</span>
@@ -74,66 +90,62 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="1.1" data-path="I. Overview 总览/1. Introduction 介绍.html">
             
                 
                     <a href="../I. Overview 总览/1. Introduction 介绍.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
                         
-                         1. Introduction 介绍
+                        1. Introduction 介绍
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.2" data-path="I. Overview 总览/2. Tutorial 教程.html">
             
                 
                     <a href="../I. Overview 总览/2. Tutorial 教程.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                         2. Tutorial 教程
+                        2. Tutorial 教程
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.3" data-path="I. Overview 总览/3. Architecture 架构.html">
             
                 
                     <a href="../I. Overview 总览/3. Architecture 架构.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.3.</b>
                         
-                         3. Architecture 架构
+                        3. Architecture 架构
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.4" data-path="I. Overview 总览/4. Configuration 配置.html">
             
                 
                     <a href="../I. Overview 总览/4. Configuration 配置.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.4.</b>
                         
-                         4. Configuration 配置
+                        4. Configuration 配置
                     </a>
-                
             
             
         </li>
@@ -143,7 +155,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="2" >
             
             <span><b>2.</b> II. Core 核心</span>
@@ -152,51 +163,48 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="2.1" data-path="II. Core 核心/5. Authentication 认证.html">
             
                 
                     <a href="../II. Core 核心/5. Authentication 认证.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.</b>
                         
-                         5. Authentication 认证
+                        5. Authentication 认证
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.2" data-path="II. Core 核心/6. Authorization 授权.html">
             
                 
                     <a href="../II. Core 核心/6. Authorization 授权.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.</b>
                         
-                         6. Authorization 授权
+                        6. Authorization 授权
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="2.2.1" data-path="II. Core 核心/6.1. Permissions 权限.html">
             
                 
                     <a href="../II. Core 核心/6.1. Permissions 权限.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.1.</b>
                         
-                         6.1. Permissions 权限
+                        6.1. Permissions 权限
                     </a>
-                
             
             
         </li>
@@ -206,50 +214,47 @@
             
         </li>
     
-        
         <li class="chapter " data-level="2.3" data-path="II. Core 核心/7. Realms.html">
             
                 
                     <a href="../II. Core 核心/7. Realms.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
                         
-                         7. Realms
+                        7. Realms
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.4" data-path="II. Core 核心/8. Session Management.html">
             
                 
                     <a href="../II. Core 核心/8. Session Management.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
                         
-                         8. Session Management
+                        8. Session Management
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.5" data-path="II. Core 核心/9. Cryptography 密码.html">
             
                 
                     <a href="../II. Core 核心/9. Cryptography 密码.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.5.</b>
                         
-                         9. Cryptography 密码
+                        9. Cryptography 密码
                     </a>
-                
             
             
         </li>
@@ -259,7 +264,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="3" >
             
             <span><b>3.</b> III. Web Applications</span>
@@ -268,99 +272,93 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="3.1" data-path="III. Web Applications/10. Web.html">
             
                 
                     <a href="../III. Web Applications/10. Web.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
                         
-                         10. Web
+                        10. Web
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="3.1.1" data-path="III. Web Applications/10.1. Configuration 配置.html">
             
                 
                     <a href="../III. Web Applications/10.1. Configuration 配置.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.1.</b>
                         
-                         10.1. Configuration 配置
+                        10.1. Configuration 配置
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.1.2" data-path="III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
             
                 
                     <a href="../III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.2.</b>
                         
-                         10.2. 基于路径的 url 安全
+                        10.2. 基于路径的 url 安全
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.1.3" data-path="III. Web Applications/10.3. Default Filters 默认过滤器.html">
             
                 
                     <a href="../III. Web Applications/10.3. Default Filters 默认过滤器.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.3.</b>
                         
-                         10.3. Default Filters 默认过滤器
+                        10.3. Default Filters 默认过滤器
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.1.4" data-path="III. Web Applications/10.4. Session Management.html">
             
                 
                     <a href="../III. Web Applications/10.4. Session Management.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.4.</b>
                         
-                         10.4. Session Management
+                        10.4. Session Management
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.1.5" data-path="III. Web Applications/10.5. JSP Tag Library.html">
             
                 
                     <a href="../III. Web Applications/10.5. JSP Tag Library.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.5.</b>
                         
-                         10.5. JSP Tag Library
+                        10.5. JSP Tag Library
                     </a>
-                
             
             
         </li>
@@ -375,7 +373,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="4" >
             
             <span><b>4.</b> IV. Auxiliary Support 辅助支持</span>
@@ -384,66 +381,62 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="4.1" data-path="IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
             
                 
                     <a href="../IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.1.</b>
                         
-                         11. Caching 缓存
+                        11. Caching 缓存
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="4.2" data-path="IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
             
                 
                     <a href="../IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.2.</b>
                         
-                         12. Concurrency &amp; Multithreading 并发与多线程
+                        12. Concurrency &amp; Multithreading 并发与多线程
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="4.3" data-path="IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
             
                 
                     <a href="../IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.3.</b>
                         
-                         13. Testing 测试
+                        13. Testing 测试
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="4.4" data-path="IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
             
                 
                     <a href="../IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.4.</b>
                         
-                         14. Custom Subjects 自定义 Subject
+                        14. Custom Subjects 自定义 Subject
                     </a>
-                
             
             
         </li>
@@ -453,7 +446,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="5" >
             
             <span><b>5.</b> V. Integration 整合</span>
@@ -462,50 +454,47 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="5.1" data-path="V. Integration 整合/15. Spring Framework.html">
             
                 
                     <a href="../V. Integration 整合/15. Spring Framework.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>5.1.</b>
                         
-                         15. Spring Framework
+                        15. Spring Framework
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="5.2" data-path="V. Integration 整合/16. Guice.html">
             
                 
                     <a href="../V. Integration 整合/16. Guice.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>5.2.</b>
                         
-                         16. Guice
+                        16. Guice
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="5.3" data-path="V. Integration 整合/17. CAS.html">
             
                 
                     <a href="../V. Integration 整合/17. CAS.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>5.3.</b>
                         
-                         17. CAS
+                        17. CAS
                     </a>
-                
             
             
         </li>
@@ -515,7 +504,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="6" >
             
             <span><b>6.</b> VI. Tools 工具</span>
@@ -524,18 +512,17 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="6.1" data-path="VI. Tools 工具/18. Command Line Hasher.html">
             
                 
                     <a href="../VI. Tools 工具/18. Command Line Hasher.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>6.1.</b>
                         
-                         18. Command Line Hasher
+                        18. Command Line Hasher
                     </a>
-                
             
             
         </li>
@@ -545,7 +532,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="7" >
             
             <span><b>7.</b> VII. Index 目录</span>
@@ -554,18 +540,17 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="7.1" data-path="VII. Index 目录/19. Terminology 术语.html">
             
                 
                     <a href="../VII. Index 目录/19. Terminology 术语.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>7.1.</b>
                         
-                         19. Terminology 术语
+                        19. Terminology 术语
                     </a>
-                
             
             
         </li>
@@ -575,7 +560,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="8" >
             
             <span><b>8.</b> VIII. Other 其他</span>
@@ -584,82 +568,77 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="8.1" data-path="VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
             
                 
                     <a href="../VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>8.1.</b>
                         
-                         20. 10 Minute Tutorial 十分钟教程
+                        20. 10 Minute Tutorial 十分钟教程
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="8.2" data-path="VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
             
                 
                     <a href="../VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>8.2.</b>
                         
-                         21. Beginner&#39;s Webapp Tutorial 初学者web应用教程
+                        21. Beginner&#39;s Webapp Tutorial 初学者web应用教程
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="8.3" data-path="VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
             
                 
                     <a href="../VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>8.3.</b>
                         
-                         22. Application Security With Apache Shiro 用Shiro保护你的应用安全 
+                        22. Application Security With Apache Shiro 用Shiro保护你的应用安全
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter active" data-level="8.4" data-path="VIII. Other 其他/23. CacheManager 缓存管理.html">
             
                 
                     <a href="../VIII. Other 其他/23. CacheManager 缓存管理.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>8.4.</b>
                         
-                         23. CacheManager 缓存管理
+                        23. CacheManager 缓存管理
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="8.5" data-path="VIII. Other 其他/24. Apache Shiro Cryptography Features 加密功能.html">
             
                 
                     <a href="../VIII. Other 其他/24. Apache Shiro Cryptography Features 加密功能.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>8.5.</b>
                         
-                         24. Apache Shiro Cryptography Features 加密功能
+                        24. Apache Shiro Cryptography Features 加密功能
                     </a>
-                
             
             
         </li>
@@ -671,80 +650,22 @@
     
 
 
-        
-        <li class="divider"></li>
-        <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
-        </li>
-        
-    </ul>
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
 </div>
 
     <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
+            <div class="book-header" role="navigation">
     <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
-    
-    <div id="font-settings-wrapper" class="dropdown pull-left">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
-        </a>
-        <div class="dropdown-menu font-settings">
-    <div class="dropdown-caret">
-        <span class="caret-outer"></span>
-        <span class="caret-inner"></span>
-    </div>
-
-    <div class="buttons">
-        <button type="button" id="reduce-font-size" class="button size-2">A</button>
-        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
-    </div>
-
-    <div class="buttons font-family-list">
-        <button type="button" data-font="0" class="button">Serif</button>
-        <button type="button" data-font="1" class="button">Sans</button>
-    </div>
-
-    <div class="buttons color-theme-list">
-        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
-        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
-        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
-    </div>
-</div>
-
-    </div>
-
-    <!-- Actions Right -->
-    
-    <div class="dropdown pull-right">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
-        </a>
-        <div class="dropdown-menu font-settings dropdown-left">
-            <div class="dropdown-caret">
-                <span class="caret-outer"></span>
-                <span class="caret-inner"></span>
-            </div>
-            <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">Twitter</button>
-                <button type="button" data-sharing="google-plus" class="button">Google</button>
-                <button type="button" data-sharing="facebook" class="button">Facebook</button>
-                <button type="button" data-sharing="weibo" class="button">Weibo</button>
-                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
-    
     
 
     <!-- Title -->
@@ -754,22 +675,22 @@
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1">
+            <div class="page-wrapper" tabindex="-1" role="main">
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_30">
+                    <section class="normal" id="section-">
                     
-                        <h1 id="23-cachemanager-">23. CacheManager 缓存管理</h1>
-<p>Shiro 有三个重要的缓存接口：</p>
+                        <h1 id="23-cachemanager-&#x7F13;&#x5B58;&#x7BA1;&#x7406;">23. CacheManager &#x7F13;&#x5B58;&#x7BA1;&#x7406;</h1>
+<p>Shiro &#x6709;&#x4E09;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x7F13;&#x5B58;&#x63A5;&#x53E3;&#xFF1A;</p>
 <ul>
-<li><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/CacheManager.html" target="_blank">CacheManager</a> - 负责所有缓存的主要管理组件，它返回 Cache 实例。</li>
-<li><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/Cache.html" target="_blank">Cache</a> - 维护key/value 对。</li>
-<li><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/CacheManagerAware.html" target="_blank">CacheManagerAware</a> - 通过想要接收和使用 CacheManager 实例的组件来实现。</li>
+<li><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/CacheManager.html" target="_blank">CacheManager</a> - &#x8D1F;&#x8D23;&#x6240;&#x6709;&#x7F13;&#x5B58;&#x7684;&#x4E3B;&#x8981;&#x7BA1;&#x7406;&#x7EC4;&#x4EF6;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE; Cache &#x5B9E;&#x4F8B;&#x3002;</li>
+<li><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/Cache.html" target="_blank">Cache</a> - &#x7EF4;&#x62A4;key/value &#x5BF9;&#x3002;</li>
+<li><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/CacheManagerAware.html" target="_blank">CacheManagerAware</a> - &#x901A;&#x8FC7;&#x60F3;&#x8981;&#x63A5;&#x6536;&#x548C;&#x4F7F;&#x7528; CacheManager &#x5B9E;&#x4F8B;&#x7684;&#x7EC4;&#x4EF6;&#x6765;&#x5B9E;&#x73B0;&#x3002;</li>
 </ul>
-<p>CacheManager 返回Cache 实例，各种不同的 Shiro 组件使用这些Cache 实例来缓存必要的数据。任何实现了 CacheManagerAware 的 Shiro 组件将会自动地接收一个配置好的 CacheManager，该 CacheManager 能够用来获取 Cache 实例。</p>
-<p>Shiro 的 <a href="http://shiro.apache.org/securitymanager.html" target="_blank">SecurityManager</a> 实现及所有 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthenticatingRealm.html" target="_blank">AuthorizingRealm</a> 实现都实现了 CacheManagerAware 。如果你在 SecurityManager
-上设置了 CacheManger，它反过来也会将它设置到实现了CacheManagerAware 的各种不同的 Realm 上（OO delegation）。例如，在 shiro.ini 中：</p>
+<p>CacheManager &#x8FD4;&#x56DE;Cache &#x5B9E;&#x4F8B;&#xFF0C;&#x5404;&#x79CD;&#x4E0D;&#x540C;&#x7684; Shiro &#x7EC4;&#x4EF6;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;Cache &#x5B9E;&#x4F8B;&#x6765;&#x7F13;&#x5B58;&#x5FC5;&#x8981;&#x7684;&#x6570;&#x636E;&#x3002;&#x4EFB;&#x4F55;&#x5B9E;&#x73B0;&#x4E86; CacheManagerAware &#x7684; Shiro &#x7EC4;&#x4EF6;&#x5C06;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x597D;&#x7684; CacheManager&#xFF0C;&#x8BE5; CacheManager &#x80FD;&#x591F;&#x7528;&#x6765;&#x83B7;&#x53D6; Cache &#x5B9E;&#x4F8B;&#x3002;</p>
+<p>Shiro &#x7684; <a href="http://shiro.apache.org/securitymanager.html" target="_blank">SecurityManager</a> &#x5B9E;&#x73B0;&#x53CA;&#x6240;&#x6709; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthenticatingRealm.html" target="_blank">AuthorizingRealm</a> &#x5B9E;&#x73B0;&#x90FD;&#x5B9E;&#x73B0;&#x4E86; CacheManagerAware &#x3002;&#x5982;&#x679C;&#x4F60;&#x5728; SecurityManager
+&#x4E0A;&#x8BBE;&#x7F6E;&#x4E86; CacheManger&#xFF0C;&#x5B83;&#x53CD;&#x8FC7;&#x6765;&#x4E5F;&#x4F1A;&#x5C06;&#x5B83;&#x8BBE;&#x7F6E;&#x5230;&#x5B9E;&#x73B0;&#x4E86;CacheManagerAware &#x7684;&#x5404;&#x79CD;&#x4E0D;&#x540C;&#x7684; Realm &#x4E0A;&#xFF08;OO delegation&#xFF09;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5728; shiro.ini &#x4E2D;&#xFF1A;</p>
 <pre><code>securityManager.realms = $myRealm1, $myRealm2, ..., $myRealmN
 ...
 cacheManager = my.implementation.of.CacheManager
@@ -777,13 +698,13 @@ cacheManager = my.implementation.of.CacheManager
 securityManager.cacheManager = $cacheManager
 # at this point, the securityManager and all CacheManagerAware
 # realms have been set with the cacheManager instance
-</code></pre><p>我们有开箱即用的 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/ehcache/EhCacheManager.html" target="_blank">EhCacheManager</a>实现 ,所以马上就能使用它。否则，您也可以很好的实现自己的 CacheManager （例如 Coherence，等），配置如上。</p>
-<h2 id="authorization-cache-invalidation-">Authorization Cache Invalidation 授权缓存失效</h2>
-<p>最后请注意, <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthorizingRealm.html" target="_blank">AuthorizingRealm</a> 有一个 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthorizingRealm.html#clearCachedAuthorizationInfo(org.apache.shiro.subject.PrincipalCollection" target="_blank">clearCachedAuthorizationInfo</a>) 方法能够被子类调用，用来清除特殊账户缓存的授权信息。它通常被自定义逻辑调用，如果与之匹配的账户授权数据发生了改变（来确保下次的授权检查能够捕获新数据）。</p>
-<h2 id="">为文档加把手</h2>
-<p>我们希望这篇文档可以帮助你使用 Apache Shiro 进行工作，社区一直在不断地完善和扩展文档，如果你希望帮助 Shiro 项目，请在你认为需要的地方考虑更正、扩展或添加文档，你提供的任何点滴帮助都将扩充社区并且提升 Shiro。</p>
-<p>提供你的文档的最简单的途径是将它发送到用户<a href="http://shiro-user.582556.n2.nabble.com/" target="_blank">论坛</a>或<a href="http://shiro.apache.org/mailing-lists.html" target="_blank">邮件列表</a></p>
-<p><em>译者注：</em>如果对本中文翻译有疑议的或发现勘误欢迎指正，<a href="https://github.com/waylau/apache-shiro-1.2.x-reference/issues" target="_blank">点此</a>提问。</p>
+</code></pre><p>&#x6211;&#x4EEC;&#x6709;&#x5F00;&#x7BB1;&#x5373;&#x7528;&#x7684; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/ehcache/EhCacheManager.html" target="_blank">EhCacheManager</a>&#x5B9E;&#x73B0; ,&#x6240;&#x4EE5;&#x9A6C;&#x4E0A;&#x5C31;&#x80FD;&#x4F7F;&#x7528;&#x5B83;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x7684;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x7684; CacheManager &#xFF08;&#x4F8B;&#x5982; Coherence&#xFF0C;&#x7B49;&#xFF09;&#xFF0C;&#x914D;&#x7F6E;&#x5982;&#x4E0A;&#x3002;</p>
+<h2 id="authorization-cache-invalidation-&#x6388;&#x6743;&#x7F13;&#x5B58;&#x5931;&#x6548;">Authorization Cache Invalidation &#x6388;&#x6743;&#x7F13;&#x5B58;&#x5931;&#x6548;</h2>
+<p>&#x6700;&#x540E;&#x8BF7;&#x6CE8;&#x610F;, <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthorizingRealm.html" target="_blank">AuthorizingRealm</a> &#x6709;&#x4E00;&#x4E2A; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthorizingRealm.html#clearCachedAuthorizationInfo(org.apache.shiro.subject.PrincipalCollection" target="_blank">clearCachedAuthorizationInfo</a>) &#x65B9;&#x6CD5;&#x80FD;&#x591F;&#x88AB;&#x5B50;&#x7C7B;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x6765;&#x6E05;&#x9664;&#x7279;&#x6B8A;&#x8D26;&#x6237;&#x7F13;&#x5B58;&#x7684;&#x6388;&#x6743;&#x4FE1;&#x606F;&#x3002;&#x5B83;&#x901A;&#x5E38;&#x88AB;&#x81EA;&#x5B9A;&#x4E49;&#x903B;&#x8F91;&#x8C03;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x4E0E;&#x4E4B;&#x5339;&#x914D;&#x7684;&#x8D26;&#x6237;&#x6388;&#x6743;&#x6570;&#x636E;&#x53D1;&#x751F;&#x4E86;&#x6539;&#x53D8;&#xFF08;&#x6765;&#x786E;&#x4FDD;&#x4E0B;&#x6B21;&#x7684;&#x6388;&#x6743;&#x68C0;&#x67E5;&#x80FD;&#x591F;&#x6355;&#x83B7;&#x65B0;&#x6570;&#x636E;&#xFF09;&#x3002;</p>
+<h2 id="&#x4E3A;&#x6587;&#x6863;&#x52A0;&#x628A;&#x624B;">&#x4E3A;&#x6587;&#x6863;&#x52A0;&#x628A;&#x624B;</h2>
+<p>&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x8FD9;&#x7BC7;&#x6587;&#x6863;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x4F60;&#x4F7F;&#x7528; Apache Shiro &#x8FDB;&#x884C;&#x5DE5;&#x4F5C;&#xFF0C;&#x793E;&#x533A;&#x4E00;&#x76F4;&#x5728;&#x4E0D;&#x65AD;&#x5730;&#x5B8C;&#x5584;&#x548C;&#x6269;&#x5C55;&#x6587;&#x6863;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x5E2E;&#x52A9; Shiro &#x9879;&#x76EE;&#xFF0C;&#x8BF7;&#x5728;&#x4F60;&#x8BA4;&#x4E3A;&#x9700;&#x8981;&#x7684;&#x5730;&#x65B9;&#x8003;&#x8651;&#x66F4;&#x6B63;&#x3001;&#x6269;&#x5C55;&#x6216;&#x6DFB;&#x52A0;&#x6587;&#x6863;&#xFF0C;&#x4F60;&#x63D0;&#x4F9B;&#x7684;&#x4EFB;&#x4F55;&#x70B9;&#x6EF4;&#x5E2E;&#x52A9;&#x90FD;&#x5C06;&#x6269;&#x5145;&#x793E;&#x533A;&#x5E76;&#x4E14;&#x63D0;&#x5347; Shiro&#x3002;</p>
+<p>&#x63D0;&#x4F9B;&#x4F60;&#x7684;&#x6587;&#x6863;&#x7684;&#x6700;&#x7B80;&#x5355;&#x7684;&#x9014;&#x5F84;&#x662F;&#x5C06;&#x5B83;&#x53D1;&#x9001;&#x5230;&#x7528;&#x6237;<a href="http://shiro-user.582556.n2.nabble.com/" target="_blank">&#x8BBA;&#x575B;</a>&#x6216;<a href="http://shiro.apache.org/mailing-lists.html" target="_blank">&#x90AE;&#x4EF6;&#x5217;&#x8868;</a></p>
+<p><em>&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;</em>&#x5982;&#x679C;&#x5BF9;&#x672C;&#x4E2D;&#x6587;&#x7FFB;&#x8BD1;&#x6709;&#x7591;&#x8BAE;&#x7684;&#x6216;&#x53D1;&#x73B0;&#x52D8;&#x8BEF;&#x6B22;&#x8FCE;&#x6307;&#x6B63;&#xFF0C;<a href="https://github.com/waylau/apache-shiro-1.2.x-reference/issues" target="_blank">&#x70B9;&#x6B64;</a>&#x63D0;&#x95EE;&#x3002;</p>
 
                     
                     </section>
@@ -794,7 +715,7 @@ securityManager.cacheManager = $cacheManager
         </div>
 
         
-        <a href="../VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html" class="navigation navigation-prev " aria-label="Previous page: 22. Application Security With Apache Shiro 用Shiro保护你的应用安全 "><i class="fa fa-angle-left"></i></a>
+        <a href="../VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html" class="navigation navigation-prev " aria-label="Previous page: 22. Application Security With Apache Shiro 用Shiro保护你的应用安全"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="../VIII. Other 其他/24. Apache Shiro Cryptography Features 加密功能.html" class="navigation navigation-next " aria-label="Next page: 24. Apache Shiro Cryptography Features 加密功能"><i class="fa fa-angle-right"></i></a>
@@ -806,16 +727,24 @@ securityManager.cacheManager = $cacheManager
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
     
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
     gitbook.start(config);
 });
 </script>

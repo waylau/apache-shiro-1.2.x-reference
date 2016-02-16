@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en-US" >
+<html lang="en" >
     
     <head>
         
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>6. Authorization 授权 | apache-shiro-1.2.x-reference</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="generator" content="GitBook 2.6.6">
+        
+        
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,6 +18,22 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
         
     
     
@@ -30,42 +48,40 @@
     <body>
         
         
-<link rel="stylesheet" href="../gitbook/style.css">
-
-
-        
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="1426562387353">
+    <div class="book"
+        data-level="2.2"
+        data-chapter-title="6. Authorization 授权"
+        data-filepath="II. Core 核心/6. Authorization 授权.md"
+        data-basepath=".."
+        data-revision="Tue Feb 16 2016 18:15:31 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
     
 
 <div class="book-summary">
-    <div class="book-search">
-        <input type="text" placeholder="Type to search" class="form-control" />
-    </div>
-    <ul class="summary">
-        
-    	
-    	
-    	
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
 
-        
+            
 
-        
+            
     
-        
         <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="../index.html">
+                
                         <i class="fa fa-check"></i>
                         
-                         Introduction
+                        Introduction
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1" >
             
             <span><b>1.</b> I. Overview 总览</span>
@@ -74,66 +90,62 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="1.1" data-path="I. Overview 总览/1. Introduction 介绍.html">
             
                 
                     <a href="../I. Overview 总览/1. Introduction 介绍.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
                         
-                         1. Introduction 介绍
+                        1. Introduction 介绍
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.2" data-path="I. Overview 总览/2. Tutorial 教程.html">
             
                 
                     <a href="../I. Overview 总览/2. Tutorial 教程.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                         2. Tutorial 教程
+                        2. Tutorial 教程
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.3" data-path="I. Overview 总览/3. Architecture 架构.html">
             
                 
                     <a href="../I. Overview 总览/3. Architecture 架构.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.3.</b>
                         
-                         3. Architecture 架构
+                        3. Architecture 架构
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.4" data-path="I. Overview 总览/4. Configuration 配置.html">
             
                 
                     <a href="../I. Overview 总览/4. Configuration 配置.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.4.</b>
                         
-                         4. Configuration 配置
+                        4. Configuration 配置
                     </a>
-                
             
             
         </li>
@@ -143,7 +155,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="2" >
             
             <span><b>2.</b> II. Core 核心</span>
@@ -152,51 +163,48 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="2.1" data-path="II. Core 核心/5. Authentication 认证.html">
             
                 
                     <a href="../II. Core 核心/5. Authentication 认证.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.</b>
                         
-                         5. Authentication 认证
+                        5. Authentication 认证
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter active" data-level="2.2" data-path="II. Core 核心/6. Authorization 授权.html">
             
                 
                     <a href="../II. Core 核心/6. Authorization 授权.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.</b>
                         
-                         6. Authorization 授权
+                        6. Authorization 授权
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="2.2.1" data-path="II. Core 核心/6.1. Permissions 权限.html">
             
                 
                     <a href="../II. Core 核心/6.1. Permissions 权限.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.1.</b>
                         
-                         6.1. Permissions 权限
+                        6.1. Permissions 权限
                     </a>
-                
             
             
         </li>
@@ -206,50 +214,47 @@
             
         </li>
     
-        
         <li class="chapter " data-level="2.3" data-path="II. Core 核心/7. Realms.html">
             
                 
                     <a href="../II. Core 核心/7. Realms.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
                         
-                         7. Realms
+                        7. Realms
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.4" data-path="II. Core 核心/8. Session Management.html">
             
                 
                     <a href="../II. Core 核心/8. Session Management.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
                         
-                         8. Session Management
+                        8. Session Management
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.5" data-path="II. Core 核心/9. Cryptography 密码.html">
             
                 
                     <a href="../II. Core 核心/9. Cryptography 密码.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.5.</b>
                         
-                         9. Cryptography 密码
+                        9. Cryptography 密码
                     </a>
-                
             
             
         </li>
@@ -259,7 +264,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="3" >
             
             <span><b>3.</b> III. Web Applications</span>
@@ -268,99 +272,93 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="3.1" data-path="III. Web Applications/10. Web.html">
             
                 
                     <a href="../III. Web Applications/10. Web.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
                         
-                         10. Web
+                        10. Web
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="3.1.1" data-path="III. Web Applications/10.1. Configuration 配置.html">
             
                 
                     <a href="../III. Web Applications/10.1. Configuration 配置.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.1.</b>
                         
-                         10.1. Configuration 配置
+                        10.1. Configuration 配置
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.1.2" data-path="III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
             
                 
                     <a href="../III. Web Applications/10.2. urls Path based security 基于路径的安全.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.2.</b>
                         
-                         10.2. 基于路径的 url 安全
+                        10.2. 基于路径的 url 安全
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.1.3" data-path="III. Web Applications/10.3. Default Filters 默认过滤器.html">
             
                 
                     <a href="../III. Web Applications/10.3. Default Filters 默认过滤器.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.3.</b>
                         
-                         10.3. Default Filters 默认过滤器
+                        10.3. Default Filters 默认过滤器
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.1.4" data-path="III. Web Applications/10.4. Session Management.html">
             
                 
                     <a href="../III. Web Applications/10.4. Session Management.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.4.</b>
                         
-                         10.4. Session Management
+                        10.4. Session Management
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="3.1.5" data-path="III. Web Applications/10.5. JSP Tag Library.html">
             
                 
                     <a href="../III. Web Applications/10.5. JSP Tag Library.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.5.</b>
                         
-                         10.5. JSP Tag Library
+                        10.5. JSP Tag Library
                     </a>
-                
             
             
         </li>
@@ -375,7 +373,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="4" >
             
             <span><b>4.</b> IV. Auxiliary Support 辅助支持</span>
@@ -384,66 +381,62 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="4.1" data-path="IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
             
                 
                     <a href="../IV. Auxiliary Support 辅助支持/11. Caching 缓存.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.1.</b>
                         
-                         11. Caching 缓存
+                        11. Caching 缓存
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="4.2" data-path="IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
             
                 
                     <a href="../IV. Auxiliary Support 辅助支持/12. Concurrency &amp; Multithreading 并发与多线程.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.2.</b>
                         
-                         12. Concurrency &amp; Multithreading 并发与多线程
+                        12. Concurrency &amp; Multithreading 并发与多线程
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="4.3" data-path="IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
             
                 
                     <a href="../IV. Auxiliary Support 辅助支持/13. Testing 测试.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.3.</b>
                         
-                         13. Testing 测试
+                        13. Testing 测试
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="4.4" data-path="IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
             
                 
                     <a href="../IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.4.</b>
                         
-                         14. Custom Subjects 自定义 Subject
+                        14. Custom Subjects 自定义 Subject
                     </a>
-                
             
             
         </li>
@@ -453,7 +446,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="5" >
             
             <span><b>5.</b> V. Integration 整合</span>
@@ -462,50 +454,47 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="5.1" data-path="V. Integration 整合/15. Spring Framework.html">
             
                 
                     <a href="../V. Integration 整合/15. Spring Framework.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>5.1.</b>
                         
-                         15. Spring Framework
+                        15. Spring Framework
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="5.2" data-path="V. Integration 整合/16. Guice.html">
             
                 
                     <a href="../V. Integration 整合/16. Guice.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>5.2.</b>
                         
-                         16. Guice
+                        16. Guice
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="5.3" data-path="V. Integration 整合/17. CAS.html">
             
                 
                     <a href="../V. Integration 整合/17. CAS.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>5.3.</b>
                         
-                         17. CAS
+                        17. CAS
                     </a>
-                
             
             
         </li>
@@ -515,7 +504,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="6" >
             
             <span><b>6.</b> VI. Tools 工具</span>
@@ -524,18 +512,17 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="6.1" data-path="VI. Tools 工具/18. Command Line Hasher.html">
             
                 
                     <a href="../VI. Tools 工具/18. Command Line Hasher.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>6.1.</b>
                         
-                         18. Command Line Hasher
+                        18. Command Line Hasher
                     </a>
-                
             
             
         </li>
@@ -545,7 +532,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="7" >
             
             <span><b>7.</b> VII. Index 目录</span>
@@ -554,18 +540,17 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="7.1" data-path="VII. Index 目录/19. Terminology 术语.html">
             
                 
                     <a href="../VII. Index 目录/19. Terminology 术语.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>7.1.</b>
                         
-                         19. Terminology 术语
+                        19. Terminology 术语
                     </a>
-                
             
             
         </li>
@@ -575,7 +560,6 @@
             
         </li>
     
-        
         <li class="chapter " data-level="8" >
             
             <span><b>8.</b> VIII. Other 其他</span>
@@ -584,82 +568,77 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="8.1" data-path="VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
             
                 
                     <a href="../VIII. Other 其他/20. 10 Minute Tutorial 十分钟教程.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>8.1.</b>
                         
-                         20. 10 Minute Tutorial 十分钟教程
+                        20. 10 Minute Tutorial 十分钟教程
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="8.2" data-path="VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
             
                 
                     <a href="../VIII. Other 其他/21. Beginner&#39;s Webapp Tutorial 初学者web应用教程.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>8.2.</b>
                         
-                         21. Beginner&#39;s Webapp Tutorial 初学者web应用教程
+                        21. Beginner&#39;s Webapp Tutorial 初学者web应用教程
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="8.3" data-path="VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
             
                 
                     <a href="../VIII. Other 其他/22. Application Security With Apache Shiro 用Shiro保护你的应用安全 .html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>8.3.</b>
                         
-                         22. Application Security With Apache Shiro 用Shiro保护你的应用安全 
+                        22. Application Security With Apache Shiro 用Shiro保护你的应用安全
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="8.4" data-path="VIII. Other 其他/23. CacheManager 缓存管理.html">
             
                 
                     <a href="../VIII. Other 其他/23. CacheManager 缓存管理.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>8.4.</b>
                         
-                         23. CacheManager 缓存管理
+                        23. CacheManager 缓存管理
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="8.5" data-path="VIII. Other 其他/24. Apache Shiro Cryptography Features 加密功能.html">
             
                 
                     <a href="../VIII. Other 其他/24. Apache Shiro Cryptography Features 加密功能.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>8.5.</b>
                         
-                         24. Apache Shiro Cryptography Features 加密功能
+                        24. Apache Shiro Cryptography Features 加密功能
                     </a>
-                
             
             
         </li>
@@ -671,80 +650,22 @@
     
 
 
-        
-        <li class="divider"></li>
-        <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
-        </li>
-        
-    </ul>
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
 </div>
 
     <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
+            <div class="book-header" role="navigation">
     <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
-    
-    <div id="font-settings-wrapper" class="dropdown pull-left">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
-        </a>
-        <div class="dropdown-menu font-settings">
-    <div class="dropdown-caret">
-        <span class="caret-outer"></span>
-        <span class="caret-inner"></span>
-    </div>
-
-    <div class="buttons">
-        <button type="button" id="reduce-font-size" class="button size-2">A</button>
-        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
-    </div>
-
-    <div class="buttons font-family-list">
-        <button type="button" data-font="0" class="button">Serif</button>
-        <button type="button" data-font="1" class="button">Sans</button>
-    </div>
-
-    <div class="buttons color-theme-list">
-        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
-        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
-        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
-    </div>
-</div>
-
-    </div>
-
-    <!-- Actions Right -->
-    
-    <div class="dropdown pull-right">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
-        </a>
-        <div class="dropdown-menu font-settings dropdown-left">
-            <div class="dropdown-caret">
-                <span class="caret-outer"></span>
-                <span class="caret-inner"></span>
-            </div>
-            <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">Twitter</button>
-                <button type="button" data-sharing="google-plus" class="button">Google</button>
-                <button type="button" data-sharing="facebook" class="button">Facebook</button>
-                <button type="button" data-sharing="weibo" class="button">Weibo</button>
-                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
-    
     
 
     <!-- Title -->
@@ -754,428 +675,428 @@
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1">
+            <div class="page-wrapper" tabindex="-1" role="main">
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_2">
+                    <section class="normal" id="section-">
                     
-                        <h1 id="6-authorization-">6. Authorization 授权</h1>
+                        <h1 id="6-authorization-&#x6388;&#x6743;">6. Authorization &#x6388;&#x6743;</h1>
 <p><img src="http://i1288.photobucket.com/albums/b484/waylau/apache-shiro/ShiroFeatures_Authorization_zps6a8bcd71.png" alt="Authorization">
-授权，亦即访问控制，是管理资源访问的过程，换言之，也就是控制在一个程序中“谁”有权利访问“什么”。</p>
-<p>授权的例子有：是否允许这个用户查看这个页面，编辑数据，看到按钮，或者从这台打印机打印？这些决定是一个用户可以访问什么的决断。</p>
-<h2 id="elements-of-authorization-">Elements of Authorization 元素</h2>
-<p>授权有三个核心元素，在 Shiro 中我们经常要用到它们：权限（permissions）、角色（roles）和用户（users）。</p>
+&#x6388;&#x6743;&#xFF0C;&#x4EA6;&#x5373;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF0C;&#x662F;&#x7BA1;&#x7406;&#x8D44;&#x6E90;&#x8BBF;&#x95EE;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x6362;&#x8A00;&#x4E4B;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x63A7;&#x5236;&#x5728;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x4E2D;&#x201C;&#x8C01;&#x201D;&#x6709;&#x6743;&#x5229;&#x8BBF;&#x95EE;&#x201C;&#x4EC0;&#x4E48;&#x201D;&#x3002;</p>
+<p>&#x6388;&#x6743;&#x7684;&#x4F8B;&#x5B50;&#x6709;&#xFF1A;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#x67E5;&#x770B;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x7F16;&#x8F91;&#x6570;&#x636E;&#xFF0C;&#x770B;&#x5230;&#x6309;&#x94AE;&#xFF0C;&#x6216;&#x8005;&#x4ECE;&#x8FD9;&#x53F0;&#x6253;&#x5370;&#x673A;&#x6253;&#x5370;&#xFF1F;&#x8FD9;&#x4E9B;&#x51B3;&#x5B9A;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4EC0;&#x4E48;&#x7684;&#x51B3;&#x65AD;&#x3002;</p>
+<h2 id="elements-of-authorization-&#x5143;&#x7D20;">Elements of Authorization &#x5143;&#x7D20;</h2>
+<p>&#x6388;&#x6743;&#x6709;&#x4E09;&#x4E2A;&#x6838;&#x5FC3;&#x5143;&#x7D20;&#xFF0C;&#x5728; Shiro &#x4E2D;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x8981;&#x7528;&#x5230;&#x5B83;&#x4EEC;&#xFF1A;&#x6743;&#x9650;&#xFF08;permissions&#xFF09;&#x3001;&#x89D2;&#x8272;&#xFF08;roles&#xFF09;&#x548C;&#x7528;&#x6237;&#xFF08;users&#xFF09;&#x3002;</p>
 <h3 id="permissions">Permissions</h3>
-<p>权限是 Apache Shiro 中安全策略最基本的元素，它们是一组关于行为的基本指令，以明确表示在一个程序中什么可以做。一个很好定义的权限指令必须描述资源以及当一个 Subject 与这些资源交互时什么动作可以执行。</p>
-<p>下面是一些权限指令的例子：</p>
+<p>&#x6743;&#x9650;&#x662F; Apache Shiro &#x4E2D;&#x5B89;&#x5168;&#x7B56;&#x7565;&#x6700;&#x57FA;&#x672C;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x4E00;&#x7EC4;&#x5173;&#x4E8E;&#x884C;&#x4E3A;&#x7684;&#x57FA;&#x672C;&#x6307;&#x4EE4;&#xFF0C;&#x4EE5;&#x660E;&#x786E;&#x8868;&#x793A;&#x5728;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x4E2D;&#x4EC0;&#x4E48;&#x53EF;&#x4EE5;&#x505A;&#x3002;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x5B9A;&#x4E49;&#x7684;&#x6743;&#x9650;&#x6307;&#x4EE4;&#x5FC5;&#x987B;&#x63CF;&#x8FF0;&#x8D44;&#x6E90;&#x4EE5;&#x53CA;&#x5F53;&#x4E00;&#x4E2A; Subject &#x4E0E;&#x8FD9;&#x4E9B;&#x8D44;&#x6E90;&#x4EA4;&#x4E92;&#x65F6;&#x4EC0;&#x4E48;&#x52A8;&#x4F5C;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x6743;&#x9650;&#x6307;&#x4EE4;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
 <ul>
-<li>打开一个文件；</li>
-<li>查看“/user/list”页面；</li>
-<li>打印文档；</li>
-<li>删除“Jsmith”用户。</li>
+<li>&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF1B;</li>
+<li>&#x67E5;&#x770B;&#x201C;/user/list&#x201D;&#x9875;&#x9762;&#xFF1B;</li>
+<li>&#x6253;&#x5370;&#x6587;&#x6863;&#xFF1B;</li>
+<li>&#x5220;&#x9664;&#x201C;Jsmith&#x201D;&#x7528;&#x6237;&#x3002;</li>
 </ul>
-<p>大部分资源都支持基本的 CRUD（create,read,update,delete）操作，但对于特定资源类型，任何动作都是可以的。权限设置最基础的思想是在资源和动作的基础上设置最小量的权限指令。</p>
-<p>当看到权限时，最重要的一点是要是认识到一个权限指令不是描述“谁”可以执行这个动作，而是描述“什么”可以做的指令。</p>
-<p><em>权限只描述行为</em></p>
-<p><em>权限指令只描述行为（和资源相关的动作），并不关心“谁”有能力执行这个动作。</em></p>
-<p>定义“谁”（用户）被允许做“什么”（权限）需要用一些方法将权限赋给用户，这通常取决于程序的数据模型而且经常在程序中发生改变。</p>
-<p>例如，一组权限可以归于一个角色而角色与一个或多个用户对象关联，或者一些程序可以有一组用户而一个组可以指定一个角色，在这里关系将被传递也就是说组内用户隐含被赋予角色的权限。</p>
-<p>有很多方式可以将权限赋予用户--程序根据需求决定如何设计。</p>
-<p>我们稍后讨论 Shiro 如何判断一个 Subject 是否被允许。</p>
-<h4 id="permission-granularity-">Permission Granularity 权限粒度</h4>
-<p>上面的权限示例都是针对资源（门、文件、客户等）指定的动作（打开、读、删除等），在一些场景中，他们也会指定非常细粒度的“实例级别”行为--例如,“删除”（delete）名为“Jsmith”（实例标识）的“用户”（资源类型），在 Shiro 中，你可以精确定义指令到你所能细化到的程度。</p>
-<p>我们在 Shiro 的 <a href="6.1. Permissions 权限.html">Permissions</a> 文档中详细讨论权限粒度和权限指令的“级别”。</p>
+<p>&#x5927;&#x90E8;&#x5206;&#x8D44;&#x6E90;&#x90FD;&#x652F;&#x6301;&#x57FA;&#x672C;&#x7684; CRUD&#xFF08;create,read,update,delete&#xFF09;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;&#x7279;&#x5B9A;&#x8D44;&#x6E90;&#x7C7B;&#x578B;&#xFF0C;&#x4EFB;&#x4F55;&#x52A8;&#x4F5C;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;&#x6743;&#x9650;&#x8BBE;&#x7F6E;&#x6700;&#x57FA;&#x7840;&#x7684;&#x601D;&#x60F3;&#x662F;&#x5728;&#x8D44;&#x6E90;&#x548C;&#x52A8;&#x4F5C;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x8BBE;&#x7F6E;&#x6700;&#x5C0F;&#x91CF;&#x7684;&#x6743;&#x9650;&#x6307;&#x4EE4;&#x3002;</p>
+<p>&#x5F53;&#x770B;&#x5230;&#x6743;&#x9650;&#x65F6;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;&#x662F;&#x8981;&#x662F;&#x8BA4;&#x8BC6;&#x5230;&#x4E00;&#x4E2A;&#x6743;&#x9650;&#x6307;&#x4EE4;&#x4E0D;&#x662F;&#x63CF;&#x8FF0;&#x201C;&#x8C01;&#x201D;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x52A8;&#x4F5C;&#xFF0C;&#x800C;&#x662F;&#x63CF;&#x8FF0;&#x201C;&#x4EC0;&#x4E48;&#x201D;&#x53EF;&#x4EE5;&#x505A;&#x7684;&#x6307;&#x4EE4;&#x3002;</p>
+<p><em>&#x6743;&#x9650;&#x53EA;&#x63CF;&#x8FF0;&#x884C;&#x4E3A;</em></p>
+<p><em>&#x6743;&#x9650;&#x6307;&#x4EE4;&#x53EA;&#x63CF;&#x8FF0;&#x884C;&#x4E3A;&#xFF08;&#x548C;&#x8D44;&#x6E90;&#x76F8;&#x5173;&#x7684;&#x52A8;&#x4F5C;&#xFF09;&#xFF0C;&#x5E76;&#x4E0D;&#x5173;&#x5FC3;&#x201C;&#x8C01;&#x201D;&#x6709;&#x80FD;&#x529B;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x52A8;&#x4F5C;&#x3002;</em></p>
+<p>&#x5B9A;&#x4E49;&#x201C;&#x8C01;&#x201D;&#xFF08;&#x7528;&#x6237;&#xFF09;&#x88AB;&#x5141;&#x8BB8;&#x505A;&#x201C;&#x4EC0;&#x4E48;&#x201D;&#xFF08;&#x6743;&#x9650;&#xFF09;&#x9700;&#x8981;&#x7528;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#x5C06;&#x6743;&#x9650;&#x8D4B;&#x7ED9;&#x7528;&#x6237;&#xFF0C;&#x8FD9;&#x901A;&#x5E38;&#x53D6;&#x51B3;&#x4E8E;&#x7A0B;&#x5E8F;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x800C;&#x4E14;&#x7ECF;&#x5E38;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4E00;&#x7EC4;&#x6743;&#x9650;&#x53EF;&#x4EE5;&#x5F52;&#x4E8E;&#x4E00;&#x4E2A;&#x89D2;&#x8272;&#x800C;&#x89D2;&#x8272;&#x4E0E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x5BF9;&#x8C61;&#x5173;&#x8054;&#xFF0C;&#x6216;&#x8005;&#x4E00;&#x4E9B;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x7EC4;&#x7528;&#x6237;&#x800C;&#x4E00;&#x4E2A;&#x7EC4;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x89D2;&#x8272;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x5173;&#x7CFB;&#x5C06;&#x88AB;&#x4F20;&#x9012;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x7EC4;&#x5185;&#x7528;&#x6237;&#x9690;&#x542B;&#x88AB;&#x8D4B;&#x4E88;&#x89D2;&#x8272;&#x7684;&#x6743;&#x9650;&#x3002;</p>
+<p>&#x6709;&#x5F88;&#x591A;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x5C06;&#x6743;&#x9650;&#x8D4B;&#x4E88;&#x7528;&#x6237;--&#x7A0B;&#x5E8F;&#x6839;&#x636E;&#x9700;&#x6C42;&#x51B3;&#x5B9A;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x7A0D;&#x540E;&#x8BA8;&#x8BBA; Shiro &#x5982;&#x4F55;&#x5224;&#x65AD;&#x4E00;&#x4E2A; Subject &#x662F;&#x5426;&#x88AB;&#x5141;&#x8BB8;&#x3002;</p>
+<h4 id="permission-granularity-&#x6743;&#x9650;&#x7C92;&#x5EA6;">Permission Granularity &#x6743;&#x9650;&#x7C92;&#x5EA6;</h4>
+<p>&#x4E0A;&#x9762;&#x7684;&#x6743;&#x9650;&#x793A;&#x4F8B;&#x90FD;&#x662F;&#x9488;&#x5BF9;&#x8D44;&#x6E90;&#xFF08;&#x95E8;&#x3001;&#x6587;&#x4EF6;&#x3001;&#x5BA2;&#x6237;&#x7B49;&#xFF09;&#x6307;&#x5B9A;&#x7684;&#x52A8;&#x4F5C;&#xFF08;&#x6253;&#x5F00;&#x3001;&#x8BFB;&#x3001;&#x5220;&#x9664;&#x7B49;&#xFF09;&#xFF0C;&#x5728;&#x4E00;&#x4E9B;&#x573A;&#x666F;&#x4E2D;&#xFF0C;&#x4ED6;&#x4EEC;&#x4E5F;&#x4F1A;&#x6307;&#x5B9A;&#x975E;&#x5E38;&#x7EC6;&#x7C92;&#x5EA6;&#x7684;&#x201C;&#x5B9E;&#x4F8B;&#x7EA7;&#x522B;&#x201D;&#x884C;&#x4E3A;--&#x4F8B;&#x5982;,&#x201C;&#x5220;&#x9664;&#x201D;&#xFF08;delete&#xFF09;&#x540D;&#x4E3A;&#x201C;Jsmith&#x201D;&#xFF08;&#x5B9E;&#x4F8B;&#x6807;&#x8BC6;&#xFF09;&#x7684;&#x201C;&#x7528;&#x6237;&#x201D;&#xFF08;&#x8D44;&#x6E90;&#x7C7B;&#x578B;&#xFF09;&#xFF0C;&#x5728; Shiro &#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7CBE;&#x786E;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;&#x5230;&#x4F60;&#x6240;&#x80FD;&#x7EC6;&#x5316;&#x5230;&#x7684;&#x7A0B;&#x5EA6;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5728; Shiro &#x7684; <a href="6.1.%20Permissions%20&#x6743;&#x9650;.md">Permissions</a> &#x6587;&#x6863;&#x4E2D;&#x8BE6;&#x7EC6;&#x8BA8;&#x8BBA;&#x6743;&#x9650;&#x7C92;&#x5EA6;&#x548C;&#x6743;&#x9650;&#x6307;&#x4EE4;&#x7684;&#x201C;&#x7EA7;&#x522B;&#x201D;&#x3002;</p>
 <h3 id="roles">Roles</h3>
-<p>角色是一个实体名，代表一组行为或职责，这些行为在程序中转换为你可以或者不能做的事情。角色通常赋给用户帐号，关联后，用户就可以“做”属于不同角色的事情。</p>
-<p>有两种有效的角色指定方式，Shiro 都支持。 </p>
+<p>&#x89D2;&#x8272;&#x662F;&#x4E00;&#x4E2A;&#x5B9E;&#x4F53;&#x540D;&#xFF0C;&#x4EE3;&#x8868;&#x4E00;&#x7EC4;&#x884C;&#x4E3A;&#x6216;&#x804C;&#x8D23;&#xFF0C;&#x8FD9;&#x4E9B;&#x884C;&#x4E3A;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x8F6C;&#x6362;&#x4E3A;&#x4F60;&#x53EF;&#x4EE5;&#x6216;&#x8005;&#x4E0D;&#x80FD;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x89D2;&#x8272;&#x901A;&#x5E38;&#x8D4B;&#x7ED9;&#x7528;&#x6237;&#x5E10;&#x53F7;&#xFF0C;&#x5173;&#x8054;&#x540E;&#xFF0C;&#x7528;&#x6237;&#x5C31;&#x53EF;&#x4EE5;&#x201C;&#x505A;&#x201D;&#x5C5E;&#x4E8E;&#x4E0D;&#x540C;&#x89D2;&#x8272;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+<p>&#x6709;&#x4E24;&#x79CD;&#x6709;&#x6548;&#x7684;&#x89D2;&#x8272;&#x6307;&#x5B9A;&#x65B9;&#x5F0F;&#xFF0C;Shiro &#x90FD;&#x652F;&#x6301;&#x3002; </p>
 <ul>
-<li>权限隐含于角色中：大部分用户将权限隐含于创建的角色中：程序只是在一个角色名称上隐含了一组行为（也就是权限），使用时，在软件级别不会说“某角色允许执行行为A、B和C”，而是将行为隐含于一个单独的角色名字中。</li>
+<li>&#x6743;&#x9650;&#x9690;&#x542B;&#x4E8E;&#x89D2;&#x8272;&#x4E2D;&#xFF1A;&#x5927;&#x90E8;&#x5206;&#x7528;&#x6237;&#x5C06;&#x6743;&#x9650;&#x9690;&#x542B;&#x4E8E;&#x521B;&#x5EFA;&#x7684;&#x89D2;&#x8272;&#x4E2D;&#xFF1A;&#x7A0B;&#x5E8F;&#x53EA;&#x662F;&#x5728;&#x4E00;&#x4E2A;&#x89D2;&#x8272;&#x540D;&#x79F0;&#x4E0A;&#x9690;&#x542B;&#x4E86;&#x4E00;&#x7EC4;&#x884C;&#x4E3A;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x6743;&#x9650;&#xFF09;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x5728;&#x8F6F;&#x4EF6;&#x7EA7;&#x522B;&#x4E0D;&#x4F1A;&#x8BF4;&#x201C;&#x67D0;&#x89D2;&#x8272;&#x5141;&#x8BB8;&#x6267;&#x884C;&#x884C;&#x4E3A;A&#x3001;B&#x548C;C&#x201D;&#xFF0C;&#x800C;&#x662F;&#x5C06;&#x884C;&#x4E3A;&#x9690;&#x542B;&#x4E8E;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x89D2;&#x8272;&#x540D;&#x5B57;&#x4E2D;&#x3002;</li>
 </ul>
-<p><em>潜在的安全隐患</em></p>
-<p><em>虽然这是一个非常简单和常用的方法，但隐含的角色可能会增加软件的维护成本和管理问题。</em></p>
-<p><em>例如，如果你想增加或删除一个角色，或者重定义角色的行为怎么办？你不得不重新打开代码，修改所有对更改后的角色的检测，每次都需要这样做，这还没提到其引起的执行代价（重测试，通过质量验证，关闭程序，升级软件，重启程序等）。</em></p>
-<p><em>对于简单程序这种方法可能适用（比如只有一个&#39;admin&#39;角色和&#39;everyone else&#39;角色），但复杂的程序中，这会成为你程序生命周期中一个主要的问题，会给你的软件带来很大的维护代价。</em></p>
+<p><em>&#x6F5C;&#x5728;&#x7684;&#x5B89;&#x5168;&#x9690;&#x60A3;</em></p>
+<p><em>&#x867D;&#x7136;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x548C;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x9690;&#x542B;&#x7684;&#x89D2;&#x8272;&#x53EF;&#x80FD;&#x4F1A;&#x589E;&#x52A0;&#x8F6F;&#x4EF6;&#x7684;&#x7EF4;&#x62A4;&#x6210;&#x672C;&#x548C;&#x7BA1;&#x7406;&#x95EE;&#x9898;&#x3002;</em></p>
+<p><em>&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x589E;&#x52A0;&#x6216;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x89D2;&#x8272;&#xFF0C;&#x6216;&#x8005;&#x91CD;&#x5B9A;&#x4E49;&#x89D2;&#x8272;&#x7684;&#x884C;&#x4E3A;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#x4F60;&#x4E0D;&#x5F97;&#x4E0D;&#x91CD;&#x65B0;&#x6253;&#x5F00;&#x4EE3;&#x7801;&#xFF0C;&#x4FEE;&#x6539;&#x6240;&#x6709;&#x5BF9;&#x66F4;&#x6539;&#x540E;&#x7684;&#x89D2;&#x8272;&#x7684;&#x68C0;&#x6D4B;&#xFF0C;&#x6BCF;&#x6B21;&#x90FD;&#x9700;&#x8981;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x8FD9;&#x8FD8;&#x6CA1;&#x63D0;&#x5230;&#x5176;&#x5F15;&#x8D77;&#x7684;&#x6267;&#x884C;&#x4EE3;&#x4EF7;&#xFF08;&#x91CD;&#x6D4B;&#x8BD5;&#xFF0C;&#x901A;&#x8FC7;&#x8D28;&#x91CF;&#x9A8C;&#x8BC1;&#xFF0C;&#x5173;&#x95ED;&#x7A0B;&#x5E8F;&#xFF0C;&#x5347;&#x7EA7;&#x8F6F;&#x4EF6;&#xFF0C;&#x91CD;&#x542F;&#x7A0B;&#x5E8F;&#x7B49;&#xFF09;&#x3002;</em></p>
+<p><em>&#x5BF9;&#x4E8E;&#x7B80;&#x5355;&#x7A0B;&#x5E8F;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x9002;&#x7528;&#xFF08;&#x6BD4;&#x5982;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&apos;admin&apos;&#x89D2;&#x8272;&#x548C;&apos;everyone else&apos;&#x89D2;&#x8272;&#xFF09;&#xFF0C;&#x4F46;&#x590D;&#x6742;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x8FD9;&#x4F1A;&#x6210;&#x4E3A;&#x4F60;&#x7A0B;&#x5E8F;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x4E00;&#x4E2A;&#x4E3B;&#x8981;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4F1A;&#x7ED9;&#x4F60;&#x7684;&#x8F6F;&#x4EF6;&#x5E26;&#x6765;&#x5F88;&#x5927;&#x7684;&#x7EF4;&#x62A4;&#x4EE3;&#x4EF7;&#x3002;</em></p>
 <ul>
-<li>明确为角色指定权限：明确为角色指定权限本质上是一组权限指令的名称集，在这种形式下，程序（以及 Shiro）准确知道一个特定的角色是什么意思，因为它确切知道某行为是否可以执行，而不用去猜测特定的角色可以或不可以做什么。</li>
+<li>&#x660E;&#x786E;&#x4E3A;&#x89D2;&#x8272;&#x6307;&#x5B9A;&#x6743;&#x9650;&#xFF1A;&#x660E;&#x786E;&#x4E3A;&#x89D2;&#x8272;&#x6307;&#x5B9A;&#x6743;&#x9650;&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x4E00;&#x7EC4;&#x6743;&#x9650;&#x6307;&#x4EE4;&#x7684;&#x540D;&#x79F0;&#x96C6;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x5F62;&#x5F0F;&#x4E0B;&#xFF0C;&#x7A0B;&#x5E8F;&#xFF08;&#x4EE5;&#x53CA; Shiro&#xFF09;&#x51C6;&#x786E;&#x77E5;&#x9053;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x89D2;&#x8272;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x786E;&#x5207;&#x77E5;&#x9053;&#x67D0;&#x884C;&#x4E3A;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x53BB;&#x731C;&#x6D4B;&#x7279;&#x5B9A;&#x7684;&#x89D2;&#x8272;&#x53EF;&#x4EE5;&#x6216;&#x4E0D;&#x53EF;&#x4EE5;&#x505A;&#x4EC0;&#x4E48;&#x3002;</li>
 </ul>
-<p>Shiro 团队提倡使用权限和明确为角色指定权限替代原始的将权限隐含于角色中的方法，这样你可以对程序安全提供更强的控制。</p>
-<p><em>基于资源的访问控制</em></p>
-<p><em>读一下这个文章：<a href="http://www.waylau.com/new-rbac-resource-based-access-control/" target="_blank">新的RBAC：基于资源的权限管理(Resource-Based Access Control)</a>，这篇文章深入讨论了使用权限和明确为角色指定权限代替旧的将权限隐含于角色中方法的好处（以及对源代码的影响）。</em></p>
-<h3 id="users">Users用户</h3>
-<p>一个用户本质上是程序中的“谁”，如同我们前面提到的，Subject 实际上是 shiro 的“用户”。</p>
-<p>用户（Subjects）通过与角色或权限关联确定是否被允许执行程序内特定的动作，程序数据模型确切定义了 Subject 是否允许做什么事情。</p>
-<p>例如，在你的数据模型中，你定义了一个普通的用户类并且直接为其设置了权限，或者你只是直接给角色设置了权限，然后将用户与该角色关联，通过这种关联，用户就“有”了角色所具备的权限，或者你也可以通过“组”的概念完成这件事，这取决于你程序的设计。</p>
-<p>数据模型定义了如何进行授权，Shiro 依赖一个 <a href="7. Realms.html">Realm</a> 实现将你的数据模型关联转换成 Shiro 可以理解的内容，我们将稍后讨论 Realms。</p>
-<p><em>最终，是 <a href="7. Realms.html">Realm</a>  与你的数据源（RDBMS,LDAP等）做交流，Realm 用来告知Shiro 是否角色或权限是否存在，你可以完全控制你的授权模型如何创建和定义。</em></p>
-<h2 id="authorizing-subjects-">Authorizing Subjects 授权对象</h2>
-<p>在 Shiro 中执行授权可以有三种途径：</p>
+<p>Shiro &#x56E2;&#x961F;&#x63D0;&#x5021;&#x4F7F;&#x7528;&#x6743;&#x9650;&#x548C;&#x660E;&#x786E;&#x4E3A;&#x89D2;&#x8272;&#x6307;&#x5B9A;&#x6743;&#x9650;&#x66FF;&#x4EE3;&#x539F;&#x59CB;&#x7684;&#x5C06;&#x6743;&#x9650;&#x9690;&#x542B;&#x4E8E;&#x89D2;&#x8272;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x53EF;&#x4EE5;&#x5BF9;&#x7A0B;&#x5E8F;&#x5B89;&#x5168;&#x63D0;&#x4F9B;&#x66F4;&#x5F3A;&#x7684;&#x63A7;&#x5236;&#x3002;</p>
+<p><em>&#x57FA;&#x4E8E;&#x8D44;&#x6E90;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</em></p>
+<p><em>&#x8BFB;&#x4E00;&#x4E0B;&#x8FD9;&#x4E2A;&#x6587;&#x7AE0;&#xFF1A;<a href="http://www.waylau.com/new-rbac-resource-based-access-control/" target="_blank">&#x65B0;&#x7684;RBAC&#xFF1A;&#x57FA;&#x4E8E;&#x8D44;&#x6E90;&#x7684;&#x6743;&#x9650;&#x7BA1;&#x7406;(Resource-Based Access Control)</a>&#xFF0C;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x6DF1;&#x5165;&#x8BA8;&#x8BBA;&#x4E86;&#x4F7F;&#x7528;&#x6743;&#x9650;&#x548C;&#x660E;&#x786E;&#x4E3A;&#x89D2;&#x8272;&#x6307;&#x5B9A;&#x6743;&#x9650;&#x4EE3;&#x66FF;&#x65E7;&#x7684;&#x5C06;&#x6743;&#x9650;&#x9690;&#x542B;&#x4E8E;&#x89D2;&#x8272;&#x4E2D;&#x65B9;&#x6CD5;&#x7684;&#x597D;&#x5904;&#xFF08;&#x4EE5;&#x53CA;&#x5BF9;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x5F71;&#x54CD;&#xFF09;&#x3002;</em></p>
+<h3 id="users&#x7528;&#x6237;">Users&#x7528;&#x6237;</h3>
+<p>&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x201C;&#x8C01;&#x201D;&#xFF0C;&#x5982;&#x540C;&#x6211;&#x4EEC;&#x524D;&#x9762;&#x63D0;&#x5230;&#x7684;&#xFF0C;Subject &#x5B9E;&#x9645;&#x4E0A;&#x662F; shiro &#x7684;&#x201C;&#x7528;&#x6237;&#x201D;&#x3002;</p>
+<p>&#x7528;&#x6237;&#xFF08;Subjects&#xFF09;&#x901A;&#x8FC7;&#x4E0E;&#x89D2;&#x8272;&#x6216;&#x6743;&#x9650;&#x5173;&#x8054;&#x786E;&#x5B9A;&#x662F;&#x5426;&#x88AB;&#x5141;&#x8BB8;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x5185;&#x7279;&#x5B9A;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x7A0B;&#x5E8F;&#x6570;&#x636E;&#x6A21;&#x578B;&#x786E;&#x5207;&#x5B9A;&#x4E49;&#x4E86; Subject &#x662F;&#x5426;&#x5141;&#x8BB8;&#x505A;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x4F60;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x4E2D;&#xFF0C;&#x4F60;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x7528;&#x6237;&#x7C7B;&#x5E76;&#x4E14;&#x76F4;&#x63A5;&#x4E3A;&#x5176;&#x8BBE;&#x7F6E;&#x4E86;&#x6743;&#x9650;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x53EA;&#x662F;&#x76F4;&#x63A5;&#x7ED9;&#x89D2;&#x8272;&#x8BBE;&#x7F6E;&#x4E86;&#x6743;&#x9650;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x7528;&#x6237;&#x4E0E;&#x8BE5;&#x89D2;&#x8272;&#x5173;&#x8054;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x5173;&#x8054;&#xFF0C;&#x7528;&#x6237;&#x5C31;&#x201C;&#x6709;&#x201D;&#x4E86;&#x89D2;&#x8272;&#x6240;&#x5177;&#x5907;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x201C;&#x7EC4;&#x201D;&#x7684;&#x6982;&#x5FF5;&#x5B8C;&#x6210;&#x8FD9;&#x4EF6;&#x4E8B;&#xFF0C;&#x8FD9;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x7A0B;&#x5E8F;&#x7684;&#x8BBE;&#x8BA1;&#x3002;</p>
+<p>&#x6570;&#x636E;&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x4E86;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x6388;&#x6743;&#xFF0C;Shiro &#x4F9D;&#x8D56;&#x4E00;&#x4E2A; <a href="7.%20Realms.md">Realm</a> &#x5B9E;&#x73B0;&#x5C06;&#x4F60;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x5173;&#x8054;&#x8F6C;&#x6362;&#x6210; Shiro &#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x7A0D;&#x540E;&#x8BA8;&#x8BBA; Realms&#x3002;</p>
+<p><em>&#x6700;&#x7EC8;&#xFF0C;&#x662F; <a href="7.%20Realms.md">Realm</a>  &#x4E0E;&#x4F60;&#x7684;&#x6570;&#x636E;&#x6E90;&#xFF08;RDBMS,LDAP&#x7B49;&#xFF09;&#x505A;&#x4EA4;&#x6D41;&#xFF0C;Realm &#x7528;&#x6765;&#x544A;&#x77E5;Shiro &#x662F;&#x5426;&#x89D2;&#x8272;&#x6216;&#x6743;&#x9650;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x63A7;&#x5236;&#x4F60;&#x7684;&#x6388;&#x6743;&#x6A21;&#x578B;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x548C;&#x5B9A;&#x4E49;&#x3002;</em></p>
+<h2 id="authorizing-subjects-&#x6388;&#x6743;&#x5BF9;&#x8C61;">Authorizing Subjects &#x6388;&#x6743;&#x5BF9;&#x8C61;</h2>
+<p>&#x5728; Shiro &#x4E2D;&#x6267;&#x884C;&#x6388;&#x6743;&#x53EF;&#x4EE5;&#x6709;&#x4E09;&#x79CD;&#x9014;&#x5F84;&#xFF1A;</p>
 <ul>
-<li>程序代码--你可以在你的 JAVA 代码中执行用类似于 if 和 else 的结构来执行权限检查。</li>
-<li>JDK 注解--你可以在你的 JAVA 方法上附加权限注解</li>
-<li>JSP/GSP 标签--你可以基于角色和权限控制 JSP 或 GSP 页面输出内容。</li>
+<li>&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;--&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4F60;&#x7684; JAVA &#x4EE3;&#x7801;&#x4E2D;&#x6267;&#x884C;&#x7528;&#x7C7B;&#x4F3C;&#x4E8E; if &#x548C; else &#x7684;&#x7ED3;&#x6784;&#x6765;&#x6267;&#x884C;&#x6743;&#x9650;&#x68C0;&#x67E5;&#x3002;</li>
+<li>JDK &#x6CE8;&#x89E3;--&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4F60;&#x7684; JAVA &#x65B9;&#x6CD5;&#x4E0A;&#x9644;&#x52A0;&#x6743;&#x9650;&#x6CE8;&#x89E3;</li>
+<li>JSP/GSP &#x6807;&#x7B7E;--&#x4F60;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x89D2;&#x8272;&#x548C;&#x6743;&#x9650;&#x63A7;&#x5236; JSP &#x6216; GSP &#x9875;&#x9762;&#x8F93;&#x51FA;&#x5185;&#x5BB9;&#x3002;</li>
 </ul>
-<h3 id="programmatic-authorization-">Programmatic Authorization 程序中检查授权</h3>
-<p>直接在程序中为当前 Subject 实例检查授权可能是最简单也最常用的方法。</p>
-<h4 id="role-based-authorization-">Role-Based Authorization 基于角色的授权</h4>
-<p>如果你要基于简单/传统的角色名进行访问控制，你可以执行角色检查：</p>
-<h5 id="role-checks-">Role Checks 角色检查</h5>
-<p>如果你想简单地检查一下当前Subject是否拥有一个角色，你可以在一个实例上调用 hasRole* 方法。</p>
-<p>例如，查看一个 Subject 是否有特定（单独）的角色，你可以调用subject.<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#hasRole(java.lang.String" target="_blank">hasRole(roleName)</a>)方法，做出相应的反馈。</p>
+<h3 id="programmatic-authorization-&#x7A0B;&#x5E8F;&#x4E2D;&#x68C0;&#x67E5;&#x6388;&#x6743;">Programmatic Authorization &#x7A0B;&#x5E8F;&#x4E2D;&#x68C0;&#x67E5;&#x6388;&#x6743;</h3>
+<p>&#x76F4;&#x63A5;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x4E3A;&#x5F53;&#x524D; Subject &#x5B9E;&#x4F8B;&#x68C0;&#x67E5;&#x6388;&#x6743;&#x53EF;&#x80FD;&#x662F;&#x6700;&#x7B80;&#x5355;&#x4E5F;&#x6700;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h4 id="rolebased-authorization-&#x57FA;&#x4E8E;&#x89D2;&#x8272;&#x7684;&#x6388;&#x6743;">Role-Based Authorization &#x57FA;&#x4E8E;&#x89D2;&#x8272;&#x7684;&#x6388;&#x6743;</h4>
+<p>&#x5982;&#x679C;&#x4F60;&#x8981;&#x57FA;&#x4E8E;&#x7B80;&#x5355;/&#x4F20;&#x7EDF;&#x7684;&#x89D2;&#x8272;&#x540D;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x89D2;&#x8272;&#x68C0;&#x67E5;&#xFF1A;</p>
+<h5 id="role-checks-&#x89D2;&#x8272;&#x68C0;&#x67E5;">Role Checks &#x89D2;&#x8272;&#x68C0;&#x67E5;</h5>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x7B80;&#x5355;&#x5730;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x5F53;&#x524D;Subject&#x662F;&#x5426;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x89D2;&#x8272;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x4E0A;&#x8C03;&#x7528; hasRole* &#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x67E5;&#x770B;&#x4E00;&#x4E2A; Subject &#x662F;&#x5426;&#x6709;&#x7279;&#x5B9A;&#xFF08;&#x5355;&#x72EC;&#xFF09;&#x7684;&#x89D2;&#x8272;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8C03;&#x7528;subject.<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#hasRole(java.lang.String" target="_blank">hasRole(roleName)</a>)&#x65B9;&#x6CD5;&#xFF0C;&#x505A;&#x51FA;&#x76F8;&#x5E94;&#x7684;&#x53CD;&#x9988;&#x3002;</p>
 <pre><code>Subject currentUser = SecurityUtils.getSubject();
 
 if (currentUser.hasRole(&quot;administrator&quot;)) {
-    //显示 admin 按钮
+    //&#x663E;&#x793A; admin &#x6309;&#x94AE;
 } else {
-    //不显示按钮?  灰色吗？
+    //&#x4E0D;&#x663E;&#x793A;&#x6309;&#x94AE;?  &#x7070;&#x8272;&#x5417;&#xFF1F;
 }
-</code></pre><p>下面是你可以根据需要调用的函数：</p>
-<table >
+</code></pre><p>&#x4E0B;&#x9762;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF1A;</p>
+<table>
 <tbody>
 <tr>
-<th colspan="1" rowspan="1" style="white-space: nowrap;"> Subject 方法 </th>
-<th colspan="1" rowspan="1" style="cursor: pointer;"> 描述 </th>
+<th colspan="1" rowspan="1" style="white-space: nowrap;"> Subject &#x65B9;&#x6CD5; </th>
+<th colspan="1" rowspan="1" style="cursor: pointer;"> &#x63CF;&#x8FF0; </th>
 </tr>
 <tr bgcolor="">
-<td colspan="1" rowspan="1"style="white-space: nowrap;"> <tt><a href="static/current/apidocs/org/apache/shiro/subject/Subject.html#hasRole(java.lang.String)">hasRole(String roleName)</a>
+<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="static/current/apidocs/org/apache/shiro/subject/Subject.html#hasRole(java.lang.String)">hasRole(String roleName)</a>
 </tt> </td>
-<td colspan="1" rowspan="1"> 如果Subject指定了特定的角色返回真，否则返回假； </td></tr>
+<td colspan="1" rowspan="1"> &#x5982;&#x679C;Subject&#x6307;&#x5B9A;&#x4E86;&#x7279;&#x5B9A;&#x7684;&#x89D2;&#x8272;&#x8FD4;&#x56DE;&#x771F;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x5047;&#xFF1B; </td></tr>
 <tr bgcolor="">
 <td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="static/current/apidocs/org/apache/shiro/subject/Subject.html#hasRoles(java.util.List)">hasRoles(List&lt;String&gt; roleNames)</a></tt> </td>
-<td colspan="1" rowspan="1" > 返回一个与参数顺序相对应的hasRole结果数组，当一次有多个角色需要检测时非常有用（如定制一个复杂的视图）</td></tr>
+<td colspan="1" rowspan="1"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E0E;&#x53C2;&#x6570;&#x987A;&#x5E8F;&#x76F8;&#x5BF9;&#x5E94;&#x7684;hasRole&#x7ED3;&#x679C;&#x6570;&#x7EC4;&#xFF0C;&#x5F53;&#x4E00;&#x6B21;&#x6709;&#x591A;&#x4E2A;&#x89D2;&#x8272;&#x9700;&#x8981;&#x68C0;&#x6D4B;&#x65F6;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF08;&#x5982;&#x5B9A;&#x5236;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x89C6;&#x56FE;&#xFF09;</td></tr>
 <tr bgcolor=""><td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="static/current/apidocs/org/apache/shiro/subject/Subject.html#hasAllRoles(java.util.Collection)">hasAllRoles(Collection&lt;String&gt; roleNames)</a></tt> </td>
-<td colspan="1" rowspan="1" > 如果Subject具备所有角色返回真，否则返回假。</td>
+<td colspan="1" rowspan="1"> &#x5982;&#x679C;Subject&#x5177;&#x5907;&#x6240;&#x6709;&#x89D2;&#x8272;&#x8FD4;&#x56DE;&#x771F;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x5047;&#x3002;</td>
 </tr>
 </tbody>
 </table>
 
-<h5 id="role-assertions-">Role Assertions 角色判断</h5>
-<p>还有另一个方法检测 Subjet 是否是指定为某个角色，你可以在的代码执行之前简单判断他们是否是所要求的角色，如果 Subject 不是所要求的角色， <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/AuthorizationException.html" target="_blank">AuthorizationException</a> 异常将被抛出，如果是所要求的角色，判断将安静地执行并按期望顺序执行下面的逻辑。</p>
-<p>例如：</p>
+<h5 id="role-assertions-&#x89D2;&#x8272;&#x5224;&#x65AD;">Role Assertions &#x89D2;&#x8272;&#x5224;&#x65AD;</h5>
+<p>&#x8FD8;&#x6709;&#x53E6;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x68C0;&#x6D4B; Subjet &#x662F;&#x5426;&#x662F;&#x6307;&#x5B9A;&#x4E3A;&#x67D0;&#x4E2A;&#x89D2;&#x8272;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x7684;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x4E4B;&#x524D;&#x7B80;&#x5355;&#x5224;&#x65AD;&#x4ED6;&#x4EEC;&#x662F;&#x5426;&#x662F;&#x6240;&#x8981;&#x6C42;&#x7684;&#x89D2;&#x8272;&#xFF0C;&#x5982;&#x679C; Subject &#x4E0D;&#x662F;&#x6240;&#x8981;&#x6C42;&#x7684;&#x89D2;&#x8272;&#xFF0C; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/AuthorizationException.html" target="_blank">AuthorizationException</a> &#x5F02;&#x5E38;&#x5C06;&#x88AB;&#x629B;&#x51FA;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x6240;&#x8981;&#x6C42;&#x7684;&#x89D2;&#x8272;&#xFF0C;&#x5224;&#x65AD;&#x5C06;&#x5B89;&#x9759;&#x5730;&#x6267;&#x884C;&#x5E76;&#x6309;&#x671F;&#x671B;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x903B;&#x8F91;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code>Subject currentUser = SecurityUtils.getSubject();
 
-//保证当前用户是一个银行出纳员
-//因此允许开立帐户：
+//&#x4FDD;&#x8BC1;&#x5F53;&#x524D;&#x7528;&#x6237;&#x662F;&#x4E00;&#x4E2A;&#x94F6;&#x884C;&#x51FA;&#x7EB3;&#x5458;
+//&#x56E0;&#x6B64;&#x5141;&#x8BB8;&#x5F00;&#x7ACB;&#x5E10;&#x6237;&#xFF1A;
 currentUser.checkRole(&quot;bankTeller&quot;);
 openBankAccount();
-</code></pre><p>与 hasRole* 方法相比，这种方法的好处在于代码更为清晰，如果当前Subject 不满足所需条件你不需要建立你自己的AuthorizationExceptions 异常（如果你不想那么做）。</p>
-<p>下面是你可以根据需要调用的函数：</p>
-<table >
+</code></pre><p>&#x4E0E; hasRole* &#x65B9;&#x6CD5;&#x76F8;&#x6BD4;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x597D;&#x5904;&#x5728;&#x4E8E;&#x4EE3;&#x7801;&#x66F4;&#x4E3A;&#x6E05;&#x6670;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;Subject &#x4E0D;&#x6EE1;&#x8DB3;&#x6240;&#x9700;&#x6761;&#x4EF6;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x5EFA;&#x7ACB;&#x4F60;&#x81EA;&#x5DF1;&#x7684;AuthorizationExceptions &#x5F02;&#x5E38;&#xFF08;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x90A3;&#x4E48;&#x505A;&#xFF09;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF1A;</p>
+<table>
 <tbody>
 <tr>
-<th colspan="1" rowspan="1" style="white-space: nowrap;"> Subject 方法 </th>
-<th colspan="1" rowspan="1" style="cursor: pointer;"> 描述 </th>
+<th colspan="1" rowspan="1" style="white-space: nowrap;"> Subject &#x65B9;&#x6CD5; </th>
+<th colspan="1" rowspan="1" style="cursor: pointer;"> &#x63CF;&#x8FF0; </th>
 </tr>
 <tr bgcolor="">
-<td colspan="1" rowspan="1"style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkRole(java.lang.String)">checkRole(String roleName)</a>
+<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkRole(java.lang.String)" target="_blank">checkRole(String roleName)</a>
 </tt> </td>
-<td colspan="1" rowspan="1"> 如果Subject被指定为特定角色则安静地返回否则抛出AuthorizationException异常；</td></tr>
+<td colspan="1" rowspan="1"> &#x5982;&#x679C;Subject&#x88AB;&#x6307;&#x5B9A;&#x4E3A;&#x7279;&#x5B9A;&#x89D2;&#x8272;&#x5219;&#x5B89;&#x9759;&#x5730;&#x8FD4;&#x56DE;&#x5426;&#x5219;&#x629B;&#x51FA;AuthorizationException&#x5F02;&#x5E38;&#xFF1B;</td></tr>
 <tr bgcolor="">
-<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkRoles(java.util.Collection)">checkRoles(Collection<String> roleNames)</a></tt> </td>
-<td colspan="1" rowspan="1" >如果Subject被指定了所有特定的角色则安静地返回否则抛出AuthorizationException异常；</td></tr>
-<tr bgcolor=""><td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkRoles(java.lang.String...)">checkRoles(String... roleNames)</a></tt> </td>
-<td colspan="1" rowspan="1" > 和上面的checkRoles具有相同的效果，但允许Java5的变参形式。 </td>
+<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkRoles(java.util.Collection)" target="_blank">checkRoles(Collection<String> roleNames)</String></a></tt> </td>
+<td colspan="1" rowspan="1">&#x5982;&#x679C;Subject&#x88AB;&#x6307;&#x5B9A;&#x4E86;&#x6240;&#x6709;&#x7279;&#x5B9A;&#x7684;&#x89D2;&#x8272;&#x5219;&#x5B89;&#x9759;&#x5730;&#x8FD4;&#x56DE;&#x5426;&#x5219;&#x629B;&#x51FA;AuthorizationException&#x5F02;&#x5E38;&#xFF1B;</td></tr>
+<tr bgcolor=""><td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkRoles(java.lang.String...)" target="_blank">checkRoles(String... roleNames)</a></tt> </td>
+<td colspan="1" rowspan="1"> &#x548C;&#x4E0A;&#x9762;&#x7684;checkRoles&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x4F46;&#x5141;&#x8BB8;Java5&#x7684;&#x53D8;&#x53C2;&#x5F62;&#x5F0F;&#x3002; </td>
 </tr>
 </tbody>
 </table>
 
-<h4 id="permission-based-authorization-">Permission-Based Authorization 基于权限的授权</h4>
-<p>就像我们上面在角色概述中提到的，通过基于权限的授权执行访问控制是更好的方法。基于权限的授权，因为其与程序功能（以及程序核心资源上的行为）紧密联系，基于权限授权的源代码在程序功能改变时才需要改变，而与安全策略无关。这意味着与同样基于角色的授权相比，对代码的影响更少。</p>
-<h5 id="permission-checks-">Permission Checks 权限检查</h5>
-<p>如果你希望检查一个 Subject 是否允许做某件事情，你可以调用isPermitted* 方法的变形，有两种主要方式检查授权--基于对象的权限实例和基于字符串的权限表示。</p>
-<h5 id="object-based-permission-checks-">Object-based Permission Checks 基于对象的权限检查</h5>
-<p>执行权限检查的一种方法是实例化一个Shiro的<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Permission.html" target="_blank">org.apache.shiro.authz.Permission</a>接口并且将它传递给接收权限实例的*isPermitted 方法。</p>
-<p>例如，假设一下以下情景：办公室里有一台唯一标识为 laserjet4400n 的打印机，在我们向用户显示打印按钮之前，软件需要检查当前用户是否允许用这台打印机打印文档，检查权限的方式会是这样：</p>
+<h4 id="permissionbased-authorization-&#x57FA;&#x4E8E;&#x6743;&#x9650;&#x7684;&#x6388;&#x6743;">Permission-Based Authorization &#x57FA;&#x4E8E;&#x6743;&#x9650;&#x7684;&#x6388;&#x6743;</h4>
+<p>&#x5C31;&#x50CF;&#x6211;&#x4EEC;&#x4E0A;&#x9762;&#x5728;&#x89D2;&#x8272;&#x6982;&#x8FF0;&#x4E2D;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x901A;&#x8FC7;&#x57FA;&#x4E8E;&#x6743;&#x9650;&#x7684;&#x6388;&#x6743;&#x6267;&#x884C;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x662F;&#x66F4;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x57FA;&#x4E8E;&#x6743;&#x9650;&#x7684;&#x6388;&#x6743;&#xFF0C;&#x56E0;&#x4E3A;&#x5176;&#x4E0E;&#x7A0B;&#x5E8F;&#x529F;&#x80FD;&#xFF08;&#x4EE5;&#x53CA;&#x7A0B;&#x5E8F;&#x6838;&#x5FC3;&#x8D44;&#x6E90;&#x4E0A;&#x7684;&#x884C;&#x4E3A;&#xFF09;&#x7D27;&#x5BC6;&#x8054;&#x7CFB;&#xFF0C;&#x57FA;&#x4E8E;&#x6743;&#x9650;&#x6388;&#x6743;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x5728;&#x7A0B;&#x5E8F;&#x529F;&#x80FD;&#x6539;&#x53D8;&#x65F6;&#x624D;&#x9700;&#x8981;&#x6539;&#x53D8;&#xFF0C;&#x800C;&#x4E0E;&#x5B89;&#x5168;&#x7B56;&#x7565;&#x65E0;&#x5173;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4E0E;&#x540C;&#x6837;&#x57FA;&#x4E8E;&#x89D2;&#x8272;&#x7684;&#x6388;&#x6743;&#x76F8;&#x6BD4;&#xFF0C;&#x5BF9;&#x4EE3;&#x7801;&#x7684;&#x5F71;&#x54CD;&#x66F4;&#x5C11;&#x3002;</p>
+<h5 id="permission-checks-&#x6743;&#x9650;&#x68C0;&#x67E5;">Permission Checks &#x6743;&#x9650;&#x68C0;&#x67E5;</h5>
+<p>&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x68C0;&#x67E5;&#x4E00;&#x4E2A; Subject &#x662F;&#x5426;&#x5141;&#x8BB8;&#x505A;&#x67D0;&#x4EF6;&#x4E8B;&#x60C5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8C03;&#x7528;isPermitted* &#x65B9;&#x6CD5;&#x7684;&#x53D8;&#x5F62;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x4E3B;&#x8981;&#x65B9;&#x5F0F;&#x68C0;&#x67E5;&#x6388;&#x6743;--&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x6743;&#x9650;&#x5B9E;&#x4F8B;&#x548C;&#x57FA;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6743;&#x9650;&#x8868;&#x793A;&#x3002;</p>
+<h5 id="objectbased-permission-checks-&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x6743;&#x9650;&#x68C0;&#x67E5;">Object-based Permission Checks &#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x6743;&#x9650;&#x68C0;&#x67E5;</h5>
+<p>&#x6267;&#x884C;&#x6743;&#x9650;&#x68C0;&#x67E5;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;Shiro&#x7684;<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Permission.html" target="_blank">org.apache.shiro.authz.Permission</a>&#x63A5;&#x53E3;&#x5E76;&#x4E14;&#x5C06;&#x5B83;&#x4F20;&#x9012;&#x7ED9;&#x63A5;&#x6536;&#x6743;&#x9650;&#x5B9E;&#x4F8B;&#x7684;*isPermitted &#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x8BBE;&#x4E00;&#x4E0B;&#x4EE5;&#x4E0B;&#x60C5;&#x666F;&#xFF1A;&#x529E;&#x516C;&#x5BA4;&#x91CC;&#x6709;&#x4E00;&#x53F0;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x4E3A; laserjet4400n &#x7684;&#x6253;&#x5370;&#x673A;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x5411;&#x7528;&#x6237;&#x663E;&#x793A;&#x6253;&#x5370;&#x6309;&#x94AE;&#x4E4B;&#x524D;&#xFF0C;&#x8F6F;&#x4EF6;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x5F53;&#x524D;&#x7528;&#x6237;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x7528;&#x8FD9;&#x53F0;&#x6253;&#x5370;&#x673A;&#x6253;&#x5370;&#x6587;&#x6863;&#xFF0C;&#x68C0;&#x67E5;&#x6743;&#x9650;&#x7684;&#x65B9;&#x5F0F;&#x4F1A;&#x662F;&#x8FD9;&#x6837;&#xFF1A;</p>
 <pre><code>Permission printPermission = new PrinterPermission(&quot;laserjet4400n&quot;, &quot;print&quot;);
 
 Subject currentUser = SecurityUtils.getSubject();
 
 if (currentUser.isPermitted(printPermission)) {
-    //显示 打印 按钮
+    //&#x663E;&#x793A; &#x6253;&#x5370; &#x6309;&#x94AE;
 } else {
-    //不显示按钮?  灰色吗？
+    //&#x4E0D;&#x663E;&#x793A;&#x6309;&#x94AE;?  &#x7070;&#x8272;&#x5417;&#xFF1F;
 }
-</code></pre><p>在这个例子中，我们同样看到了一个非常强大的实例级别的访问控制检查--在单独数据实例上限制行为的能力。</p>
-<p>基于对象的权限对下列情况非常有用：</p>
+</code></pre><p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x540C;&#x6837;&#x770B;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#x5B9E;&#x4F8B;&#x7EA7;&#x522B;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x68C0;&#x67E5;--&#x5728;&#x5355;&#x72EC;&#x6570;&#x636E;&#x5B9E;&#x4F8B;&#x4E0A;&#x9650;&#x5236;&#x884C;&#x4E3A;&#x7684;&#x80FD;&#x529B;&#x3002;</p>
+<p>&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x6743;&#x9650;&#x5BF9;&#x4E0B;&#x5217;&#x60C5;&#x51B5;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF1A;</p>
 <ul>
-<li>希望编译期类型安全；</li>
-<li>希望确保正确地引用和使用的权限；</li>
-<li>希望对权限判断逻辑（称作权限隐含逻辑，基于权限接口的 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Permission.html#implies(org.apache.shiro.authz.Permission" target="_blank">implies</a>)方法）执行方式进行明确控制；</li>
-<li>希望确保权限正确地反映程序资源（例如，在一个对象域模型上创建一个对象时，权限类可能自动产生）。</li>
+<li>&#x5E0C;&#x671B;&#x7F16;&#x8BD1;&#x671F;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#xFF1B;</li>
+<li>&#x5E0C;&#x671B;&#x786E;&#x4FDD;&#x6B63;&#x786E;&#x5730;&#x5F15;&#x7528;&#x548C;&#x4F7F;&#x7528;&#x7684;&#x6743;&#x9650;&#xFF1B;</li>
+<li>&#x5E0C;&#x671B;&#x5BF9;&#x6743;&#x9650;&#x5224;&#x65AD;&#x903B;&#x8F91;&#xFF08;&#x79F0;&#x4F5C;&#x6743;&#x9650;&#x9690;&#x542B;&#x903B;&#x8F91;&#xFF0C;&#x57FA;&#x4E8E;&#x6743;&#x9650;&#x63A5;&#x53E3;&#x7684; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Permission.html#implies(org.apache.shiro.authz.Permission" target="_blank">implies</a>)&#x65B9;&#x6CD5;&#xFF09;&#x6267;&#x884C;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x660E;&#x786E;&#x63A7;&#x5236;&#xFF1B;</li>
+<li>&#x5E0C;&#x671B;&#x786E;&#x4FDD;&#x6743;&#x9650;&#x6B63;&#x786E;&#x5730;&#x53CD;&#x6620;&#x7A0B;&#x5E8F;&#x8D44;&#x6E90;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x57DF;&#x6A21;&#x578B;&#x4E0A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x6743;&#x9650;&#x7C7B;&#x53EF;&#x80FD;&#x81EA;&#x52A8;&#x4EA7;&#x751F;&#xFF09;&#x3002;</li>
 </ul>
-<p>下面是你可以根据需要调用的函数：</p>
-<table >
+<p>&#x4E0B;&#x9762;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF1A;</p>
+<table>
 <tbody>
 <tr>
-<th colspan="1" rowspan="1" style="white-space: nowrap;"> Subject 方法 </th>
-<th colspan="1" rowspan="1" style="cursor: pointer;"> 描述 </th>
+<th colspan="1" rowspan="1" style="white-space: nowrap;"> Subject &#x65B9;&#x6CD5; </th>
+<th colspan="1" rowspan="1" style="cursor: pointer;"> &#x63CF;&#x8FF0; </th>
 </tr>
 <tr bgcolor="">
-<td colspan="1" rowspan="1"style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermitted(org.apache.shiro.authz.Permission)">isPermitted(Permission p)</a>
+<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermitted(org.apache.shiro.authz.Permission)" target="_blank">isPermitted(Permission p)</a>
 </tt> </td>
-<td colspan="1" rowspan="1"> 如果Subject允许执行特定权限实例综合指定的动作或资源访问权返回真，否则返回假；</td></tr>
+<td colspan="1" rowspan="1"> &#x5982;&#x679C;Subject&#x5141;&#x8BB8;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x6743;&#x9650;&#x5B9E;&#x4F8B;&#x7EFC;&#x5408;&#x6307;&#x5B9A;&#x7684;&#x52A8;&#x4F5C;&#x6216;&#x8D44;&#x6E90;&#x8BBF;&#x95EE;&#x6743;&#x8FD4;&#x56DE;&#x771F;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x5047;&#xFF1B;</td></tr>
 <tr bgcolor="">
-<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermitted(java.util.List)">isPermitted(List<Permission> perms)</a></tt> </td>
-<td colspan="1" rowspan="1" >按参数顺序返回isPermitted的结果数组，如果许多权限需要检查时非常有用（如定制一个复杂的视图）</td></tr>
-<tr bgcolor=""><td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermittedAll(java.util.Collection))">isPermittedAll(Collection<Permission> perms)</a></tt> </td>
-<td colspan="1" rowspan="1" > 如果Subject拥有指定的所有权限返回真，否则返回假。 </td>
+<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermitted(java.util.List)" target="_blank">isPermitted(List<Permission> perms)</Permission></a></tt> </td>
+<td colspan="1" rowspan="1">&#x6309;&#x53C2;&#x6570;&#x987A;&#x5E8F;&#x8FD4;&#x56DE;isPermitted&#x7684;&#x7ED3;&#x679C;&#x6570;&#x7EC4;&#xFF0C;&#x5982;&#x679C;&#x8BB8;&#x591A;&#x6743;&#x9650;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x65F6;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF08;&#x5982;&#x5B9A;&#x5236;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x89C6;&#x56FE;&#xFF09;</td></tr>
+<tr bgcolor=""><td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermittedAll(java.util.Collection))" target="_blank">isPermittedAll(Collection<Permission> perms)</Permission></a></tt> </td>
+<td colspan="1" rowspan="1"> &#x5982;&#x679C;Subject&#x62E5;&#x6709;&#x6307;&#x5B9A;&#x7684;&#x6240;&#x6709;&#x6743;&#x9650;&#x8FD4;&#x56DE;&#x771F;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x5047;&#x3002; </td>
 </tr>
 </tbody>
 </table>
 
-<h5 id="string-based-permission-checks-">String-based permission checks 基于字符串的权限检查</h5>
-<p>虽然基于对象的权限检查很有用（编译期类型安全，对行为担保，定制隐含逻辑等），但在许多程序里有时候感觉有点笨重，另一种选择是用普通的字符串来代表权限。</p>
-<p>例如，对于上面打印权限的例子，我们可以使用字符串权限检查达到同样的结果</p>
+<h5 id="stringbased-permission-checks-&#x57FA;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6743;&#x9650;&#x68C0;&#x67E5;">String-based permission checks &#x57FA;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6743;&#x9650;&#x68C0;&#x67E5;</h5>
+<p>&#x867D;&#x7136;&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x6743;&#x9650;&#x68C0;&#x67E5;&#x5F88;&#x6709;&#x7528;&#xFF08;&#x7F16;&#x8BD1;&#x671F;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#xFF0C;&#x5BF9;&#x884C;&#x4E3A;&#x62C5;&#x4FDD;&#xFF0C;&#x5B9A;&#x5236;&#x9690;&#x542B;&#x903B;&#x8F91;&#x7B49;&#xFF09;&#xFF0C;&#x4F46;&#x5728;&#x8BB8;&#x591A;&#x7A0B;&#x5E8F;&#x91CC;&#x6709;&#x65F6;&#x5019;&#x611F;&#x89C9;&#x6709;&#x70B9;&#x7B28;&#x91CD;&#xFF0C;&#x53E6;&#x4E00;&#x79CD;&#x9009;&#x62E9;&#x662F;&#x7528;&#x666E;&#x901A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6765;&#x4EE3;&#x8868;&#x6743;&#x9650;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0A;&#x9762;&#x6253;&#x5370;&#x6743;&#x9650;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x6743;&#x9650;&#x68C0;&#x67E5;&#x8FBE;&#x5230;&#x540C;&#x6837;&#x7684;&#x7ED3;&#x679C;</p>
 <pre><code>Subject currentUser = SecurityUtils.getSubject();
 
 if (currentUser.isPermitted(&quot;printer:print:laserjet4400n&quot;)) {
-    //显示 打印 按钮
+    //&#x663E;&#x793A; &#x6253;&#x5370; &#x6309;&#x94AE;
 } else {
-    //不显示按钮?  灰色吗？
+    //&#x4E0D;&#x663E;&#x793A;&#x6309;&#x94AE;?  &#x7070;&#x8272;&#x5417;&#xFF1F;
 }
-</code></pre><p>这个例子同样实现了实例级别的权限检查，但是所有主要权限部件--printer（资源类型）、print（动作）、laserjet4400n（实例ID）都表现为一个字符串。</p>
-<p>上面的例子展示了一种以冒号分割的特殊形式的字符串，定义于Shiro的 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/WildcardPermission.html" target="_blank">org.apache.shiro.authz.permission.WildcardPermission</a>中，它适合大多数用户的需求。</p>
-<p>上面的代码块基本上是下面这段代码的缩写：</p>
+</code></pre><p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x540C;&#x6837;&#x5B9E;&#x73B0;&#x4E86;&#x5B9E;&#x4F8B;&#x7EA7;&#x522B;&#x7684;&#x6743;&#x9650;&#x68C0;&#x67E5;&#xFF0C;&#x4F46;&#x662F;&#x6240;&#x6709;&#x4E3B;&#x8981;&#x6743;&#x9650;&#x90E8;&#x4EF6;--printer&#xFF08;&#x8D44;&#x6E90;&#x7C7B;&#x578B;&#xFF09;&#x3001;print&#xFF08;&#x52A8;&#x4F5C;&#xFF09;&#x3001;laserjet4400n&#xFF08;&#x5B9E;&#x4F8B;ID&#xFF09;&#x90FD;&#x8868;&#x73B0;&#x4E3A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x79CD;&#x4EE5;&#x5192;&#x53F7;&#x5206;&#x5272;&#x7684;&#x7279;&#x6B8A;&#x5F62;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B9A;&#x4E49;&#x4E8E;Shiro&#x7684; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/WildcardPermission.html" target="_blank">org.apache.shiro.authz.permission.WildcardPermission</a>&#x4E2D;&#xFF0C;&#x5B83;&#x9002;&#x5408;&#x5927;&#x591A;&#x6570;&#x7528;&#x6237;&#x7684;&#x9700;&#x6C42;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x57FA;&#x672C;&#x4E0A;&#x662F;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x7F29;&#x5199;&#xFF1A;</p>
 <pre><code>Subject currentUser = SecurityUtils.getSubject();
 
 Permission p = new WildcardPermission(&quot;printer:print:laserjet4400n&quot;);
 
 if (currentUser.isPermitted(p) {
-    //显示 打印 按钮
+    //&#x663E;&#x793A; &#x6253;&#x5370; &#x6309;&#x94AE;
 } else {
-    //不显示按钮?  灰色吗？
+    //&#x4E0D;&#x663E;&#x793A;&#x6309;&#x94AE;?  &#x7070;&#x8272;&#x5417;&#xFF1F;
 }
-</code></pre><p>WildcardPermission 令牌形式和构成选项将在 Shiro 的 <a href="6.1. Permissions 权限.html">Permission</a>文档中深入讨论</p>
-<p>上面的字符串使用默认的 WildcardPermission 格式，实际上你可以创造并使用你自己的字符串格式，我们将在下面 Realm 授权章节讨论如何这样做。</p>
-<p>基于字符串的权限有利的一面在于你不需要实现一个接口而且简单的字符串也非常易读，而不利的一面在于不保证类型安全，而且当你需要定义超出字符串表现能力之外的更复杂的行为时，你仍旧需要利用权限接口实现你自己的权限对象。实际上，大部分 Shiro 的终端用户因为其简单而选择基于字符串的方式，但最终你的程序需求决定了哪一种方法会更好。</p>
-<p>和基于对象的权限检查方法一样，下面是字符串权限检查的函数：</p>
-<table >
+</code></pre><p>WildcardPermission &#x4EE4;&#x724C;&#x5F62;&#x5F0F;&#x548C;&#x6784;&#x6210;&#x9009;&#x9879;&#x5C06;&#x5728; Shiro &#x7684; <a href="6.1.%20Permissions%20&#x6743;&#x9650;.md">Permission</a>&#x6587;&#x6863;&#x4E2D;&#x6DF1;&#x5165;&#x8BA8;&#x8BBA;</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684; WildcardPermission &#x683C;&#x5F0F;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x9020;&#x5E76;&#x4F7F;&#x7528;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x4E0B;&#x9762; Realm &#x6388;&#x6743;&#x7AE0;&#x8282;&#x8BA8;&#x8BBA;&#x5982;&#x4F55;&#x8FD9;&#x6837;&#x505A;&#x3002;</p>
+<p>&#x57FA;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6743;&#x9650;&#x6709;&#x5229;&#x7684;&#x4E00;&#x9762;&#x5728;&#x4E8E;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x800C;&#x4E14;&#x7B80;&#x5355;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E5F;&#x975E;&#x5E38;&#x6613;&#x8BFB;&#xFF0C;&#x800C;&#x4E0D;&#x5229;&#x7684;&#x4E00;&#x9762;&#x5728;&#x4E8E;&#x4E0D;&#x4FDD;&#x8BC1;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#xFF0C;&#x800C;&#x4E14;&#x5F53;&#x4F60;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x8D85;&#x51FA;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x73B0;&#x80FD;&#x529B;&#x4E4B;&#x5916;&#x7684;&#x66F4;&#x590D;&#x6742;&#x7684;&#x884C;&#x4E3A;&#x65F6;&#xFF0C;&#x4F60;&#x4ECD;&#x65E7;&#x9700;&#x8981;&#x5229;&#x7528;&#x6743;&#x9650;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x6743;&#x9650;&#x5BF9;&#x8C61;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x5927;&#x90E8;&#x5206; Shiro &#x7684;&#x7EC8;&#x7AEF;&#x7528;&#x6237;&#x56E0;&#x4E3A;&#x5176;&#x7B80;&#x5355;&#x800C;&#x9009;&#x62E9;&#x57FA;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x6700;&#x7EC8;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x9700;&#x6C42;&#x51B3;&#x5B9A;&#x4E86;&#x54EA;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x4F1A;&#x66F4;&#x597D;&#x3002;</p>
+<p>&#x548C;&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x6743;&#x9650;&#x68C0;&#x67E5;&#x65B9;&#x6CD5;&#x4E00;&#x6837;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x6743;&#x9650;&#x68C0;&#x67E5;&#x7684;&#x51FD;&#x6570;&#xFF1A;</p>
+<table>
 <tbody>
 <tr>
-<th colspan="1" rowspan="1" style="white-space: nowrap;"> Subject 方法 </th>
-<th colspan="1" rowspan="1" style="cursor: pointer;"> 描述 </th>
+<th colspan="1" rowspan="1" style="white-space: nowrap;"> Subject &#x65B9;&#x6CD5; </th>
+<th colspan="1" rowspan="1" style="cursor: pointer;"> &#x63CF;&#x8FF0; </th>
 </tr>
 <tr bgcolor="">
-<td colspan="1" rowspan="1"style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermitted(java.lang.String)">isPermitted(String perm)</a>
+<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermitted(java.lang.String)" target="_blank">isPermitted(String perm)</a>
 </tt> </td>
-<td colspan="1" rowspan="1">如果Subject被允许执行字符串表达的动作或资源访问权限，返回真，否则返回假；</td></tr>
+<td colspan="1" rowspan="1">&#x5982;&#x679C;Subject&#x88AB;&#x5141;&#x8BB8;&#x6267;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x7684;&#x52A8;&#x4F5C;&#x6216;&#x8D44;&#x6E90;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#xFF0C;&#x8FD4;&#x56DE;&#x771F;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x5047;&#xFF1B;</td></tr>
 <tr bgcolor="">
-<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermitted(java.util.List)">isPermitted(String... perms)</a></tt> </td>
-<td colspan="1" rowspan="1" >按照参数顺序返回isPermitted的结果数组，当许多字符串权限需要检查时非常有用（如定制一个复杂的视图时）；</td></tr>
-<tr bgcolor=""><td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermittedAll(java.lang.String...)">isPermittedAll(String... perms)</a></tt> </td>
-<td colspan="1" rowspan="1" > 当Subject具备所有字符串定义的权限时返回真，否则返回假。</td>
+<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermitted(java.util.List)" target="_blank">isPermitted(String... perms)</a></tt> </td>
+<td colspan="1" rowspan="1">&#x6309;&#x7167;&#x53C2;&#x6570;&#x987A;&#x5E8F;&#x8FD4;&#x56DE;isPermitted&#x7684;&#x7ED3;&#x679C;&#x6570;&#x7EC4;&#xFF0C;&#x5F53;&#x8BB8;&#x591A;&#x5B57;&#x7B26;&#x4E32;&#x6743;&#x9650;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x65F6;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF08;&#x5982;&#x5B9A;&#x5236;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x89C6;&#x56FE;&#x65F6;&#xFF09;&#xFF1B;</td></tr>
+<tr bgcolor=""><td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isPermittedAll(java.lang.String...)" target="_blank">isPermittedAll(String... perms)</a></tt> </td>
+<td colspan="1" rowspan="1"> &#x5F53;Subject&#x5177;&#x5907;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x4E32;&#x5B9A;&#x4E49;&#x7684;&#x6743;&#x9650;&#x65F6;&#x8FD4;&#x56DE;&#x771F;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x5047;&#x3002;</td>
 </tr>
 </tbody>
 </table>
 
-<h4 id="permission-assertions-">Permission Assertions 权限判断</h4>
-<p>另一种检查 Subject 是否被允许做某件事的方法是，在逻辑执行之前简单判断他们是否具备所需的权限，如果不允许，<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/AuthorizationException.html" target="_blank">AuthorizationException</a>异常被抛出，如果是允许的，判断将安静地执行并按期望顺序执行下面的逻辑。</p>
-<p>例如：</p>
+<h4 id="permission-assertions-&#x6743;&#x9650;&#x5224;&#x65AD;">Permission Assertions &#x6743;&#x9650;&#x5224;&#x65AD;</h4>
+<p>&#x53E6;&#x4E00;&#x79CD;&#x68C0;&#x67E5; Subject &#x662F;&#x5426;&#x88AB;&#x5141;&#x8BB8;&#x505A;&#x67D0;&#x4EF6;&#x4E8B;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#xFF0C;&#x5728;&#x903B;&#x8F91;&#x6267;&#x884C;&#x4E4B;&#x524D;&#x7B80;&#x5355;&#x5224;&#x65AD;&#x4ED6;&#x4EEC;&#x662F;&#x5426;&#x5177;&#x5907;&#x6240;&#x9700;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5141;&#x8BB8;&#xFF0C;<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/AuthorizationException.html" target="_blank">AuthorizationException</a>&#x5F02;&#x5E38;&#x88AB;&#x629B;&#x51FA;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5141;&#x8BB8;&#x7684;&#xFF0C;&#x5224;&#x65AD;&#x5C06;&#x5B89;&#x9759;&#x5730;&#x6267;&#x884C;&#x5E76;&#x6309;&#x671F;&#x671B;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x903B;&#x8F91;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code>Subject currentUser = SecurityUtils.getSubject();
 
-//担保允许当前用户
-//开一个银行帐户：
+//&#x62C5;&#x4FDD;&#x5141;&#x8BB8;&#x5F53;&#x524D;&#x7528;&#x6237;
+//&#x5F00;&#x4E00;&#x4E2A;&#x94F6;&#x884C;&#x5E10;&#x6237;&#xFF1A;
 Permission p = new AccountPermission(&quot;open&quot;);
 currentUser.checkPermission(p);
 openBankAccount();
-</code></pre><p>或者，同样的判断，可以用字符串形式：</p>
+</code></pre><p>&#x6216;&#x8005;&#xFF0C;&#x540C;&#x6837;&#x7684;&#x5224;&#x65AD;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#xFF1A;</p>
 <pre><code>Subject currentUser = SecurityUtils.getSubject();
 
-//担保允许当前用户
-//开一个银行帐户：
+//&#x62C5;&#x4FDD;&#x5141;&#x8BB8;&#x5F53;&#x524D;&#x7528;&#x6237;
+//&#x5F00;&#x4E00;&#x4E2A;&#x94F6;&#x884C;&#x5E10;&#x6237;&#xFF1A;
 currentUser.checkPermission(&quot;account:open&quot;);
 openBankAccount();
-</code></pre><p>与 isPermitted* 方法相比较，这种方法的优势是代码更为清晰，如果当前Subject 不符合条件，你不必创建你自己的 AuthorizationExceptions 异常（如果你不想那么做）。</p>
-<p>下面是你可以根据需要调用的函数：</p>
-<table >
+</code></pre><p>&#x4E0E; isPermitted* &#x65B9;&#x6CD5;&#x76F8;&#x6BD4;&#x8F83;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x4F18;&#x52BF;&#x662F;&#x4EE3;&#x7801;&#x66F4;&#x4E3A;&#x6E05;&#x6670;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;Subject &#x4E0D;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#xFF0C;&#x4F60;&#x4E0D;&#x5FC5;&#x521B;&#x5EFA;&#x4F60;&#x81EA;&#x5DF1;&#x7684; AuthorizationExceptions &#x5F02;&#x5E38;&#xFF08;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x90A3;&#x4E48;&#x505A;&#xFF09;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF1A;</p>
+<table>
 <tbody>
 <tr>
-<th colspan="1" rowspan="1" style="white-space: nowrap;"> Subject 方法 </th>
-<th colspan="1" rowspan="1" style="cursor: pointer;"> 描述 </th>
+<th colspan="1" rowspan="1" style="white-space: nowrap;"> Subject &#x65B9;&#x6CD5; </th>
+<th colspan="1" rowspan="1" style="cursor: pointer;"> &#x63CF;&#x8FF0; </th>
 </tr>
 <tr bgcolor="">
-<td colspan="1" rowspan="1"style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkPermission(org.apache.shiro.authz.Permission)">checkPermission(Permission p)</a>
+<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkPermission(org.apache.shiro.authz.Permission)" target="_blank">checkPermission(Permission p)</a>
 </tt> </td>
-<td colspan="1" rowspan="1">如果Subject被允许执行特定权限实例指定的动作或资源访问，安静地返回，否则抛出AuthorizationException异常。</td></tr>
+<td colspan="1" rowspan="1">&#x5982;&#x679C;Subject&#x88AB;&#x5141;&#x8BB8;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x6743;&#x9650;&#x5B9E;&#x4F8B;&#x6307;&#x5B9A;&#x7684;&#x52A8;&#x4F5C;&#x6216;&#x8D44;&#x6E90;&#x8BBF;&#x95EE;&#xFF0C;&#x5B89;&#x9759;&#x5730;&#x8FD4;&#x56DE;&#xFF0C;&#x5426;&#x5219;&#x629B;&#x51FA;AuthorizationException&#x5F02;&#x5E38;&#x3002;</td></tr>
 <tr bgcolor="">
-<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkPermission(java.lang.String)">checkPermission(String perm)</a></tt> </td>
-<td colspan="1" rowspan="1" >如果Subject被允许执行权限字符串指定的动作或资源访问，安静地返回，否则抛出AuthorizationException异常。</td></tr>
-<tr bgcolor=""><td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkPermissions(java.util.Collection)">checkPermissions(Collection<Permission> perms)</a></tt> </td>
-<td colspan="1" rowspan="1" > 如果Subject被允许执行所有权限实例指定的动作或资源访问，安静地返回，否则抛出AuthorizationException异常。</td>
+<td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkPermission(java.lang.String)" target="_blank">checkPermission(String perm)</a></tt> </td>
+<td colspan="1" rowspan="1">&#x5982;&#x679C;Subject&#x88AB;&#x5141;&#x8BB8;&#x6267;&#x884C;&#x6743;&#x9650;&#x5B57;&#x7B26;&#x4E32;&#x6307;&#x5B9A;&#x7684;&#x52A8;&#x4F5C;&#x6216;&#x8D44;&#x6E90;&#x8BBF;&#x95EE;&#xFF0C;&#x5B89;&#x9759;&#x5730;&#x8FD4;&#x56DE;&#xFF0C;&#x5426;&#x5219;&#x629B;&#x51FA;AuthorizationException&#x5F02;&#x5E38;&#x3002;</td></tr>
+<tr bgcolor=""><td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkPermissions(java.util.Collection)" target="_blank">checkPermissions(Collection<Permission> perms)</Permission></a></tt> </td>
+<td colspan="1" rowspan="1"> &#x5982;&#x679C;Subject&#x88AB;&#x5141;&#x8BB8;&#x6267;&#x884C;&#x6240;&#x6709;&#x6743;&#x9650;&#x5B9E;&#x4F8B;&#x6307;&#x5B9A;&#x7684;&#x52A8;&#x4F5C;&#x6216;&#x8D44;&#x6E90;&#x8BBF;&#x95EE;&#xFF0C;&#x5B89;&#x9759;&#x5730;&#x8FD4;&#x56DE;&#xFF0C;&#x5426;&#x5219;&#x629B;&#x51FA;AuthorizationException&#x5F02;&#x5E38;&#x3002;</td>
 </tr>
-<tr bgcolor=""><td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkPermissions(java.lang.String...)">checkPermissions(String... perms)</a></tt> </td>
-<td colspan="1" rowspan="1" > 和上面的checkPermissions效果一样，只是使用字符串权限类型。</td>
+<tr bgcolor=""><td colspan="1" rowspan="1" style="white-space: nowrap;"> <tt><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#checkPermissions(java.lang.String...)" target="_blank">checkPermissions(String... perms)</a></tt> </td>
+<td colspan="1" rowspan="1"> &#x548C;&#x4E0A;&#x9762;&#x7684;checkPermissions&#x6548;&#x679C;&#x4E00;&#x6837;&#xFF0C;&#x53EA;&#x662F;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x6743;&#x9650;&#x7C7B;&#x578B;&#x3002;</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="annotation-based-authorization-">Annotation-based Authorization 基于注解的授权</h3>
-<p>如果你更喜欢基于注解的授权控制，除了 Subject 的 API 之外，Shiro提供了一个 Java 5 的注解集。</p>
-<h4 id="configuration-">Configuration 配置</h4>
-<p>在你使用 JAVA 的注解之前，你需要在程序中启动 AOP 支持，因为有许多AOP 框架，所以很不幸，在这里并没有标准的在程序中启用 AOP 的方法。</p>
-<p>关于AspectJ，你可以查看我们的<a href="http://svn.apache.org/repos/asf/shiro/trunk/samples/aspectj/" target="_blank">AspectJ sample application</a>；</p>
-<p>关于Spring，你可以查看 <a href="../V. Integration 整合/15. Spring Framework.html">Spring Integration</a>文档；</p>
-<p>关于Guice，你可以查看我们的 <a href="../V. Integration 整合/16. Guice.html">Guice Integration</a>文档；</p>
-<h4 id="requiresauthentication-">RequiresAuthentication 注解</h4>
-<p><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresAuthentication.html" target="_blank">RequiresAuthentication</a> 注解表示在访问或调用被注解的类/实例/方法时，要求 Subject 在当前的 session中已经被验证。</p>
-<p>举例：</p>
+<h3 id="annotationbased-authorization-&#x57FA;&#x4E8E;&#x6CE8;&#x89E3;&#x7684;&#x6388;&#x6743;">Annotation-based Authorization &#x57FA;&#x4E8E;&#x6CE8;&#x89E3;&#x7684;&#x6388;&#x6743;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x66F4;&#x559C;&#x6B22;&#x57FA;&#x4E8E;&#x6CE8;&#x89E3;&#x7684;&#x6388;&#x6743;&#x63A7;&#x5236;&#xFF0C;&#x9664;&#x4E86; Subject &#x7684; API &#x4E4B;&#x5916;&#xFF0C;Shiro&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A; Java 5 &#x7684;&#x6CE8;&#x89E3;&#x96C6;&#x3002;</p>
+<h4 id="configuration-&#x914D;&#x7F6E;">Configuration &#x914D;&#x7F6E;</h4>
+<p>&#x5728;&#x4F60;&#x4F7F;&#x7528; JAVA &#x7684;&#x6CE8;&#x89E3;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x542F;&#x52A8; AOP &#x652F;&#x6301;&#xFF0C;&#x56E0;&#x4E3A;&#x6709;&#x8BB8;&#x591A;AOP &#x6846;&#x67B6;&#xFF0C;&#x6240;&#x4EE5;&#x5F88;&#x4E0D;&#x5E78;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x5E76;&#x6CA1;&#x6709;&#x6807;&#x51C6;&#x7684;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x542F;&#x7528; AOP &#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5173;&#x4E8E;AspectJ&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6211;&#x4EEC;&#x7684;<a href="http://svn.apache.org/repos/asf/shiro/trunk/samples/aspectj/" target="_blank">AspectJ sample application</a>&#xFF1B;</p>
+<p>&#x5173;&#x4E8E;Spring&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x67E5;&#x770B; <a href="../V.%20Integration%20&#x6574;&#x5408;/15.%20Spring%20Framework.md">Spring Integration</a>&#x6587;&#x6863;&#xFF1B;</p>
+<p>&#x5173;&#x4E8E;Guice&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6211;&#x4EEC;&#x7684; <a href="../V.%20Integration%20&#x6574;&#x5408;/16.%20Guice.md">Guice Integration</a>&#x6587;&#x6863;&#xFF1B;</p>
+<h4 id="requiresauthentication-&#x6CE8;&#x89E3;">RequiresAuthentication &#x6CE8;&#x89E3;</h4>
+<p><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresAuthentication.html" target="_blank">RequiresAuthentication</a> &#x6CE8;&#x89E3;&#x8868;&#x793A;&#x5728;&#x8BBF;&#x95EE;&#x6216;&#x8C03;&#x7528;&#x88AB;&#x6CE8;&#x89E3;&#x7684;&#x7C7B;/&#x5B9E;&#x4F8B;/&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x8981;&#x6C42; Subject &#x5728;&#x5F53;&#x524D;&#x7684; session&#x4E2D;&#x5DF2;&#x7ECF;&#x88AB;&#x9A8C;&#x8BC1;&#x3002;</p>
+<p>&#x4E3E;&#x4F8B;&#xFF1A;</p>
 <pre><code>@RequiresAuthentication
 public void updateAccount(Account userAccount) {
-    //这个方法只会被调用在
-    //Subject 保证被认证的情况下
+    //&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EA;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x5728;
+    //Subject &#x4FDD;&#x8BC1;&#x88AB;&#x8BA4;&#x8BC1;&#x7684;&#x60C5;&#x51B5;&#x4E0B;
     ...
 }
-</code></pre><p>这基本上与下面的基于对象的逻辑效果相同：</p>
+</code></pre><p>&#x8FD9;&#x57FA;&#x672C;&#x4E0A;&#x4E0E;&#x4E0B;&#x9762;&#x7684;&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x903B;&#x8F91;&#x6548;&#x679C;&#x76F8;&#x540C;&#xFF1A;</p>
 <pre><code>public void updateAccount(Account userAccount) {
     if (!SecurityUtils.getSubject().isAuthenticated()) {
         throw new AuthorizationException(...);
     }
 
-    //这里 Subject 保证被认证的情况下
+    //&#x8FD9;&#x91CC; Subject &#x4FDD;&#x8BC1;&#x88AB;&#x8BA4;&#x8BC1;&#x7684;&#x60C5;&#x51B5;&#x4E0B;
     ...
 }
-</code></pre><h4 id="requiresguest-">RequiresGuest 注解</h4>
-<p><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresGuest.html" target="_blank">RequiresGuest</a> 注解表示要求当前Subject是一个“guest(访客)”，也就是，在访问或调用被注解的类/实例/方法时，他们没有被认证或者在被前一个Session 记住。</p>
-<p>例如：</p>
+</code></pre><h4 id="requiresguest-&#x6CE8;&#x89E3;">RequiresGuest &#x6CE8;&#x89E3;</h4>
+<p><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresGuest.html" target="_blank">RequiresGuest</a> &#x6CE8;&#x89E3;&#x8868;&#x793A;&#x8981;&#x6C42;&#x5F53;&#x524D;Subject&#x662F;&#x4E00;&#x4E2A;&#x201C;guest(&#x8BBF;&#x5BA2;)&#x201D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#xFF0C;&#x5728;&#x8BBF;&#x95EE;&#x6216;&#x8C03;&#x7528;&#x88AB;&#x6CE8;&#x89E3;&#x7684;&#x7C7B;/&#x5B9E;&#x4F8B;/&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x4ED6;&#x4EEC;&#x6CA1;&#x6709;&#x88AB;&#x8BA4;&#x8BC1;&#x6216;&#x8005;&#x5728;&#x88AB;&#x524D;&#x4E00;&#x4E2A;Session &#x8BB0;&#x4F4F;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code>@RequiresGuest
 public void signUp(User newUser) {
-    //这个方法只会被调用在
-    //Subject 未知/匿名的情况下
+    //&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EA;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x5728;
+    //Subject &#x672A;&#x77E5;/&#x533F;&#x540D;&#x7684;&#x60C5;&#x51B5;&#x4E0B;
     ...
 }
-</code></pre><p>这基本上与下面的基于对象的逻辑效果相同：</p>
+</code></pre><p>&#x8FD9;&#x57FA;&#x672C;&#x4E0A;&#x4E0E;&#x4E0B;&#x9762;&#x7684;&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x903B;&#x8F91;&#x6548;&#x679C;&#x76F8;&#x540C;&#xFF1A;</p>
 <pre><code>public void signUp(User newUser) {
     Subject currentUser = SecurityUtils.getSubject();
     PrincipalCollection principals = currentUser.getPrincipals();
     if (principals != null &amp;&amp; !principals.isEmpty()) {
-        //已知的身份 - 不是 guest（访客）:
+        //&#x5DF2;&#x77E5;&#x7684;&#x8EAB;&#x4EFD; - &#x4E0D;&#x662F; guest&#xFF08;&#x8BBF;&#x5BA2;&#xFF09;:
         throw new AuthorizationException(...);
     }
 
-    //在这里 Subject 确保是一个 &#39;guest（访客）&#39;
+    //&#x5728;&#x8FD9;&#x91CC; Subject &#x786E;&#x4FDD;&#x662F;&#x4E00;&#x4E2A; &apos;guest&#xFF08;&#x8BBF;&#x5BA2;&#xFF09;&apos;
     ...
 }
-</code></pre><h4 id="requirespermissions-">RequiresPermissions 注解</h4>
-<p><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresPermissions.html" target="_blank">RequiresPermissions</a> 注解表示要求当前Subject在执行被注解的方法时具备一个或多个对应的权限。</p>
-<p>例如：</p>
+</code></pre><h4 id="requirespermissions-&#x6CE8;&#x89E3;">RequiresPermissions &#x6CE8;&#x89E3;</h4>
+<p><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresPermissions.html" target="_blank">RequiresPermissions</a> &#x6CE8;&#x89E3;&#x8868;&#x793A;&#x8981;&#x6C42;&#x5F53;&#x524D;Subject&#x5728;&#x6267;&#x884C;&#x88AB;&#x6CE8;&#x89E3;&#x7684;&#x65B9;&#x6CD5;&#x65F6;&#x5177;&#x5907;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5BF9;&#x5E94;&#x7684;&#x6743;&#x9650;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code>@RequiresPermissions(&quot;account:create&quot;)
 public void createAccount(Account account) {
-    //这个方法只会被调用在
-    //Subject 允许创建一个 account 的情况下
+    //&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EA;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x5728;
+    //Subject &#x5141;&#x8BB8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; account &#x7684;&#x60C5;&#x51B5;&#x4E0B;
     ...
 }
-</code></pre><p>这基本上与下面的基于对象的逻辑效果相同</p>
+</code></pre><p>&#x8FD9;&#x57FA;&#x672C;&#x4E0A;&#x4E0E;&#x4E0B;&#x9762;&#x7684;&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x903B;&#x8F91;&#x6548;&#x679C;&#x76F8;&#x540C;</p>
 <pre><code>public void createAccount(Account account) {
     Subject currentUser = SecurityUtils.getSubject();
     if (!subject.isPermitted(&quot;account:create&quot;)) {
         throw new AuthorizationException(...);
     }
 
-    //在这里 Subject 确保是允许
+    //&#x5728;&#x8FD9;&#x91CC; Subject &#x786E;&#x4FDD;&#x662F;&#x5141;&#x8BB8;
     ...
 }
-</code></pre><h4 id="requiresroles--">RequiresRoles  注解</h4>
-<p><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresRoles.html" target="_blank">RequiresRoles</a> 注解表示要求当前Subject在执行被注解的方法时具备所有的角色，否则将抛出 AuthorizationException 异常。</p>
-<p>例如：</p>
+</code></pre><h4 id="requiresroles--&#x6CE8;&#x89E3;">RequiresRoles  &#x6CE8;&#x89E3;</h4>
+<p><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresRoles.html" target="_blank">RequiresRoles</a> &#x6CE8;&#x89E3;&#x8868;&#x793A;&#x8981;&#x6C42;&#x5F53;&#x524D;Subject&#x5728;&#x6267;&#x884C;&#x88AB;&#x6CE8;&#x89E3;&#x7684;&#x65B9;&#x6CD5;&#x65F6;&#x5177;&#x5907;&#x6240;&#x6709;&#x7684;&#x89D2;&#x8272;&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x629B;&#x51FA; AuthorizationException &#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code>@RequiresRoles(&quot;administrator&quot;)
 public void deleteUser(User user) {
-    //这个方法只会被 administrator 调用 
+    //&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EA;&#x4F1A;&#x88AB; administrator &#x8C03;&#x7528; 
     ...
 }
-</code></pre><p>这基本上与下面的基于对象的逻辑效果相同</p>
+</code></pre><p>&#x8FD9;&#x57FA;&#x672C;&#x4E0A;&#x4E0E;&#x4E0B;&#x9762;&#x7684;&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x903B;&#x8F91;&#x6548;&#x679C;&#x76F8;&#x540C;</p>
 <pre><code>public void deleteUser(User user) {
     Subject currentUser = SecurityUtils.getSubject();
     if (!subject.hasRole(&quot;administrator&quot;)) {
         throw new AuthorizationException(...);
     }
 
-    //Subject 确保是一个 &#39;administrator&#39;
+    //Subject &#x786E;&#x4FDD;&#x662F;&#x4E00;&#x4E2A; &apos;administrator&apos;
     ...
 }
-</code></pre><h4 id="requiresuser-">RequiresUser 注解</h4>
-<p><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresUser.html" target="_blank">RequiresUser</a>* 注解表示要求在访问或调用被注解的类/实例/方法时，当前 Subject 是一个程序用户，“程序用户”是一个已知身份的 Subject，或者在当前 Session 中被验证过或者在以前的 Session 中被记住过。</p>
-<p>例如：</p>
+</code></pre><h4 id="requiresuser-&#x6CE8;&#x89E3;">RequiresUser &#x6CE8;&#x89E3;</h4>
+<p><a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresUser.html" target="_blank">RequiresUser</a>* &#x6CE8;&#x89E3;&#x8868;&#x793A;&#x8981;&#x6C42;&#x5728;&#x8BBF;&#x95EE;&#x6216;&#x8C03;&#x7528;&#x88AB;&#x6CE8;&#x89E3;&#x7684;&#x7C7B;/&#x5B9E;&#x4F8B;/&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5F53;&#x524D; Subject &#x662F;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x7528;&#x6237;&#xFF0C;&#x201C;&#x7A0B;&#x5E8F;&#x7528;&#x6237;&#x201D;&#x662F;&#x4E00;&#x4E2A;&#x5DF2;&#x77E5;&#x8EAB;&#x4EFD;&#x7684; Subject&#xFF0C;&#x6216;&#x8005;&#x5728;&#x5F53;&#x524D; Session &#x4E2D;&#x88AB;&#x9A8C;&#x8BC1;&#x8FC7;&#x6216;&#x8005;&#x5728;&#x4EE5;&#x524D;&#x7684; Session &#x4E2D;&#x88AB;&#x8BB0;&#x4F4F;&#x8FC7;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code>@RequiresUser
 public void updateAccount(Account account) {
-    //这个方法只会被 &#39;user&#39; 调用 
-    //i.e. Subject 是一个已知的身份with a known identity
+    //&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EA;&#x4F1A;&#x88AB; &apos;user&apos; &#x8C03;&#x7528; 
+    //i.e. Subject &#x662F;&#x4E00;&#x4E2A;&#x5DF2;&#x77E5;&#x7684;&#x8EAB;&#x4EFD;with a known identity
     ...
 }
-</code></pre><p>这基本上与下面的基于对象的逻辑效果相同</p>
+</code></pre><p>&#x8FD9;&#x57FA;&#x672C;&#x4E0A;&#x4E0E;&#x4E0B;&#x9762;&#x7684;&#x57FA;&#x4E8E;&#x5BF9;&#x8C61;&#x7684;&#x903B;&#x8F91;&#x6548;&#x679C;&#x76F8;&#x540C;</p>
 <pre><code>public void updateAccount(Account account) {
     Subject currentUser = SecurityUtils.getSubject();
     PrincipalCollection principals = currentUser.getPrincipals();
     if (principals == null || principals.isEmpty()) {
-        //无身份 - 他们是匿名的，不被允许
+        //&#x65E0;&#x8EAB;&#x4EFD; - &#x4ED6;&#x4EEC;&#x662F;&#x533F;&#x540D;&#x7684;&#xFF0C;&#x4E0D;&#x88AB;&#x5141;&#x8BB8;
         throw new AuthorizationException(...);
     }
 
-    //Subject 确保是一个已知的身份
+    //Subject &#x786E;&#x4FDD;&#x662F;&#x4E00;&#x4E2A;&#x5DF2;&#x77E5;&#x7684;&#x8EAB;&#x4EFD;
     ...
 }
-</code></pre><h3 id="jsp-taglib-authorization-">JSP TagLib Authorization 标签库授权</h3>
-<p>Shiro 提供了一个标签库来控制 JSP/GSP 页面输出，这将在 <a href="../III. Web Applications/10. Web.html">Web</a> 文档中的 JSP/GSP 标签库中讨论</p>
-<h2 id="authorization-sequence-">Authorization Sequence 授权序列</h2>
-<p>现在我们已经看到如何对当前 Subject 执行授权，让我们了解一下当一个授权命令调用时 Shiro 内部发生了什么事情。</p>
-<p>我们仍使用前面<a href="../I. Overview 总览/3. Architecture 架构.html">Architecture</a>章节里的架构图，在左侧仅仅与授权相关的组件是高亮的，每一个数字代表授权操作中的一个步骤：</p>
-<p><img src="http://i1288.photobucket.com/albums/b484/waylau/apache-shiro/ShiroAuthorizationSequence_zpsd16bbb64.png" alt="授权序列"></p>
-<p><strong>第1步：</strong>程序或框架代码调用一个 Subject 的<code>hasRole*</code>、<code>checkRole*</code>、 <code>isPermitted*</code>或者 <code>checkPermission*</code>方法，传递所需的权限或角色。</p>
-<p><strong>第2步：</strong>Subject实例，通常是一个 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/support/DelegatingSubject.html" target="_blank">DelegatingSubject</a>（或子类），通过调用securityManager 与各 <code>hasRole*</code>、<code>checkRole*</code>、 <code>isPermitted*</code> 或 <code>checkPermission*</code> 基本一致的方法将权限或角色传递给程序的 SecurityManager(实现了 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Authorizer.html" target="_blank">org.apache.shiro.authz.Authorizer</a> 接口)</p>
-<p><strong>第3步：</strong>SecurityManager 作为一个基本的“保护伞”组件,接替/代表其内部 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Authorizer.html" target="_blank">org.apache.shiro.authz.Authorizer</a> 实例通过调用 authorizer 的各自的 <code>hasRole*</code>, <code>checkRole*</code> , <code>isPermitted*</code> ,或 <code>checkPermission*</code> 方法。 authorizer 默认情况下是一个实例 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/ModularRealmAuthorizer.html" target="_blank">ModularRealmAuthorizer</a> 支持协调一个或多个实例 Realm  在任何授权操作实例。 </p>
-<p><strong>第4步:</strong>，检查每一个被配置的 Realm 是否实现相同的 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Authorizer.html" target="_blank">Authorizer</a>接口，如果是，Realm 自己的各 <code>hasRole*</code>、<code>checkRole*</code>、 <code>isPermitted*</code> 或 <code>checkPermission*</code> 方法被调用。</p>
+</code></pre><h3 id="jsp-taglib-authorization-&#x6807;&#x7B7E;&#x5E93;&#x6388;&#x6743;">JSP TagLib Authorization &#x6807;&#x7B7E;&#x5E93;&#x6388;&#x6743;</h3>
+<p>Shiro &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#x5E93;&#x6765;&#x63A7;&#x5236; JSP/GSP &#x9875;&#x9762;&#x8F93;&#x51FA;&#xFF0C;&#x8FD9;&#x5C06;&#x5728; <a href="../III.%20Web%20Applications/10.%20Web.md">Web</a> &#x6587;&#x6863;&#x4E2D;&#x7684; JSP/GSP &#x6807;&#x7B7E;&#x5E93;&#x4E2D;&#x8BA8;&#x8BBA;</p>
+<h2 id="authorization-sequence-&#x6388;&#x6743;&#x5E8F;&#x5217;">Authorization Sequence &#x6388;&#x6743;&#x5E8F;&#x5217;</h2>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x770B;&#x5230;&#x5982;&#x4F55;&#x5BF9;&#x5F53;&#x524D; Subject &#x6267;&#x884C;&#x6388;&#x6743;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#x5F53;&#x4E00;&#x4E2A;&#x6388;&#x6743;&#x547D;&#x4EE4;&#x8C03;&#x7528;&#x65F6; Shiro &#x5185;&#x90E8;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x4ECD;&#x4F7F;&#x7528;&#x524D;&#x9762;<a href="../I.%20Overview%20&#x603B;&#x89C8;/3.%20Architecture%20&#x67B6;&#x6784;.md">Architecture</a>&#x7AE0;&#x8282;&#x91CC;&#x7684;&#x67B6;&#x6784;&#x56FE;&#xFF0C;&#x5728;&#x5DE6;&#x4FA7;&#x4EC5;&#x4EC5;&#x4E0E;&#x6388;&#x6743;&#x76F8;&#x5173;&#x7684;&#x7EC4;&#x4EF6;&#x662F;&#x9AD8;&#x4EAE;&#x7684;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x4EE3;&#x8868;&#x6388;&#x6743;&#x64CD;&#x4F5C;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<p><img src="http://i1288.photobucket.com/albums/b484/waylau/apache-shiro/ShiroAuthorizationSequence_zpsd16bbb64.png" alt="&#x6388;&#x6743;&#x5E8F;&#x5217;"></p>
+<p><strong>&#x7B2C;1&#x6B65;&#xFF1A;</strong>&#x7A0B;&#x5E8F;&#x6216;&#x6846;&#x67B6;&#x4EE3;&#x7801;&#x8C03;&#x7528;&#x4E00;&#x4E2A; Subject &#x7684;<code>hasRole*</code>&#x3001;<code>checkRole*</code>&#x3001; <code>isPermitted*</code>&#x6216;&#x8005; <code>checkPermission*</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4F20;&#x9012;&#x6240;&#x9700;&#x7684;&#x6743;&#x9650;&#x6216;&#x89D2;&#x8272;&#x3002;</p>
+<p><strong>&#x7B2C;2&#x6B65;&#xFF1A;</strong>Subject&#x5B9E;&#x4F8B;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x4E00;&#x4E2A; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/support/DelegatingSubject.html" target="_blank">DelegatingSubject</a>&#xFF08;&#x6216;&#x5B50;&#x7C7B;&#xFF09;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;securityManager &#x4E0E;&#x5404; <code>hasRole*</code>&#x3001;<code>checkRole*</code>&#x3001; <code>isPermitted*</code> &#x6216; <code>checkPermission*</code> &#x57FA;&#x672C;&#x4E00;&#x81F4;&#x7684;&#x65B9;&#x6CD5;&#x5C06;&#x6743;&#x9650;&#x6216;&#x89D2;&#x8272;&#x4F20;&#x9012;&#x7ED9;&#x7A0B;&#x5E8F;&#x7684; SecurityManager(&#x5B9E;&#x73B0;&#x4E86; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Authorizer.html" target="_blank">org.apache.shiro.authz.Authorizer</a> &#x63A5;&#x53E3;)</p>
+<p><strong>&#x7B2C;3&#x6B65;&#xFF1A;</strong>SecurityManager &#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x201C;&#x4FDD;&#x62A4;&#x4F1E;&#x201D;&#x7EC4;&#x4EF6;,&#x63A5;&#x66FF;/&#x4EE3;&#x8868;&#x5176;&#x5185;&#x90E8; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Authorizer.html" target="_blank">org.apache.shiro.authz.Authorizer</a> &#x5B9E;&#x4F8B;&#x901A;&#x8FC7;&#x8C03;&#x7528; authorizer &#x7684;&#x5404;&#x81EA;&#x7684; <code>hasRole*</code>, <code>checkRole*</code> , <code>isPermitted*</code> ,&#x6216; <code>checkPermission*</code> &#x65B9;&#x6CD5;&#x3002; authorizer &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x662F;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/ModularRealmAuthorizer.html" target="_blank">ModularRealmAuthorizer</a> &#x652F;&#x6301;&#x534F;&#x8C03;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B; Realm  &#x5728;&#x4EFB;&#x4F55;&#x6388;&#x6743;&#x64CD;&#x4F5C;&#x5B9E;&#x4F8B;&#x3002; </p>
+<p><strong>&#x7B2C;4&#x6B65;:</strong>&#xFF0C;&#x68C0;&#x67E5;&#x6BCF;&#x4E00;&#x4E2A;&#x88AB;&#x914D;&#x7F6E;&#x7684; Realm &#x662F;&#x5426;&#x5B9E;&#x73B0;&#x76F8;&#x540C;&#x7684; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Authorizer.html" target="_blank">Authorizer</a>&#x63A5;&#x53E3;&#xFF0C;&#x5982;&#x679C;&#x662F;&#xFF0C;Realm &#x81EA;&#x5DF1;&#x7684;&#x5404; <code>hasRole*</code>&#x3001;<code>checkRole*</code>&#x3001; <code>isPermitted*</code> &#x6216; <code>checkPermission*</code> &#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
 <h3 id="modularrealmauthorizer">ModularRealmAuthorizer</h3>
-<p>前面提到过，Shiro SecurityManager 默认使用 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/ModularRealmAuthorizer.html" target="_blank">ModularRealmAuthorizer</a> 实例，ModularRealmAuthorizer 实例同等支持用一个 Realm 的程序和用多个 Realm 的程序。</p>
-<p>对于任何授权操作，ModularRealmAuthorizer 将在其内部的 Realm 集中迭代（iterator），按迭代（iteration）顺序同每一个 Realm 交互，与每一个 Realm 交互的方法如下：</p>
-<p>1.如果Realm实现了 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Authorizer.html" target="_blank">Authorizer</a> 接口，调用它各自的授权方法（<code>hasRole*</code>、 <code>checkRole*</code>、<code>isPermitted*</code>或 <code>checkPermission*</code>）。</p>
-<p>1.1.如果 Realm 函数的结果是一个 exception，该 exception 衍生自一个 Subject 调用者的 AuthorizationException，就切断授权过程，剩余的授权 Realm 将不在执行。</p>
-<p>1.2.如果 Realm 的方法是一个 <code>hasRole*</code> 或 <code>isPermitted*</code>，并且返回真，则真值立即被返回而且剩余的 Realm 被短路，这种做法作为一种性能增强，在一个 Realm 判断允许后，隐含认为这个 Subject 被允许。它支持最安全的安全策略：默认情况下所有都被禁止，明确指定允许的事情。</p>
-<p>2.如果 Realm 没有实现 Authorizer 接口，将被忽略。</p>
-<h3 id="realm-authorization-order-">Realm Authorization Order 授权顺序</h3>
-<p>需要指出非常重要的一点，就如同验证（authentication）一样，ModularRealmAuthorizer 按迭代（iteration）顺序与 Realm 交互。</p>
-<p>ModularRealmAuthorizer 拥有 SecurityManager 配置的 Realm 实例的入口，当执行一个授权操作时，它将在整个集合中进行迭代（iteration），对于每一个实现 Authorizer 接口的 Realm，调用Realm 各自的 Authorizer 方法（如 hasRole<em>、 checkRole</em>、 isPermitted<em>或 checkPermission</em>）。</p>
-<h3 id="configuring-a-global-permissionresolver--permissionresolver">Configuring a global PermissionResolver 配置全局的 PermissionResolver</h3>
-<p>当执行一个基于字符串的权限检查时，大部分 Shiro 默认的 Realm 将会在执行<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Permission.html" target="_blank">权限</a>隐含逻辑之前首先把这个字符串转换成一个常用的权限实例。</p>
-<p>这是因为权限被认为是基于隐含逻辑而不是相等检查（查看<a href="https://github.com/waylau/apache-shiro-1.2.x-reference/blob/master/II.%20Core%20%E6%A0%B8%E5%BF%83/6.1.%20Permissions%20%E6%9D%83%E9%99%90.md" target="_blank">Permission</a>章节了解更多隐含与相等的对比）。隐含逻辑用代码表示要比通过字符串对比好，因此，大部分 Realm需要转换一个提交的权限字符串为对应的权限实例。</p>
-<p>为了这个转换目的，Shiro 支持 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/PermissionResolver.html" target="_blank">PermissionResolver</a>，大部分 Shiro Realm 使用 PermissionResolver 来支持它们对Authorizer 接口中基于字符串权限方法的实现：当这些方法在Realm上被调用时，将使用PermissionResolver 将字符串转换为权限实例，并执行检查。</p>
-<p>所有的 Shiro Realm 默认使用内部的 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/WildcardPermissionResolver.html" target="_blank">WildcardPermissionResolver</a>，它使用 Shiro 的<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/WildcardPermission.html" target="_blank">WildcardPermission</a>字符串格式。</p>
-<p>如果你想创建你自己的 PermissionResolver 实现，比如说你想创建你自己的权限字符串语法，希望所有配置的Realm实例都支持这个语法，你可以把自己的 PermissionResolver 设置成全局，供所有 realm 使用。</p>
-<p>如，在shiro.ini中：</p>
+<p>&#x524D;&#x9762;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;Shiro SecurityManager &#x9ED8;&#x8BA4;&#x4F7F;&#x7528; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/ModularRealmAuthorizer.html" target="_blank">ModularRealmAuthorizer</a> &#x5B9E;&#x4F8B;&#xFF0C;ModularRealmAuthorizer &#x5B9E;&#x4F8B;&#x540C;&#x7B49;&#x652F;&#x6301;&#x7528;&#x4E00;&#x4E2A; Realm &#x7684;&#x7A0B;&#x5E8F;&#x548C;&#x7528;&#x591A;&#x4E2A; Realm &#x7684;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x4EFB;&#x4F55;&#x6388;&#x6743;&#x64CD;&#x4F5C;&#xFF0C;ModularRealmAuthorizer &#x5C06;&#x5728;&#x5176;&#x5185;&#x90E8;&#x7684; Realm &#x96C6;&#x4E2D;&#x8FED;&#x4EE3;&#xFF08;iterator&#xFF09;&#xFF0C;&#x6309;&#x8FED;&#x4EE3;&#xFF08;iteration&#xFF09;&#x987A;&#x5E8F;&#x540C;&#x6BCF;&#x4E00;&#x4E2A; Realm &#x4EA4;&#x4E92;&#xFF0C;&#x4E0E;&#x6BCF;&#x4E00;&#x4E2A; Realm &#x4EA4;&#x4E92;&#x7684;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>1.&#x5982;&#x679C;Realm&#x5B9E;&#x73B0;&#x4E86; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Authorizer.html" target="_blank">Authorizer</a> &#x63A5;&#x53E3;&#xFF0C;&#x8C03;&#x7528;&#x5B83;&#x5404;&#x81EA;&#x7684;&#x6388;&#x6743;&#x65B9;&#x6CD5;&#xFF08;<code>hasRole*</code>&#x3001; <code>checkRole*</code>&#x3001;<code>isPermitted*</code>&#x6216; <code>checkPermission*</code>&#xFF09;&#x3002;</p>
+<p>1.1.&#x5982;&#x679C; Realm &#x51FD;&#x6570;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A; exception&#xFF0C;&#x8BE5; exception &#x884D;&#x751F;&#x81EA;&#x4E00;&#x4E2A; Subject &#x8C03;&#x7528;&#x8005;&#x7684; AuthorizationException&#xFF0C;&#x5C31;&#x5207;&#x65AD;&#x6388;&#x6743;&#x8FC7;&#x7A0B;&#xFF0C;&#x5269;&#x4F59;&#x7684;&#x6388;&#x6743; Realm &#x5C06;&#x4E0D;&#x5728;&#x6267;&#x884C;&#x3002;</p>
+<p>1.2.&#x5982;&#x679C; Realm &#x7684;&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x4E2A; <code>hasRole*</code> &#x6216; <code>isPermitted*</code>&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x771F;&#xFF0C;&#x5219;&#x771F;&#x503C;&#x7ACB;&#x5373;&#x88AB;&#x8FD4;&#x56DE;&#x800C;&#x4E14;&#x5269;&#x4F59;&#x7684; Realm &#x88AB;&#x77ED;&#x8DEF;&#xFF0C;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x6027;&#x80FD;&#x589E;&#x5F3A;&#xFF0C;&#x5728;&#x4E00;&#x4E2A; Realm &#x5224;&#x65AD;&#x5141;&#x8BB8;&#x540E;&#xFF0C;&#x9690;&#x542B;&#x8BA4;&#x4E3A;&#x8FD9;&#x4E2A; Subject &#x88AB;&#x5141;&#x8BB8;&#x3002;&#x5B83;&#x652F;&#x6301;&#x6700;&#x5B89;&#x5168;&#x7684;&#x5B89;&#x5168;&#x7B56;&#x7565;&#xFF1A;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x6240;&#x6709;&#x90FD;&#x88AB;&#x7981;&#x6B62;&#xFF0C;&#x660E;&#x786E;&#x6307;&#x5B9A;&#x5141;&#x8BB8;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+<p>2.&#x5982;&#x679C; Realm &#x6CA1;&#x6709;&#x5B9E;&#x73B0; Authorizer &#x63A5;&#x53E3;&#xFF0C;&#x5C06;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+<h3 id="realm-authorization-order-&#x6388;&#x6743;&#x987A;&#x5E8F;">Realm Authorization Order &#x6388;&#x6743;&#x987A;&#x5E8F;</h3>
+<p>&#x9700;&#x8981;&#x6307;&#x51FA;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;&#xFF0C;&#x5C31;&#x5982;&#x540C;&#x9A8C;&#x8BC1;&#xFF08;authentication&#xFF09;&#x4E00;&#x6837;&#xFF0C;ModularRealmAuthorizer &#x6309;&#x8FED;&#x4EE3;&#xFF08;iteration&#xFF09;&#x987A;&#x5E8F;&#x4E0E; Realm &#x4EA4;&#x4E92;&#x3002;</p>
+<p>ModularRealmAuthorizer &#x62E5;&#x6709; SecurityManager &#x914D;&#x7F6E;&#x7684; Realm &#x5B9E;&#x4F8B;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x5F53;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x6388;&#x6743;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x5B83;&#x5C06;&#x5728;&#x6574;&#x4E2A;&#x96C6;&#x5408;&#x4E2D;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#xFF08;iteration&#xFF09;&#xFF0C;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x5B9E;&#x73B0; Authorizer &#x63A5;&#x53E3;&#x7684; Realm&#xFF0C;&#x8C03;&#x7528;Realm &#x5404;&#x81EA;&#x7684; Authorizer &#x65B9;&#x6CD5;&#xFF08;&#x5982; hasRole<em>&#x3001; checkRole</em>&#x3001; isPermitted<em>&#x6216; checkPermission</em>&#xFF09;&#x3002;</p>
+<h3 id="configuring-a-global-permissionresolver-&#x914D;&#x7F6E;&#x5168;&#x5C40;&#x7684;-permissionresolver">Configuring a global PermissionResolver &#x914D;&#x7F6E;&#x5168;&#x5C40;&#x7684; PermissionResolver</h3>
+<p>&#x5F53;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6743;&#x9650;&#x68C0;&#x67E5;&#x65F6;&#xFF0C;&#x5927;&#x90E8;&#x5206; Shiro &#x9ED8;&#x8BA4;&#x7684; Realm &#x5C06;&#x4F1A;&#x5728;&#x6267;&#x884C;<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Permission.html" target="_blank">&#x6743;&#x9650;</a>&#x9690;&#x542B;&#x903B;&#x8F91;&#x4E4B;&#x524D;&#x9996;&#x5148;&#x628A;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x5E38;&#x7528;&#x7684;&#x6743;&#x9650;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x6743;&#x9650;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x57FA;&#x4E8E;&#x9690;&#x542B;&#x903B;&#x8F91;&#x800C;&#x4E0D;&#x662F;&#x76F8;&#x7B49;&#x68C0;&#x67E5;&#xFF08;&#x67E5;&#x770B;<a href="https://github.com/waylau/apache-shiro-1.2.x-reference/blob/master/II.%20Core%20%E6%A0%B8%E5%BF%83/6.1.%20Permissions%20%E6%9D%83%E9%99%90.md" target="_blank">Permission</a>&#x7AE0;&#x8282;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x9690;&#x542B;&#x4E0E;&#x76F8;&#x7B49;&#x7684;&#x5BF9;&#x6BD4;&#xFF09;&#x3002;&#x9690;&#x542B;&#x903B;&#x8F91;&#x7528;&#x4EE3;&#x7801;&#x8868;&#x793A;&#x8981;&#x6BD4;&#x901A;&#x8FC7;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x6BD4;&#x597D;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5927;&#x90E8;&#x5206; Realm&#x9700;&#x8981;&#x8F6C;&#x6362;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x7684;&#x6743;&#x9650;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x6743;&#x9650;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x8FD9;&#x4E2A;&#x8F6C;&#x6362;&#x76EE;&#x7684;&#xFF0C;Shiro &#x652F;&#x6301; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/PermissionResolver.html" target="_blank">PermissionResolver</a>&#xFF0C;&#x5927;&#x90E8;&#x5206; Shiro Realm &#x4F7F;&#x7528; PermissionResolver &#x6765;&#x652F;&#x6301;&#x5B83;&#x4EEC;&#x5BF9;Authorizer &#x63A5;&#x53E3;&#x4E2D;&#x57FA;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x6743;&#x9650;&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#xFF1A;&#x5F53;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5728;Realm&#x4E0A;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x5C06;&#x4F7F;&#x7528;PermissionResolver &#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x6743;&#x9650;&#x5B9E;&#x4F8B;&#xFF0C;&#x5E76;&#x6267;&#x884C;&#x68C0;&#x67E5;&#x3002;</p>
+<p>&#x6240;&#x6709;&#x7684; Shiro Realm &#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x5185;&#x90E8;&#x7684; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/WildcardPermissionResolver.html" target="_blank">WildcardPermissionResolver</a>&#xFF0C;&#x5B83;&#x4F7F;&#x7528; Shiro &#x7684;<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/WildcardPermission.html" target="_blank">WildcardPermission</a>&#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x521B;&#x5EFA;&#x4F60;&#x81EA;&#x5DF1;&#x7684; PermissionResolver &#x5B9E;&#x73B0;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x4F60;&#x60F3;&#x521B;&#x5EFA;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x6743;&#x9650;&#x5B57;&#x7B26;&#x4E32;&#x8BED;&#x6CD5;&#xFF0C;&#x5E0C;&#x671B;&#x6240;&#x6709;&#x914D;&#x7F6E;&#x7684;Realm&#x5B9E;&#x4F8B;&#x90FD;&#x652F;&#x6301;&#x8FD9;&#x4E2A;&#x8BED;&#x6CD5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x81EA;&#x5DF1;&#x7684; PermissionResolver &#x8BBE;&#x7F6E;&#x6210;&#x5168;&#x5C40;&#xFF0C;&#x4F9B;&#x6240;&#x6709; realm &#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x5982;&#xFF0C;&#x5728;shiro.ini&#x4E2D;&#xFF1A;</p>
 <pre><code>globalPermissionResolver = com.foo.bar.authz.MyPermissionResolver
 ...
 securityManager.authorizer.permissionResolver = $globalPermissionResolver
 ...
 </code></pre><p><em>PermissionResolverAware</em></p>
-<p><em>如果你想配置一个全局的 PermissionResolver，每一个会读取这个PermissionResolver 配置的 Realm 必须实现<a href="http://shiro.apache.org/static/current/apidocs/src-html/org/apache/shiro/authz/permission/PermissionResolverAware.html" target="_blank">PermissionResolverAware</a> 接口，这确保被配置 PermissionResolver 的实例可以传递给支持这种配置的每一个 Realm。</em></p>
-<p>如果你不想使用一个全局的 PermissionResolver 或者你不想被PermissionResolverAware 接口麻烦，你可以明确地为单个的 Realm 配置 PermissionResolver 接口（可看作是JavaBean的setPermissionResolver 方法）：</p>
+<p><em>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x7684; PermissionResolver&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x4F1A;&#x8BFB;&#x53D6;&#x8FD9;&#x4E2A;PermissionResolver &#x914D;&#x7F6E;&#x7684; Realm &#x5FC5;&#x987B;&#x5B9E;&#x73B0;<a href="http://shiro.apache.org/static/current/apidocs/src-html/org/apache/shiro/authz/permission/PermissionResolverAware.html" target="_blank">PermissionResolverAware</a> &#x63A5;&#x53E3;&#xFF0C;&#x8FD9;&#x786E;&#x4FDD;&#x88AB;&#x914D;&#x7F6E; PermissionResolver &#x7684;&#x5B9E;&#x4F8B;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x7ED9;&#x652F;&#x6301;&#x8FD9;&#x79CD;&#x914D;&#x7F6E;&#x7684;&#x6BCF;&#x4E00;&#x4E2A; Realm&#x3002;</em></p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x7684; PermissionResolver &#x6216;&#x8005;&#x4F60;&#x4E0D;&#x60F3;&#x88AB;PermissionResolverAware &#x63A5;&#x53E3;&#x9EBB;&#x70E6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x660E;&#x786E;&#x5730;&#x4E3A;&#x5355;&#x4E2A;&#x7684; Realm &#x914D;&#x7F6E; PermissionResolver &#x63A5;&#x53E3;&#xFF08;&#x53EF;&#x770B;&#x4F5C;&#x662F;JavaBean&#x7684;setPermissionResolver &#x65B9;&#x6CD5;&#xFF09;&#xFF1A;</p>
 <pre><code>permissionResolver = com.foo.bar.authz.MyPermissionResolver
 
 realm = com.foo.bar.realm.MyCustomRealm
 realm.permissionResolver = $permissionResolver
 ...
-</code></pre><h3 id="configuring-a-global-rolepermissionresolver-rolepermissionresolver">Configuring a global RolePermissionResolver 配置全局的RolePermissionResolver</h3>
-<p>与 PermissionResolver 类似，<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/RolePermissionResolver.html" target="_blank">RolePermissionResolver</a> 有能力表示执行权限检查的 Realm 所需的权限实例。</p>
-<p>最主要的不同在于接收的字符串是一个角色名，而不是一个权限字符串。</p>
-<p>RolePermissionResolver 被 Realm 在需要时用来转换一个角色名到一组明确的权限实例。</p>
-<p>这是非常有用的，它支持那些遗留的或者不灵活的没有权限概念的数据源。</p>
-<p>例如，许多 LDAP 目录存储角色名称（或组名）但不支持角色名和权限的联合，因为它没有权限的概念。一个使用 shiro 的程序可以使用存储于 LDAP 的角色名，但需要实现一个 RolePermissionResolver 来转换 LDAP 名到一组确切的权限中以执行明确的访问控制，权限的联合将被存储于其它的数据存储中，比如说本地数据库。</p>
-<p>因为这种将角色名转换为权限的概念是特定的，Shiro 默认的 Realm 没有使用它们。 </p>
-<p>然而，如果你想创建你自己的 RolePermissionResolver 并且希望用它配置多个 Realm 实现，你可以将你的 RolePermissionResolver设置成全局。</p>
+</code></pre><h3 id="configuring-a-global-rolepermissionresolver-&#x914D;&#x7F6E;&#x5168;&#x5C40;&#x7684;rolepermissionresolver">Configuring a global RolePermissionResolver &#x914D;&#x7F6E;&#x5168;&#x5C40;&#x7684;RolePermissionResolver</h3>
+<p>&#x4E0E; PermissionResolver &#x7C7B;&#x4F3C;&#xFF0C;<a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/RolePermissionResolver.html" target="_blank">RolePermissionResolver</a> &#x6709;&#x80FD;&#x529B;&#x8868;&#x793A;&#x6267;&#x884C;&#x6743;&#x9650;&#x68C0;&#x67E5;&#x7684; Realm &#x6240;&#x9700;&#x7684;&#x6743;&#x9650;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x6700;&#x4E3B;&#x8981;&#x7684;&#x4E0D;&#x540C;&#x5728;&#x4E8E;&#x63A5;&#x6536;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x4E00;&#x4E2A;&#x89D2;&#x8272;&#x540D;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x6743;&#x9650;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>RolePermissionResolver &#x88AB; Realm &#x5728;&#x9700;&#x8981;&#x65F6;&#x7528;&#x6765;&#x8F6C;&#x6362;&#x4E00;&#x4E2A;&#x89D2;&#x8272;&#x540D;&#x5230;&#x4E00;&#x7EC4;&#x660E;&#x786E;&#x7684;&#x6743;&#x9650;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#xFF0C;&#x5B83;&#x652F;&#x6301;&#x90A3;&#x4E9B;&#x9057;&#x7559;&#x7684;&#x6216;&#x8005;&#x4E0D;&#x7075;&#x6D3B;&#x7684;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x6982;&#x5FF5;&#x7684;&#x6570;&#x636E;&#x6E90;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x8BB8;&#x591A; LDAP &#x76EE;&#x5F55;&#x5B58;&#x50A8;&#x89D2;&#x8272;&#x540D;&#x79F0;&#xFF08;&#x6216;&#x7EC4;&#x540D;&#xFF09;&#x4F46;&#x4E0D;&#x652F;&#x6301;&#x89D2;&#x8272;&#x540D;&#x548C;&#x6743;&#x9650;&#x7684;&#x8054;&#x5408;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x4E00;&#x4E2A;&#x4F7F;&#x7528; shiro &#x7684;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B58;&#x50A8;&#x4E8E; LDAP &#x7684;&#x89D2;&#x8272;&#x540D;&#xFF0C;&#x4F46;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A; RolePermissionResolver &#x6765;&#x8F6C;&#x6362; LDAP &#x540D;&#x5230;&#x4E00;&#x7EC4;&#x786E;&#x5207;&#x7684;&#x6743;&#x9650;&#x4E2D;&#x4EE5;&#x6267;&#x884C;&#x660E;&#x786E;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF0C;&#x6743;&#x9650;&#x7684;&#x8054;&#x5408;&#x5C06;&#x88AB;&#x5B58;&#x50A8;&#x4E8E;&#x5176;&#x5B83;&#x7684;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x4E2D;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x672C;&#x5730;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x8FD9;&#x79CD;&#x5C06;&#x89D2;&#x8272;&#x540D;&#x8F6C;&#x6362;&#x4E3A;&#x6743;&#x9650;&#x7684;&#x6982;&#x5FF5;&#x662F;&#x7279;&#x5B9A;&#x7684;&#xFF0C;Shiro &#x9ED8;&#x8BA4;&#x7684; Realm &#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x3002; </p>
+<p>&#x7136;&#x800C;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x521B;&#x5EFA;&#x4F60;&#x81EA;&#x5DF1;&#x7684; RolePermissionResolver &#x5E76;&#x4E14;&#x5E0C;&#x671B;&#x7528;&#x5B83;&#x914D;&#x7F6E;&#x591A;&#x4E2A; Realm &#x5B9E;&#x73B0;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x4F60;&#x7684; RolePermissionResolver&#x8BBE;&#x7F6E;&#x6210;&#x5168;&#x5C40;&#x3002;</p>
 <p>shiro.ini</p>
 <pre><code>globalRolePermissionResolver = com.foo.bar.authz.MyPermissionResolver
 ...
 securityManager.authorizer.rolePermissionResolver = $globalRolePermissionResolver
 ...
 </code></pre><p><em>RolePermissionResolverAware</em></p>
-<p><em>如果你想配置一个全局的 RolePermissionResolver, 每个 Realm 接收必须实现了 <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/RolePermissionResolverAware.html" target="_blank">RolePermisionResolverAware</a> 接口的配置了的 RolePermissionResolver 。这保证了配置全局 RolePermissionResolver 实例可以传递到各个支持这样配置的 Realm 。</em></p>
-<p>如果你不想使用全局的 RolePermissionResolver 或者你不想麻烦实现 RolePermissionResolverAware 接口，你可以单独为一个 Realm 配置 RolePermissionResolver（可以看作 JavaBean 的 setRolePermissionResolver 方法）。</p>
+<p><em>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x7684; RolePermissionResolver, &#x6BCF;&#x4E2A; Realm &#x63A5;&#x6536;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x4E86; <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/RolePermissionResolverAware.html" target="_blank">RolePermisionResolverAware</a> &#x63A5;&#x53E3;&#x7684;&#x914D;&#x7F6E;&#x4E86;&#x7684; RolePermissionResolver &#x3002;&#x8FD9;&#x4FDD;&#x8BC1;&#x4E86;&#x914D;&#x7F6E;&#x5168;&#x5C40; RolePermissionResolver &#x5B9E;&#x4F8B;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x5230;&#x5404;&#x4E2A;&#x652F;&#x6301;&#x8FD9;&#x6837;&#x914D;&#x7F6E;&#x7684; Realm &#x3002;</em></p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x7684; RolePermissionResolver &#x6216;&#x8005;&#x4F60;&#x4E0D;&#x60F3;&#x9EBB;&#x70E6;&#x5B9E;&#x73B0; RolePermissionResolverAware &#x63A5;&#x53E3;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x4E3A;&#x4E00;&#x4E2A; Realm &#x914D;&#x7F6E; RolePermissionResolver&#xFF08;&#x53EF;&#x4EE5;&#x770B;&#x4F5C; JavaBean &#x7684; setRolePermissionResolver &#x65B9;&#x6CD5;&#xFF09;&#x3002;</p>
 <pre><code>rolePermissionResolver = com.foo.bar.authz.MyRolePermissionResolver
 
 realm = com.foo.bar.realm.MyCustomRealm
 realm.rolePermissionResolver = $rolePermissionResolver
 ...
-</code></pre><h3 id="custom-authorizer-authorizer">Custom Authorizer 定制Authorizer</h3>
-<p>如果你的程序使用多于一个 Realm 来执行授权而 ModularRealmAuthorizer 默认的简单迭代（iteration）、短路授权的行为不能满足你的需求，你可以创建自己的 Authorizer 并配置给相应的 SecurityManager。</p>
-<p>例如，在shiro.ini中：</p>
+</code></pre><h3 id="custom-authorizer-&#x5B9A;&#x5236;authorizer">Custom Authorizer &#x5B9A;&#x5236;Authorizer</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#x591A;&#x4E8E;&#x4E00;&#x4E2A; Realm &#x6765;&#x6267;&#x884C;&#x6388;&#x6743;&#x800C; ModularRealmAuthorizer &#x9ED8;&#x8BA4;&#x7684;&#x7B80;&#x5355;&#x8FED;&#x4EE3;&#xFF08;iteration&#xFF09;&#x3001;&#x77ED;&#x8DEF;&#x6388;&#x6743;&#x7684;&#x884C;&#x4E3A;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x4F60;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684; Authorizer &#x5E76;&#x914D;&#x7F6E;&#x7ED9;&#x76F8;&#x5E94;&#x7684; SecurityManager&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5728;shiro.ini&#x4E2D;&#xFF1A;</p>
 <pre><code>[main]
 ...
 authorizer = com.foo.bar.authz.CustomAuthorizer
@@ -1203,16 +1124,24 @@ securityManager.authorizer = $authorizer
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
     
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
     gitbook.start(config);
 });
 </script>
