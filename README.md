@@ -7,7 +7,7 @@ Chinese translation of  [Apache Shiro 1.2.x Reference Manual](http://shiro.apach
 The laset version of Apache Shiro is 1.2.x. You can also see the demos of the reference at <https://github.com/waylau/apache-shiro-1.2.x-reference-demos>.There is also a GitBook version of the book: <http://waylau.gitbooks.io/apache-shiro-1-2-x-reference> or <http://www.waylau.com/apache-shiro-1.2.x-reference/>.
 Let's [READ](SUMMARY.md)!
 
-《Apache Shiro 1.2.x 参考手册》 中文翻译（包含了官方文档以及其他文章）。截止现在（2016-5-19）Shiro的最新版本为 1.2.5，利用业余时间对此进行翻译，并在原文的基础上，插入配图，图文并茂方便用户理解。如有勘误欢迎指正。
+《Apache Shiro 1.2.x 参考手册》 中文翻译（包含了官方文档以及其他文章）。截止现在（2016-9-18）Shiro的最新版本为 1.3.2，利用业余时间对此进行翻译，并在原文的基础上，插入配图，图文并茂方便用户理解。如有勘误欢迎指正。
 
 ### Get Started 如何开始阅读
 
