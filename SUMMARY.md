@@ -35,7 +35,7 @@ This is the summary of my book.
 * VII. Index 目录
 	* [19. Terminology 术语](VII.Index/19-Terminology.md) 
 * VIII. Other 其他
-	* [20. 10 Minute Tutorial 十分钟教程](VIII.Other/20. 10-Minute-Tutorial.md.md) 
+	* [20. 10 Minute Tutorial 十分钟教程](VIII.Other/20.ten-Minute-Tutorial.md) 
 	* [21. Beginner's Webapp Tutorial 初学者web应用教程](VIII.Other/21-Beginner-Webapp-Tutorial.md) 
 	* [22. Application Security With Apache Shiro 用Shiro保护你的应用安全 ](VIII.Other/22-Application-Security-With-Apache-Shiro.md) 
 	* [23. CacheManager 缓存管理](VIII.Other/23-CacheManager.md)
