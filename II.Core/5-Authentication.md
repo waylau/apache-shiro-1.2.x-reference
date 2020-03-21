@@ -1,7 +1,7 @@
-5. Authentication 认证
-========================
+# 5. Authentication 认证
 
-![Authentication](http://i1288.photobucket.com/albums/b484/waylau/apache-shiro/ShiroFeatures_Authentication_zps92d3bb7b.png)
+
+![Authentication](../images/ShiroFeatures_Authentication.png)
 认证（Authentication）：身份验证的过程--也就是证明一个用户的真实身份。为了证明用户身份，需要提供系统理解和相信的身份信息和证据。
 
 需要通过向 Shiro 提供用户的身份（principals）和证明（credentials ）来判定是否和系统所要求的匹配。
@@ -12,19 +12,17 @@
 
 最常见的身份/证明是用户名和密码，用户名是所需的身份说明，密码是证明身份的证据。如果一个提交的密码和系统要求的一致，程序就认为该用户身份正确，因为其他人不应该知道同样的密码。
 
-##Authenticating Subjects 
+## 验证Subject
 
 Subject 验证的过程可以有效地划分分以下三个步骤：
 
-1.收集 Subject 提交的身份和证明；
-
-2.向 Authentication 提交身份和证明；
-
-3.如果提交的内容正确，允许访问，否则重新尝试验证或阻止访问
+1. 收集 Subject 提交的身份和证明；
+2. 向 Authentication 提交身份和证明；
+3. 如果提交的内容正确，允许访问，否则重新尝试验证或阻止访问
 
 下面的代码示范了 Shiro API 如何实现这些步骤：
 
-###第一步：收集用户身份和证明
+### 第一步：收集用户身份和证明
 
 	//最常用的情况是 username/password 对:
 	UsernamePasswordToken token = new UsernamePasswordToken(username, password);
@@ -40,7 +38,7 @@ Subject 验证的过程可以有效地划分分以下三个步骤：
 
 这个例子同样显示我们希望 Shiro 在尝试验证时执行 “Remember Me” 服务，这确保 Shiro 在用户今后返回系统时能记住他们的身份，我们会在以后的章节讨论 [“Remember Me”](https://cwiki.apache.org/confluence/pages/createpage.action?spaceKey=SHIRO&title=Remember+Me&linkCreation=true&fromPageId=25203054) 服务。
 
-###第二步：提交身份和证明
+### 第二步：提交身份和证明
 
 当身份和证明住处被收集并实例化为一个 AuthenticationToken （认证令牌）后，我们需要向 Shiro 提交令牌以执行真正的验证尝试：
 
@@ -52,7 +50,7 @@ Subject 验证的过程可以有效地划分分以下三个步骤：
 
 调用 login 方法将有效地执行身份验证。
 
-###三步：处理成功或失败
+### 第三步：处理成功或失败
 
 当login函数没有返回信息时表明验证通过了。程序可以继续运行，此时执行 SecurityUtils.getSubject() 将返回验证后的 Subject 实例，subject.[isAuthenticated()](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isAuthenticated()) 将返回true。
 
@@ -79,19 +77,18 @@ Shiro拥有丰富的运行期异常[AuthenticationException](http://shiro.apache
 
 *虽然你的代码可以对指定的异常做出处理并执行某些所需的逻辑，但有经验的安全做法是仅向终端用户输出一般的失败信息，例如“错误的用户名和密码”。这确保不向尝试攻击你的黑客提供有用的信息。*
 
-##Remembered vs. Authenticated
+## Remembered vs. Authenticated
  
 如上例所示，Shiro 支持在登录过程中执行"remember me"，在此值得指出，一个已记住的 Subject（remembered Subject）和一个正常通过认证的 Subject（authenticated Subject）在 Shiro 是完全不同的。 
 
 * **记住的（Remembered）**：一个被记住的 Subject 不不会是匿名的，拥有一个已知的身份（也就是说subject.[getPrincipals()](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#getPrincipals())返回非空）。它的身份被先前的认证过程所记住，并存于先前session中，一个被认为记住的对象在执行subject.[isRemembered()](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isRemembered())返回true。
-
 * **已验证（Authenticated）**：一个被验证的 Subject 是成功验证后（如登录成功）并存于当前 session 中，一个被认为验证过的对象调用subject.[isAuthenticated()](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/subject/Subject.html#isAuthenticated()) 将返回true。
 
 *互斥的*
 
 *已记住（Remembered）和已验证（Authenticated）是互斥的--一个标识值为真另一个就为假，反过来也一样。*
 
-###Why the distinction?为什么区分？
+### 为什么区分？
 
 验证（authentication）有明显的证明含义，也就是说，需要担保Subject 已经被证明他们是谁。
 
@@ -101,7 +98,7 @@ Shiro拥有丰富的运行期异常[AuthenticationException](http://shiro.apache
 
 例如，检查一个 Subject 是否可以访问金融信息应该取决于是否被验证（isAuthenticated()）而不是被记住（isRemembered()），要确保该Subject 是所需的和通过身份验证的。
 
-###An illustrating example 一个例子说明
+### 一个例子说明
 
 下面是一个非常常见的场景帮助说明被记住和被验证之间差别为何重要。 
 
@@ -115,7 +112,7 @@ Shiro拥有丰富的运行期异常[AuthenticationException](http://shiro.apache
 
 这类情景经常发生，所以 Shiro 加入了该功能，你可以在你的程序中使用。现在是使用 isRemembered() 还是使用 isAuthenticated() 来定制你的视图和工作流完全取决于你自己，但 Shiro 维护这种状态基础以防你可能会需要。
 
-##Logging Out 退出登录
+## 退出登录
 
 与验证相对的是释放所有已知的身份信息，当 Subject 与程序不再交互了，你可以调用 subject.logout() 丢掉所有身份信息。
 
@@ -129,13 +126,13 @@ Shiro拥有丰富的运行期异常[AuthenticationException](http://shiro.apache
 
 *因为在 Web 程序中记住身份信息往往使用 Cookies，而 Cookies 只能在 Response 提交时才能被删除，所以强烈要求在为最终用户调用subject.logout() 之后立即将用户引导到一个新页面，确保任何与安全相关的 Cookies 如期删除，这是 Http 本身 Cookies 功能的限制而不是 Shiro 的限制。*
 
-##Authentication Sequence 认证序列
+## 认证序列
 
 直到现在，我们只看到如何在程序代码中验证一个 Suject，现在我们看一下当一个验证发生时 Shiro 内部发生了什么。
 
 我们仍使用之前在架构[Architecture](../I. Overview 总览/3. Architecture 架构.md)章节里见到过的架构图，仅将左侧跟认证相关的组件高亮，每一个数字代表认证中的一个步骤：
 
-![Authentication Sequence](http://i1288.photobucket.com/albums/b484/waylau/apache-shiro/ShiroAuthenticationSequence_zps01b19597.png) 
+![Authentication Sequence](../images/ShiroAuthenticationSequence.png) 
 
 **第1步**：程序代码调用 Subject.login 方法，向AuthenticationToken（认证令牌）实例的构造函数传递用户的身份和证明。
 
@@ -151,7 +148,7 @@ Shiro拥有丰富的运行期异常[AuthenticationException](http://shiro.apache
 
 **第5步**：每一个配置的 Realm 都被检验看其是否[支持](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/Realm.html#supports(org.apache.shiro.authc.AuthenticationToken))提交的AuthenticationToken，如果支持，则该 Realm 的 [getAuthenticationInfo](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/Realm.html#getAuthenticationInfo(org.apache.shiro.authc.AuthenticationToken)) 方法随着提交的牌被调用，getAuthenticationInfo 方法为特定的 Realm 有效提供一次独立的验证尝试，我们将稍后讨论 Realm 验证行为。
 
-###Authenticator
+### Authenticator
 
 就像以前提到过的，Shiro SecurityManager implementations默认使用一个 [ModularRealmAuthenticator](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/pam/ModularRealmAuthenticator.html) 实例， ModularRealmAuthenticator 同样支持单 Realm 和多 Realm。
 
@@ -168,7 +165,7 @@ Shiro拥有丰富的运行期异常[AuthenticationException](http://shiro.apache
 尽管在实际操作中， ModularRealmAuthenticator
 适用于大部分需求。
 
-###AuthenticationStrategy
+### AuthenticationStrategy
 
 当一个程序中定义了两个或多个 realm 时，ModularRealmAuthenticator 使用一个内部的[AuthenticationStrategy](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/pam/AuthenticationStrategy.html) 组件来决定一个验证是否成功。
 
@@ -176,13 +173,10 @@ Shiro拥有丰富的运行期异常[AuthenticationException](http://shiro.apache
 
 AuthenticationStrategy 是一个 stateless 的组件，在整个验证过程中在被用到4次（在这4次活动中需要必要的 state 时，state 将作为方法参数传递）
 
-1.在任何 Realms 被执行之前；
-
-2.在某个的 Realm 的 getAuthenticationInfo 方法调用之前；
-
-3.在某个的 Realm 的 getAuthenticationInfo 方法调用之后；
-
-4.在所有的 Realm 被执行之后。
+1. 在任何 Realms 被执行之前；
+2. 在某个的 Realm 的 getAuthenticationInfo 方法调用之前；
+3. 在某个的 Realm 的 getAuthenticationInfo 方法调用之后；
+4. 在所有的 Realm 被执行之后。
 
 AuthenticationStrategy 还有责任从每一个成功的 Realm 中收集结果并将它们“绑定”到一个单独的 [AuthenticationInfo](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/AuthenticationInfo.html)，这个AuthenticationInfo 实例是被 Authenticator 实例返回的，并且 shiro 用它来展现一个 Subject 的最终身份（也就是 Principals ）。
 
@@ -211,13 +205,13 @@ shiro.ini
 
 *如果你希望创建你自己的 AuthenticationStrategy 实现，你可以使用 [org.apache.shiro.authc.pam.AbstractAuthenticationStrategy](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/pam/AbstractAuthenticationStrategy.html) 作为起始点。AbstractAuthenticationStrategy 类自动实现 '绑定（bundling）'/聚集（aggregation）行为将来自于每个Realm 的结果收集到一个 AuthenticationInfo 实例中。*
 
-###Realm 验证的顺序
+### Realm 验证的顺序
 
 非常重要的一点是，和 Realm 交互的 ModularRealmAuthenticator 按迭代（iteration）顺序执行。
 
 ModularRealmAuthenticator 可以访问为 SecurityManager 配置的 Realm 实例，当尝试一次验证时，它将在集合中遍历，支持对提交的 AuthenticationToken 处理的每个 Realm 都将执行 Realm 的 getAuthenticationInfo 方法。
 
-####隐含的顺序
+#### 隐含的顺序
 
 在使用 ShiroINI 配置文件形式时，你可以按你希望其处理 AuthenticationToken 的顺序来配置 Realm，例如，在shiro.ni 中，Realm 将按照他们在INI文件中定义的顺序执行。
 	 
@@ -235,9 +229,9 @@ SecurityManager上配置了这三个 Realm，在一个验证过程中，blahReal
 
 使用这种方法，你不需要设置 securityManager 的 realm 顺序，每一个被定义的realm 将自动加入到 realms 属性中。
 
-####Explicit Ordering明确的顺序
+#### 显示的顺序
 
-如果你希望明确定义 realm 执行的顺序，不管他们如何被定义，你可以设置 SecurityManager 的 realms 属性，例如，使用上面定义的 realm，但你希望 blahRealm 最后执行而不是第一个：
+如果你希望显示定义 realm 执行的顺序，不管他们如何被定义，你可以设置 SecurityManager 的 realms 属性，例如，使用上面定义的 realm，但你希望 blahRealm 最后执行而不是第一个：
 	
 	blahRealm = com.company.blah.Realm
 	...
@@ -247,20 +241,20 @@ SecurityManager上配置了这三个 Realm，在一个验证过程中，blahReal
 	
 	securityManager.realms = $fooRealm, $barRealm, $blahRealm
 
-*明确 Realm 包含*
+*显示 Realm 包含*
 
-*当你明确的配置 securityManager.realms 属性时，只有被引用的 realm 将为 SecurityManager 配置，也就是说你可能在 INI 中定义了5个 realm，但实际上只使用了3个，如果在 realm 属性中只引用了3个，这和隐含的 realm 顺序不同，在那种情况下，所有有效的 realm 都会用到。*
+*当你显示的配置 securityManager.realms 属性时，只有被引用的 realm 将为 SecurityManager 配置，也就是说你可能在 INI 中定义了5个 realm，但实际上只使用了3个，如果在 realm 属性中只引用了3个，这和隐含的 realm 顺序不同，在那种情况下，所有有效的 realm 都会用到。*
 
-##Realm Authentication 验证
+## Realm 验证
 
-本章阐述了当一个验证尝试发生时 Shiro 主要的工作流程，而在验证过程中，用到的 Realm 内产生的工作流程（如上面提到的第5步）将在 [Realm](7. Realms.md) 章中 Realm Authentication 节讨论。
+本章阐述了当一个验证尝试发生时 Shiro 主要的工作流程，而在验证过程中，用到的 Realm 内产生的工作流程（如上面提到的第5步）将在 Realm章中 Realm Authentication 节讨论。
 
-##为文档加把手
+## 为文档加把手
 
 我们希望这篇文档可以帮助你使用 Apache Shiro 进行工作，社区一直在不断地完善和扩展文档，如果你希望帮助 Shiro 项目，请在你认为需要的地方考虑更正、扩展或添加文档，你提供的任何点滴帮助都将扩充社区并且提升 Shiro。
 
 提供你的文档的最简单的途径是将它发送到用户[论坛](http://shiro-user.582556.n2.nabble.com/)或[邮件列表](http://shiro.apache.org/mailing-lists.html)
 
-*译者注：*如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。
+*译者注：如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。*
 
  
