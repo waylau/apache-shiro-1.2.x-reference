@@ -1,9 +1,9 @@
-18. Command Line Hasher
-========================
+# 18. Command Line Hasher
+ 
 
 Shiro 1.2.0 及以后版本提供了一个命令行程序,可以哈希字符串和资源(文件、url、classpath 、 实体)几乎任何类型。 要使用它,您必须安装一个 Java 虚拟机，并且“Java”命令必须能访问访问 $PATH 环境变量。
 
-##Usage 使用
+## 使用
 
 确保你可以访问shiro-tools-hasher-version-cli.jar  文件。 你可以发现这在 buildroot/tools/hasher/target 目录的源码构建或通过Maven下载。
 
@@ -13,7 +13,7 @@ Shiro 1.2.0 及以后版本提供了一个命令行程序,可以哈希字符串�
 
 这将打印所有可用选项标准(MD5、SHA1)和更复杂的密码散列的场景。
 
-##Common Scenarios 常见的场景
+## 常见的场景
 
 请参阅上面的命令打印指令。 它将提供一个详尽的清单的指令将帮助您根据您的需要使用厨师。 然而,我们已经提供了一些快速参考用途/场景下面方便。
 
@@ -47,7 +47,7 @@ shiro.ini 用户密码
 	iniRealm.credentialsMatcher = $passwordMatcher
 	...
 
-###MD5 checksum 校验和
+### MD5 校验和
 
 虽然在 JVM上您可以用任意算法执行任何散列,但默认的散列算法是 MD5,常用于文件校验和。 只使用 - r (或 ——资源 )选项显示下面的值是一个资源位置(而不打印出你希望散列):
 

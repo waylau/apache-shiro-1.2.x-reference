@@ -1,11 +1,11 @@
-11. Caching 缓存
-========================
+# 11. Caching 缓存
+
 
 Shiro 开发团队明白在许多应用程序中性能是至关重要的。Caching 是从第一天开始第一个建立在 Shiro 中的一流功能，以确保安全操作保持尽可能的快。
 
 然而，Caching 作为一个概念是 Shiro 的基本组成部分，实现一个完整的缓存机制是安全框架核心能力之外的事情。为此，Shiro 的缓存支持基本上是一个抽象的（包装）API，它将“坐”在一个基本的缓存机制产品（例如，Ehcache，OSCache，Terracotta，Coherence，GigaSpaces，JBossCache 等）之上。这允许Shiro 终端用户配置他们喜欢的任何缓存机制。
 
-##Caching API
+## 缓存API
 
 Shiro 有三个重要的缓存接口：
 
@@ -26,11 +26,11 @@ Shiro 的 [SecurityManager](http://shiro.apache.org/securitymanager.html) 实现
 	# at this point, the securityManager and all CacheManagerAware
 	# realms have been set with the cacheManager instance
 
-##CacheManager Implementations
+## CacheManager 实现
 
 Shiro提供了许多开箱即用 CacheManager 实现，你可能会发现有用的而不是执行你自己的。
 
-###MemoryConstrainedCacheManager
+### MemoryConstrainedCacheManager
 
 [MemoryConstrainedCacheManager](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/MemoryConstrainedCacheManager.html) 是一个 缓存管理器 实现适合单个jvm 生产环境。 这不是集中/分布式,所以,如果你的应用程序跨越多个 JVM(例如 web 应用程序运行在多个 web 服务器),你想要缓存实体跨 JVM 访问,您将需要使用一个分布式缓存实现。
 
@@ -43,7 +43,7 @@ MemoryConstrainedCacheManager 管理 [MapCache](http://shiro.apache.org/static/c
 	...
 	securityManager.cacheManager = $cacheManager
 
-###HazelcastCacheManager
+### HazelcastCacheManager
 
 *Shiro 1.3 or later*
 
@@ -51,10 +51,10 @@ MemoryConstrainedCacheManager 管理 [MapCache](http://shiro.apache.org/static/c
 
 待定。
 
-###EhCacheManager
+### EhCacheManager
 
 待定。
 
-##Authorization Cache Invalidation 授权缓存失效
+## 授权缓存失效
 
 最后请注意, [AuthorizingRealm](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthorizingRealm.html) 有一个 [clearCachedAuthorizationInfo](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthorizingRealm.html#clearCachedAuthorizationInfo(org.apache.shiro.subject.PrincipalCollection)) 方法能够被子类调用，用来清除特殊账户缓存的授权信息。它通常被自定义逻辑调用，如果与之匹配的账户授权数据发生了改变（来确保下次的授权检查能够捕获新数据）。

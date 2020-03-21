@@ -1,11 +1,12 @@
-15. Spring Framework
-========================
+# 15. Spring Framework
+
+
 
 本页涵盖了将 Shiro 集成到基于 [Spring](http://www.springframework.org/) 的应用程序的方法。
 
 Shiro 的 JavaBean 兼容性使得它非常适合通过 Spring XML 或其他基于 Spring 的配置机制。 Shiro 应用程序需要一个具有单例SecurityManager 实例的应用程序。请注意，这不会是一个静态的单例，但应该只有一个应用程序能够使用的实例，无论它是否是静态单例的。
 
-##Standalone Applications
+## 单独的应用
 
 这里是在 Spring 应用程序中启用应用程序单例 SecurityManager 的最简单的方法：
 
@@ -26,7 +27,7 @@ Shiro 的 JavaBean 兼容性使得它非常适合通过 Spring XML 或其他基�
 	   <property name="arguments" ref="securityManager"/>
 	</bean>
 
-##Web Applications
+## Web 应用
 
 Shiro 拥有对 Spring Web 应用程序的一流支持。在 Web 应用程序中，所有 Shiro 可访问的 web 请求必须通过一个主要的 Shiro 过滤器。该过滤器本身是极为强大的，允许临时的自定义过滤器链基于任何 URL 路径表达式执行。
 
@@ -36,7 +37,7 @@ Shiro 拥有对 Spring Web 应用程序的一流支持。在 Web 应用程序中
 
 以下是如何在基于 Spring web 应用程序中配置 Shiro：
 
-###web.xml
+### web.xml
 
 除了其他 Spring web.xml 中的元素（ ContextLoaderListener，Log4jConfigListener 等等），定义下面的过滤器及过滤器映射：
 
@@ -57,7 +58,7 @@ Shiro 拥有对 Spring Web 应用程序的一流支持。在 Web 应用程序中
 	    <url-pattern>/*</url-pattern>
 	</filter-mapping>
 
-###applicationContext.xml
+### applicationContext.xml
 
 在你的 applicationContext.xml 文件中，定义 web 支持的SecurityManager 和 'shiroFilter' bean 将会被 web.xml 引用。
 
@@ -103,7 +104,7 @@ Shiro 拥有对 Spring Web 应用程序的一流支持。在 Web 应用程序中
 	...
 	</bean>
 
-##Enabling Shiro Annotations 启用注解
+## 启用Shiro注解
 
 不论独立的应用程序还是 web 应用程序，都可以使用 Shiro 提供的注解进行安全检查。比如 @RequiresRoles, @RequiresPermissions 等。这些注解需要借助 Spring 的 AOP扫描使用 Shiro 注解的类，并在必要时进行安全逻辑验证。
 
@@ -115,11 +116,11 @@ Shiro 拥有对 Spring Web 应用程序的一流支持。在 Web 应用程序中
 	    <property name="securityManager" ref="securityManager"/>
 	</bean>
 
-##Secure Spring Remoting 远程安全
+## Spring远程安全
 
 Shiro 的 Spring 远程支持有两部分组成：远程调用的客户端配置和接收、处理远程调用的服务器端配置。
 
-###Server-side Configuration 服务端配置
+### 服务端配置
 
 当 Shiro 的 Server 端接收到一个远程方法调用时，与远程调用相关的Subject 必须在接收线程执行时绑定到接收线程上，这项工作通过在applicationContext.xml 中定义 SecureRemoteInvocationExecutor bean 完成。
 
@@ -139,7 +140,7 @@ SecureRemoteInvocationExecutor 定义完成后，需要将它加入到Exporter �
 	    <property name="remoteInvocationExecutor" ref="secureRemoteInvocationExecutor"/>
 	</bean>
 
-###Client-side Configuration 客户端配置
+### 客户端配置
 
 当远程调用发生时，负责鉴别信息的Subject需要告知server远程方法是谁发起的 。如果客户端是基于Spring的，那么这种关联可以通过Shiro的SecureRemoteInvocationFactory 完成。
 
@@ -155,13 +156,13 @@ SecureRemoteInvocationExecutor 定义完成后，需要将它加入到Exporter �
 	    <property name="remoteInvocationFactory" ref="secureRemoteInvocationFactory"/>
 	</bean>
 
-##为文档加把手
+## 为文档加把手
 
 我们希望这篇文档可以帮助你使用 Apache Shiro 进行工作，社区一直在不断地完善和扩展文档，如果你希望帮助 Shiro 项目，请在你认为需要的地方考虑更正、扩展或添加文档，你提供的任何点滴帮助都将扩充社区并且提升 Shiro。
 
 提供你的文档的最简单的途径是将它发送到用户[论坛](http://shiro-user.582556.n2.nabble.com/)或[邮件列表](http://shiro.apache.org/mailing-lists.html)
 
-*译者注：*如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。
+*译者注：如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。*
 
  
 

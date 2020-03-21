@@ -1,5 +1,6 @@
-14. Custom Subjects 自定义 Subject
-========================
+# 14. Custom Subjects 自定义 Subject
+
+
 
 毫无疑问，在 Apache Shiro 中最重要的概念就是 Subject。 'Subject' 仅仅是一个安全术语，是指应用程序用户的特定安全的“视图”。一个 Shiro Subject 实例代表了一个单一应用程序用户的安全状态和操作。
 
@@ -16,7 +17,7 @@ Shiro 的 API 为应用程序提供 Subject 为中心的编程范式支持。当
 
 虽然通过使用 SecurityManager 可以捕获任何 Subject，但只有基于当前 用户/Subject 的应用程序代码更自然，更直观。
 
-##The Currently Executing Subject 当前执行的Subject
+## 当前执行的Subject
 
 几乎在所有环境下，你能够获得当前执行的 Subject 通过使用
 
@@ -110,7 +111,7 @@ Session 是一个 Shiro 的具体实例，它提供了大多数你经常要和Ht
 
 这个简单的API 包含了 90% 的 Shiro 终端用户在使用 Shiro 时将会处理的东西。
 
-##Custom Subject Instances 自定义 Subject 实例
+## 自定义 Subject 实例
 
 Shiro 1.0 中添加了一个新特性，能够在特殊情况下构造 自定义/临时 的subject 实例。
 
@@ -131,7 +132,7 @@ Shiro 1.0 中添加了一个新特性，能够在特殊情况下构造 自定义
 
 好了，假设你仍然需要创建自定义的Subject 实例的情况下，让我们看看如何来做：
 
-###Subject.Builder
+### Subject.Builder
 
 Subject.Builder 被制定得非常容易创建 Subject 实例，而无需知道构造细节。
 Builder 最简单的用法是构造一个匿名的，session-less（无会话） Subject 的实例。
@@ -161,7 +162,7 @@ SecurityManager 。你也可以指定被额外的构造函数使用的SecurityMa
 
 构造的 Subject 实例不会由于应用程序（线程）的进一步使用而自动地绑定到应用程序（线程）。如果你想让它对于任何代码都能够方便地调用SecurityUtils.getSubject()，你必须确保创建好的 Subject 有一个线程与之关联。
 
-###Thread Association 线程关联
+### 线程关联
 
 如上所述，只是构建一个 Subject 实例，并不与一个线程相关联——一个普通的必要条件是在线程执行期间任何对 SecurityUtils.getSubject() 的调用是否能正常工作。确保一个线程与一个 Subject 关联有三种途径：
 
@@ -176,7 +177,7 @@ Subject，然后返回的 Callable/Runnable 方法在另一个线程中被执行
 
 这些原则保证在上述三个机制中发生。接下来阐述它们的用法。
 
-####Automatic Association 自动关联
+#### 自动关联
 
 如果你只需要一个 Subject 暂时与当前的线程相关联，同时你希望线程绑定和清理自动发生，Subject 的 Callable 或 Runnable 的直接执行正是你所需要的。在 Subject.execute 调用返回后，当前线程被保证当前状态与执行前的状态是一样的。这个机制是这三个中使用最广泛的。
 
@@ -224,7 +225,7 @@ Subject，然后返回的 Callable/Runnable 方法在另一个线程中被执行
 	    }
 	});
 
-####Manual Association 手动关联
+#### 手动关联
 虽然 Subject.execute* 方法能够在它们返回后自动地清理线程的状态，但有可能在一些情况下，你想自己管理 ThreadState。当结合 w/Shiro 时，这几乎总是在框架开发层次使用，但它很少在 bootstrap/daemon 情景下使用（上面 Subject.execute(callable) 例子使用得更为频繁）。
 
 *Guarantee Cleanup*
@@ -250,7 +251,7 @@ Subject，然后返回的 Callable/Runnable 方法在另一个线程中被执行
 
 *不要在一个处理 Web 请求的进程中使用上述 ThreadState 代码示例。 Web 特定的 ThreadState 的实现使用 Web 请求代替。相反，确保ShiroFilter 拦截 Web 请求以确保 Subject 的 building/binding/cleanup 能够好好的完成。*
 
-####A Different Thread
+#### 一个不同的线程
 
 如果你有一个 Callable 或 Runnable 实例要以 Subject 来执行，你将自己执行 Callable 或 Runnable（或这将它移交给线程池或执行者或ExcutorService），你应该使用 Subject.associateWith* 方法。这些方法确保在最终执行的线程中保
 留 Subject，且该 Subject 是可访问的。
@@ -279,12 +280,12 @@ Runnable 例子：
 
 *associateWith 方法自动执行必要的线程清理，以取保现在在线程池环境中的clean。*
 
-##为文档加把手
+## 为文档加把手
 
 我们希望这篇文档可以帮助你使用 Apache Shiro 进行工作，社区一直在不断地完善和扩展文档，如果你希望帮助 Shiro 项目，请在你认为需要的地方考虑更正、扩展或添加文档，你提供的任何点滴帮助都将扩充社区并且提升 Shiro。
 
 提供你的文档的最简单的途径是将它发送到用户[论坛](http://shiro-user.582556.n2.nabble.com/)或[邮件列表](http://shiro.apache.org/mailing-lists.html)
 
-*译者注：*如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。
+*译者注：如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。*
 
  

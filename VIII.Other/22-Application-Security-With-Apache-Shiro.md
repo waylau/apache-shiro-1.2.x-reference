@@ -1,9 +1,10 @@
-22. Application Security With Apache Shiro 用Shiro保护你的应用安全 
-========================
+# 22. Application Security With Apache Shiro 用Shiro保护你的应用安全 
+
+
 
 在尝试保护你的应用时，你是否有过挫折？是否觉得现有的 Java 安全解决方案难以使用，只会让你更糊涂？本文介绍的 Apache Shiro，是一个不同寻常的 Java 安全框架，为保护应用提供了简单而强大的方法。本文还解释了 Apache Shiro 的项目目标、架构理念以及如何使用 Shiro 为应用安全保驾护航。
 
-##What is Apache Shiro?？
+## 什么是Apache Shiro?？
 
 Apache Shiro（发音为“shee-roh”，日语“堡垒（Castle）”的意思）是一个强大易用的 Java 安全框架，提供了认证、授权、加密和会话管理功能，可为任何应用提供安全保障——从命令行应用、移动应用到大型网络及企业应用。
 
@@ -16,7 +17,7 @@ Shiro 为解决下列问题提供了保护应用的API（我喜欢称它们为�
  
 Shiro 还支持一些辅助特性，如 Web 应用安全、单元测试和多线程，它们的存在强化了上面提到的四个要素。
 
-##Why was Apache Shiro created 为何要创建Shiro？
+## 为何要创建Shiro？
 
 对于一个框架来讲，使其有存在价值的最好例证就是有让你去用它的原因，它应该能完成一些别人无法做到的事情。要理解这一点，需要了解 Shiro 的历史以及创建它时的其他替代方法。
 
@@ -28,7 +29,7 @@ Shiro 还支持一些辅助特性，如 Web 应用安全、单元测试和多线
 
 于是，纵观 2003 年初的安全状况，你会很快意识到还没有一个大一统的框架满足所有上述需求。有鉴于此，JSecurity（即之后的 Apache Shiro）诞生了。
 
-##Why would you use Apache Shiro today 今天，你为何愿意使用 Shiro？
+##W 今天，你为何愿意使用 Shiro？
 
 从 2003 年至今，框架选择方面的情况已经改变了不少，但今天仍有令人信服的理由让你选择 Shiro。其实理由相当多，Apache Shiro：
 
@@ -39,17 +40,17 @@ Shiro 还支持一些辅助特性，如 Web 应用安全、单元测试和多线
 * **可插拔**  - Shiro 干净的 API 和设计模式使它可以方便地与许多的其他框架和应用进行集成。你将看到 Shiro 可以与诸如 Spring、Grails、Wicket、Tapestry、Mule、Apache Camel、Vaadin这类第三方框架无缝集成。
 * **支持**  - Apache Shiro 是 [Apache 软件基金会](http://www.apache.org/)成员，这是一个公认为了社区利益最大化而行动的组织。项目开发和用户组都有随时愿意提供帮助的友善成员。像 [Katasoft](http://www.katasoft.com/) 这类商业公司，还可以给你提供需要的专业支持和服务。
 
-##Who’s Using Shiro 谁在用Shiro?
+##W 谁在用Shiro?
 
 Shiro 及其前身 JSecurity 已被各种规模和不同行业的公司项目采用多年。自从成为 Apache 软件基金会的顶级项目后，站点流量和使用呈持续增长态势。许多开源社区也正在用 Shiro，这里有些例子如 Spring，Grails，Wicket，Tapestry，Tynamo，Mule和Vaadin。
 
 如Katasoft，Sonatype，MuleSoft这样的商业公司，一家大型社交网络和多家纽约商业银行都在使用 Shiro 来保护他们的商业软件和站点。
 
-##Core Concepts: Subject, SecurityManager, and Realms 核心概念
+##  核心概念：Subject, SecurityManager和Realms 
 
 已经描述了Shiro的好处，那就让我们看看它的API，好让你能够有个感性认识。Shiro 架构有三个主要概念 - Subject，SecurityManager和Realms。
 
-###Subject
+### Subject
 
 在考虑应用安全时，你最常问的问题可能是“当前用户是谁？”或“当前用户允许做什么吗？”。当我们写代码或设计用户界面时，问自己这些问题很平常：应用通常都是基于用户故事构建的，并且你希望功能描述（和安全）是基于每个用户的。所以，对于我们而言，考虑应用安全的最自然方式就是基于当前用户。Shiro 的 API 用它的 Subject 概念从根本上体现了这种思考方式。
 
@@ -64,7 +65,7 @@ Listing 1. Acquiring the Subject 获得Subject
 
 一旦获 得Subject，你就可以立即获得你希望用 Shiro为 当前用户做的90% 的事情，如登录、登出、访问会话、执行授权检查等——稍后还会看到更多。这里的关键点是Shiro的API非常直观，因为它反映了开发者以‘每个用户’思考安全控制的自然趋势。同时，在代码的任何地方都能很轻松地访问Subject，允许在任何需要的地方进行安全操作。
 
-###SecurityManager
+### SecurityManager
 
 Subject 的“幕后”推手是 SecurityManager。Subject 代表了当前用户的安全操作，SecurityManager 则管理所有用户的安全操作。它是 Shiro框架的核心，充当“保护伞”，引用了多个内部嵌套安全组件，它们形成了对象图。但是，一旦 SecurityManager 及其内部对象图配置好，它就会退居幕后，应用开发人员几乎把他们的所有时间都花在 Subject API调用上。
 
@@ -125,7 +126,7 @@ Listing 3. Loading shiro.ini Configuration File 加载ini配置文件
 2. 根据配置创建 SecurityManager 实例（使用 Shiro 的工厂概念，它表述了[工厂模式](http://en.wikipedia.org/wiki/Factory_method_pattern)）；
 3. 使应用可访问 SecurityManager Singleton。在这个简单示例中，我们将它设置为 VM 静态 Singleton，但这通常不是必须的——你的应用配置机制可以决定你是否需要使用静态存储。
 
-###Realms
+### Realms
 
 Realm 充当了 Shiro 与应用安全数据间的“桥梁”或者“连接器”。也就是说，当切实与像用户帐户这类安全相关数据进行交互，执行认证（登录）和授权（访问控制）时，Shiro 会从应用配置的 Realm 中查找很多内容。
 
@@ -143,7 +144,7 @@ Listing 4. Example realm configuration snippet to connect to LDAP user data stor
 
 既然已经了解如何建立一个基本的Shiro环境，下面让我们来讨论，作为一名开发者该如何使用这个框架。
 
-###Authentication认证
+### Authentication认证
 
 认证是核实用户身份的过程。也就是说，当用户使用应用进行认证时，他们就在证明他们就是自己所说的那个人。有时这也理解为“登录”。它是一个典型的三步骤过程。
 
@@ -186,7 +187,7 @@ Listing 6. Handle Failed Login 处理失败的登录
 
 Subject 登录成功后，他们就被认为是已认证的，通常你会允许他们使用你的应用。但是仅仅证明了一个用户的身份并不意味着他们可以对你的应用为所欲为。这就引出了另一个问题，“我如何控制用户能做或不能做哪些事情？”，决定用户允许做哪些事情的过程被称为授权。下面我们将谈谈 Shiro如何进行授权。
 
-###Authorization授权
+### Authorization授权
 
 授权实质上就是访问控制——控制用户能够访问应用中的哪些内容，比如资源、Web 页面等等。多数用户执行访问控制是通过使用诸如角色和权限这类概念完成的。也就是说，通常用户允许或不允许做的事情是根据分配给他们的角色或权限决定的。那么，通过检查这些角色和权限，你的应用程序就可以控制哪些功能是可以暴露的。如你期望的，Subject API 让你可以很容易的执行角色和权限检查。如清单7中的代码片段所示：如何检查 Subject被分配了某个角色：
 
@@ -230,7 +231,7 @@ Listing 8. Permission Check 权限检查
 
 以上就是对Shiro授权功能的简要概述。虽然多数安全框架止于授权和认证，但 Shiro 提供了更多功能。下面，我们将谈谈 Shiro 的高级会话管理功能。
 
-###Session Management会话管理
+### 会话管理
 
 在安全框架领域，Apache Shiro 提供了一些独特的东西：可在任何应用或架构层一致地使用 Session API。即，Shiro 为任何应用提供了一个会话编程范式——从小型后台独立应用到大型集群 Web 应用。这意味着，那些希望使用会话的应用开发者，不必被迫使用 Servlet 或 EJB 容器了。或者，如果正在使用这些容器，开发者现在也可以选择使用在任何层统一一致的会话API，取代 Servlet 或 EJB 机制。
 
@@ -253,13 +254,13 @@ Listing 11. Session methods 会话的方法
 	Date timestamp = session.getLastAccessTime(); 
 	session.setTimeout(millis); ...
 
-###Cryptography 加密
+### 加密
 
 加密是隐藏或混淆数据以避免被偷窥的过程。在加密方面，Shiro的目标是简化并让JDK的加密支持可用。
 
 清楚一点很重要，一般情况下，加密不是特定于Subject的，所以它是Shiro API的一部分，但并不特定于Subject。你可以在任何地方使用Shiro的加密支持，甚至在不使用Subject的情况下。对于加密支持，Shiro真正关注的两个领域是加密哈希（又名消息摘要）和加密密码。下面我们来看看这两个方面的详细描述。
 
-####Hashing哈希
+#### 哈希
 
 如果你曾使用过 JDK 的 [MessageDigest](http://download.oracle.com/javase/6/docs/api/java/security/MessageDigest.html) 类，你会立刻意识到它的使用有点麻烦。MessageDigest 类有一个笨拙的基于工厂的静态方法 API，它不是面向对象的，并且你被迫去捕获那些永远都不必捕获的 Checked Exceptions。如果需要输出十六进制编码或 Base64 编码的消息摘要，你只有靠自己 - 对上述两种编码，没有标准的 JDK 支持它们。Shiro 用一种干净而直观的哈希 API 解决了上述问题。
 
@@ -292,7 +293,7 @@ Listing 12. JDK’s MessageDigest JDK的消息摘要
 
 你可以看到 Shiro 对哈希和编码简化了不少，挽救了你处理在这类问题上所消耗的脑细胞。
 
-####Ciphers密码
+#### 密码
 
 加密是使用密钥对数据进行可逆转换的加密算法。我们使用其保证数据的安全，尤其是传输或存储数据时，以及在数据容易被窥探的时候。
 
@@ -323,7 +324,7 @@ Shiro 的 CipherService API还有其他好处，如同时支持基于字节数�
 
 不必再忍受 Java Cryptography 带来的痛苦。Shiro 的 Cryptography 支持就是为了减少你在确保数据安全上付出的努力。
 
-###Web Support Web支持
+### Web支持
 
 最后，但并非不重要，我们将简单介绍一下 Shiro 的 Web 支持。Shiro附带了一个帮助保护 Web 应用的强建的 Web 支持模块。对于 Web 应用，安装 Shiro 很简单。唯一需要做的就是在 web.xml 中定义一个 Shiro Servlet 过滤器。清单14中，列出了代码。
 
@@ -343,7 +344,7 @@ Listing 14. ShiroFilter in web.xml
 
 这个过滤器可以读取上述 shiro.ini 配置，这样不论什么开发环境，你都拥有了一致的配置体验。一旦完成配置，Shiro Filter就会过滤每个请求并且确保在请求期间特定请求的 Subject 是可访问的。同时由于它过滤了每个请求，你可以执行安全特定的逻辑以保证只有满足一定标准的请求才被允许通过。
 
-###URL-Specific Filter Chains URL特定的Filter链
+### URL特定的Filter链
 
 Shiro 通过其创新的URL过滤器链功能支持安全特定的过滤规则。它允许你为任何匹配的URL模式指定非正式的过滤器链。这意味着， 使用 Shiro 的过滤器机制，你可以很灵活的强制安全规则（或者规则的组合） - 其程度远远超过你单独在web.xml中定义过滤器时所获得的。清单15中显示了Shiro INI中的配置片段。
 
@@ -360,7 +361,7 @@ Listing 15. Path-specific Filter Chains 路径特定的Filter链
 
 相比起使用 web.xml，在其中先定义过滤器块，然后定义单独分离的过滤器模式块，这种方式带来的好处有多少？采用Shiro的方法，可以很容易就准确知道针对给定匹配路径执行的过滤器链。如果想这么做，你可以在web.xml 中仅定义 Shiro Filter，在 shiro.ini中定义所有其他的过滤器和过滤器链，这要比 web.xml简洁得多，而且更容易理解过滤器链定义机制。即使不使用 Shiro 的任何安全特性，单凭这样小小的方便之处，也值得让你使用 Shiro。
 
-###JSP Tag Library JSP标签库
+### JSP标签库
 
 Shiro 还提供了 JSP 标签库，允许你根据当前 Subject 的状态控制 JSP 页面的输出。一个有用的常见示例是在用户登录后显示“Hello <username>"文本。但若是匿名用户，你可能想要显示其他内容，如换而显示“Hello! Register Today!”。清单16显示了如何使用Shiro的JSP标签实现这个示例：
 
@@ -384,19 +385,19 @@ Listing 16. JSP Taglib Example JSP标签库示例
 
 Shiro 还支持其他许多 Web 特性，如简单的“记住我”服务，REST和BASIC认证。当然，如果想使用Shiro原生的企业会话，它还提供透明的HttpSession 支持。参见 Apache Shiro [Web](https://github.com/waylau/apache-shiro-1.2.x-reference/blob/master/III.%20Web%20Applications/10.%20Web.md)文档可以了解更多内容。
 
-###Web Session Management Web会话管理
+### Web会话管理
 
 最后值得一提的是 Shiro 在 Web 环境中对会话的支持。
 
-####Default Http Sessions 缺省Http会话
+#### 默认Http会话
 
 对于Web应用，Shiro缺省将使用我们习以为常的 Servlet 容器会话作为其会话基础设施。即，当你调用 subject.getSession()和subject.getSession(boolean) 方法时，Shiro 会返回 Servlet 容器的 HttpSession 实例支持的 Session 实例。这种方式的曼妙之处在于调用 subject.getSession() 的业务层代码会跟一个 Shiro Session 实例交互 - 还没有“认识”到它正跟一个基于 Web 的HttpSession 打交道。这在维护架构层之间的清晰隔离时，是一件非常好的事情。
 
-####Shiro’s Native Sessions in the Web Tier Web层中Shiro的原生会话
+#### Web层中Shiro的原生会话
 
 如果你由于需要 Shiro 的企业级会话特性（如容器无关的集群）而打开了Shiro 的原生会话管理，你当然希望 HttpServletRequest.getSession() 和 HttpSession API 能和“原生”会话协作，而非 Servlet 容器会话。如果你不得不重构所有使用HttpServletRequest 和 HttpSession API 的代码，使用 Shiro 的Session API 来替换，这将非常令人沮丧。Shiro 当然从来不会期望你这么做。相反，Shiro 完整实现了 Servlet 规范中的 Session 部分以在Web应用中支持原生会话。这意味着，不管何时你使用相应的HttpServletRequest 或 HttpSession 方法调用，Shiro 都会将这些调用委托给内部的原生会话 API。结果，你无需修改 Web 代码，即便是你正在使用 Shiro 的‘原生’企业会话管理 - 确实是一个非常方便（且必要）的特性。
 
-##Additional Features 附加特性
+## 附加特性
 
 Apache Shiro 框架还包含有对保护Java应用非常有用的其他特性，如：
 
@@ -405,7 +406,7 @@ Apache Shiro 框架还包含有对保护Java应用非常有用的其他特性，
 * 为了表现为另一个Subject的身份，支持“Run As”（比如，在管理应用中有用）；
 * 支持测试工具，这样可以很容易的对Shiro的安全代码进行单元测试和集成测试。
 
-##框架局限
+## 框架局限
 
 常识告诉我们，Apache Shiro 不是“银弹” - 它不能毫不费力的解决所有安全问题。如下是 Shiro 还未解决，但是值得知道的：
 
@@ -413,7 +414,7 @@ Apache Shiro 框架还包含有对保护Java应用非常有用的其他特性，
 * **多阶段认证**：目前，Shiro 不支持“多阶段”认证，即用户可能通过一种机制登录，当被要求再次登录时，使用另一种机制登录。这在基于Shiro 的应用中已经实现，但是通过应用预先收集所有必需信息再跟 Shiro交互。这个功能在 Shiro 的未来版本中非常有可能得到支持。
 * **Realm写操作**：目前所有 Realm 实现都支持“读”操作来获取验证和授权数据以执行登录和访问控制。诸如创建用户帐户、组和角色或与用户相关的角色组和权限这类“写”操作还不支持。这是因为支持这些操作的应用数据模型变化太大，很难为所有 的 Shiro 用户强制定义“写”API。
  
-##Upcoming Features未来的特性
+## 未来的特性
 
 Apache Shiro社 区每天都在壮大，借此，Shiro 的特性亦是如此。在即将发布的版本中，你可能会看到：
 
@@ -426,11 +427,11 @@ Apache Shiro社 区每天都在壮大，借此，Shiro 的特性亦是如此。�
 * 通过AuthorizationRequest进行粗粒度的授权；
 * 针对安全断言查询的[ANTLR](http://www.antlr.org/)语法（比如，(‘role(admin) && (guest || !group(developer))’）
 
-##Summary 总结
+## 总结
 
 Apache Shiro 是一个功能齐全、健壮、通用的Java安全框架，你可以用其为你的应用护航。通过简化应用安全的四个领域，即认证、授权、会话管理和加密，在真实应用中，应用安全能更容易被理解和实现。Shiro 的简单架构和兼容 JavaBean 使其几乎能够在任何环境下配置和使用。附加的 Web支持和辅助功能，比如多线程和测试支持，让这个框架为应用安全提供了“一站式”服务。Apache Shiro 开发团队将继续前进，精炼代码库和支持社区。随着持续被开源和商业应用采纳，可以预期 Shiro 会继续发展壮大。
 
-##资源
+## 资源
 
 * Apache Shiro的[主页](http://shiro.apache.org/)。
 * Shiro的[下载](http://shiro.apache.org/download.html)页面，包含面向 Maven 和 Ant+Ivy 用户的额外信息。
@@ -442,4 +443,4 @@ Apache Shiro的[邮件列表](http://shiro.apache.org/mailing-lists.html)和[论
 * *译者注：*[Apache Shiro 1.2.x 用户指南](https://github.com/waylau/apache-shiro-1.2.x-reference) ：开源项目，一个官方文档和其他文章的翻译集合
 
 
-*译者注：*本文参考：[http://www.infoq.com/articles/apache-shiro](http://www.infoq.com/articles/apache-shiro)。如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。
+*译者注：本文参考：[http://www.infoq.com/articles/apache-shiro](http://www.infoq.com/articles/apache-shiro)。如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。*

@@ -1,5 +1,5 @@
-24. Apache Shiro Cryptography Features 加密功能
-========================
+# 24. Apache Shiro Cryptography Features 加密功能
+
 
 
 Cryptography is the practice of protecting information from undesired access by hiding it or converting it into nonsense so know one else can read it. Shiro focuses on two core elements of Cryptography: ciphers that encrypt data like email using a public or private key, and hashes (aka message digests) that irreversibly encrypt data like passwords.
@@ -23,8 +23,8 @@ Deault interface implementations - Shiro provides default Hash (aka Message Dige
 Built-in Hex and Base64 conversion - Shiro Hash instances can automatically provide Hex and Base-64 encoding of hashed data via their toHex() and toBase64() methods. So now you do not need to figure out how to correctly encode the data yourself.
 Built-in Salt and repeated hashing support - Salts and repeated hash iterations are very valuable tools when hashing data, especially when it comes to protecting user passwords. Shiro's Hash implementations support salts and multiple hash iterations out of the box so you don't have to repeat this logic anywhere you might need it.
 
-##Shiro 十分钟入门教程
+## Shiro 十分钟入门教程
 
-跟着[10 Minute Tutorial 十分钟教程](20. 10 Minute Tutorial 十分钟教程.md)进行 Shiro 的尝试。如果有任何问题将它发送到用户[论坛](http://shiro-user.582556.n2.nabble.com/)或[邮件列表](http://shiro.apache.org/mailing-lists.html)
+跟着十分钟教程进行 Shiro 的尝试。如果有任何问题将它发送到用户[论坛](http://shiro-user.582556.n2.nabble.com/)或[邮件列表](http://shiro.apache.org/mailing-lists.html)
 
-*译者注：*如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。
+*译者注：如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。*

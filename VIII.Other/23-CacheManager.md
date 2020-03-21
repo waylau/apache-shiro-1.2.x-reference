@@ -1,5 +1,6 @@
-23. CacheManager 缓存管理
-========================
+# 23. CacheManager 缓存管理
+
+
 
 
 Shiro 有三个重要的缓存接口：
@@ -23,14 +24,14 @@ Shiro 的 [SecurityManager](http://shiro.apache.org/securitymanager.html) 实现
 
 我们有开箱即用的 [EhCacheManager](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/cache/ehcache/EhCacheManager.html)实现 ,所以马上就能使用它。否则，您也可以很好的实现自己的 CacheManager （例如 Coherence，等），配置如上。
 
-##Authorization Cache Invalidation 授权缓存失效
+## 授权缓存失效
 
 最后请注意, [AuthorizingRealm](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthorizingRealm.html) 有一个 [clearCachedAuthorizationInfo](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthorizingRealm.html#clearCachedAuthorizationInfo(org.apache.shiro.subject.PrincipalCollection)) 方法能够被子类调用，用来清除特殊账户缓存的授权信息。它通常被自定义逻辑调用，如果与之匹配的账户授权数据发生了改变（来确保下次的授权检查能够捕获新数据）。
 
-##为文档加把手
+## 为文档加把手
 
 我们希望这篇文档可以帮助你使用 Apache Shiro 进行工作，社区一直在不断地完善和扩展文档，如果你希望帮助 Shiro 项目，请在你认为需要的地方考虑更正、扩展或添加文档，你提供的任何点滴帮助都将扩充社区并且提升 Shiro。
 
 提供你的文档的最简单的途径是将它发送到用户[论坛](http://shiro-user.582556.n2.nabble.com/)或[邮件列表](http://shiro.apache.org/mailing-lists.html)
 
-*译者注：*如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。
+*译者注：如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。*

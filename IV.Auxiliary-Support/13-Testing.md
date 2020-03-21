@@ -1,11 +1,10 @@
-13. Testing 测试
-========================
+# 13. Testing 测试
 
 文档的这一部分介绍了在单元测试中如何使用Shiro。
 
-##What to know for tests
+## 对于测试我们需要了解什么
 
-由于我们已经涉及到了 [Subject](https://github.com/waylau/apache-shiro-1.2.x-reference/blob/master/IV.%20Auxiliary%20Support%20%E8%BE%85%E5%8A%A9%E6%94%AF%E6%8C%81/14.%20Custom%20Subjects%20%E8%87%AA%E5%AE%9A%E4%B9%89%20Subject.md) reference，我们知道 Subject 是“当前执行”用户的特定安全视图，且该 Subject 实例绑定到一个线程来确保我们知道在线程执行期间的任何时间是谁在执行逻辑。
+由于我们已经涉及到了 Subject ，我们知道 Subject 是“当前执行”用户的特定安全视图，且该 Subject 实例绑定到一个线程来确保我们知道在线程执行期间的任何时间是谁在执行逻辑。
 
 这意味着三个基本的东西必须始终出现，为了能够支持访问当前正在执行的Subject：
 
@@ -15,14 +14,14 @@
 
 Shiro 拥有为正在运行的应用程序自动地执行 绑定/解除绑定 逻辑的构建。例如，在 Web 应用程序中，当过滤一个请求时，Shiro 的根过滤器执行该逻辑。但由于测试环境和框架不同，我们需要自己选择自己的测试框架来执行此 绑定/解除绑定 逻辑。
 
-##Test Setup 设置
+## 测试设置
 
 我们知道在创建一个 Subject 实例后，它必须被绑定线程。在该线程（或在这个例子中，是一个 test ）完成执行后，我们必须解除 Subject 的绑定来保持线程的 'clean'.
 
 幸运的是，现代测试框架如 JUnit 和 TestNG 已经能够在本地支持'setup'和'teardown'的概念。我们可以利用这一支持来模拟 Shiro 在一个“完整的”应用程序中会做些什么。我们已经在下面创建了一个你能够在你自己的测试中使用的抽象基类——随意复制和修改如果你觉得合适的话。它能够在单元测试和集成测试中使用（我在本例中使用 JUnit，
 但 TestNG 也能够工作得很好）：
 
-###AbstractShiroTest
+### AbstractShiroTest
 	
 	
 	import org.apache.shiro.SecurityUtils;
@@ -107,13 +106,12 @@ Shiro 拥有为正在运行的应用程序自动地执行 绑定/解除绑定 �
 
 *大多数使用 Shiro 工作的需要确保线程的一致性的终端用户，几乎总是使用 Shiro 的自动管理机制，即 Subject.associateWith 和Subject.execute 方法。这些方法包含在 [Subject thread  association](http://shiro.apache.org/subject.html#Subject-ThreadAssociation) 参考文献中。*
 
-##Unit Testing
-
+## 单元测试
 单元测试主要是测试你的代码，且你的代码是在有限的作用域内。当你考虑到 Shiro 时，你真正要关注的是你的代码能够与 Shiro 的API 正确的运行——你不会想做关于Shiro 的实现是否工作正常（这是 Shiro 开发团队在Shiro 的代码库必须确保的东西）的必要测试。
 
 测试 Shiro 的实现是否与你的实现协同工作是真实的集成测试（下面讨论）。
 
-###ExampleShiroUnitTest
+### ExampleShiroUnitTest
 
 由于单元测试适用于测试你的逻辑（而不是你可能调用的任何实现），这对于模拟你逻辑所依赖的任何 API 来说是个很好的主意。这能够与 Shiro 工作得很好——你可以模拟 Subject 实例，并使它反映任何情况下你所需的反应，这些反应是处于测试的代码做出的。
 
@@ -160,7 +158,7 @@ Shiro 拥有为正在运行的应用程序自动地执行 绑定/解除绑定 �
 请注意，setSubject 方法实现将绑定你的模拟 Subject 到线程，且它仍将存在，直到你通过一个不同的 Subject 调用 setSubject 或直到你明确地通过调用 clearSubject() 将它从线程中清除。
 保持 Subject 绑定到该线程多长时间（或在一个不同的测试中用来交换一个新的实例）取决于你及你的测试需求。
 
-###tearDownSubject()
+### tearDownSubject()
 
 在实例中的 tearDownSubject() 方法使用了 Junit 4 的注释来确保该Subject 在每个测试方法执行后被清除，不管发生
 什么。这要求你设立一个新的 Subject 实例并将它设置到每个需要执行的测试中。
@@ -169,13 +167,14 @@ Shiro 拥有为正在运行的应用程序自动地执行 绑定/解除绑定 �
 
 你可以手动地在每个方法中混合及匹配该 setup/teardown 逻辑或使用@Before 和 @After 注释只要你认为合适。所有测试完成后，AbstractShiroTest 超类在无论怎样都会将 Subject 从线程解除绑定，因为 @After 注释在它的 tearDownShiro() 方法中。
 
-##Integration Testing
+## 集成测试
 
 现在我们讨论了单元测试的设置，让我们讨论一些关于集成测试的东西。集成测试是指测试跨API 边界的实现。例如，测试当调用B 实现时A 实现是否工作，且B 实现是否做它该做的事情。你同样也可以在Shiro 中轻松地执行集成测试。Shiro 的SecurityManager 实例及它所包含的东西（如 Realms 和 SessionManager 等）都是占用很少内存的非常轻量级的POJO。这意味着你可以为每一个你执行的测试类创建并销毁一个SecurityManager 实例。当你的集成测试运行时，它们将使用“真实的” SecurityManager，且与你应用程序中相像的 Subject 实例将会在运行时使用。
 
-###ExampleShiroIntegrationTest
+### ExampleShiroIntegrationTest
 
 下面的实例代码看起来与上面的单元测试实例几乎相同，但这3 个步骤却有些不同：
+
 1. 现在有了step '0'，它用来设立一个“真实的” SecurityManager 实例。
 2. Step 1 现在通过Subject.Builder 构造一个“真实的” Subject 实例，并将它绑定到线程。
 
@@ -227,12 +226,12 @@ Shiro 拥有为正在运行的应用程序自动地执行 绑定/解除绑定 �
 最后，与单元测试例子一样，AbstractShiroTest 超类将会清除所有Shiro 产物（任何存在的 SecurityManager 及 Subject
 实例）通过它的 @AfterClass tearDownShiro() 方法来确保该线程在下个测试类运行时是 'clean' 的。
 
-##为文档加把手
+## 为文档加把手
 
 我们希望这篇文档可以帮助你使用 Apache Shiro 进行工作，社区一直在不断地完善和扩展文档，如果你希望帮助 Shiro 项目，请在你认为需要的地方考虑更正、扩展或添加文档，你提供的任何点滴帮助都将扩充社区并且提升 Shiro。
 
 提供你的文档的最简单的途径是将它发送到用户[论坛](http://shiro-user.582556.n2.nabble.com/)或[邮件列表](http://shiro.apache.org/mailing-lists.html)
 
-*译者注：*如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。
+*译者注：如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。*
 
  

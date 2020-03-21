@@ -1,9 +1,9 @@
-17. CAS
-========================
+# 17. CAS
+
 
 shiro-cas 模块是用来保护一个 [Jasig CAS](http://www.jasig.org/cas) 单点登录服务器。它使一个 Shiro-enabled 程序变成 CAS 客户端
 
-##Basic understanding of the CAS protocol CAS协议的基本理解
+## CAS协议的基本理解
 
 1. 如果你想访问一个应用程序由 CAS 保护，并且如果你不验证在这个应用程序中的客户端,你重定向通过 CAS 客户端 到 CAS 服务器登录页面。 在 CAS 登录 url 定义了应用程序用户希望登录服务参数。
 
@@ -19,9 +19,9 @@ shiro-cas 模块是用来保护一个 [Jasig CAS](http://www.jasig.org/cas) 单�
 	http://application.examples.com/shiro-cas?ticket=ST-4545454542121-cas → HTTP 302
 	→ http://application.examples.com/protected/index.jsp
 
-##How to configure shiro to work with CAS server ? 配置
+## 如何配置CAS服务器
 
-###Dependency 依赖
+### 依赖
 
 	<dependency>
 	    <groupId>org.apache.shiro</groupId>
@@ -31,7 +31,7 @@ shiro-cas 模块是用来保护一个 [Jasig CAS](http://www.jasig.org/cas) 单�
 
 ( 版本 > = 1.2.0)。
 
-###CasFilter
+### CasFilter
 
 你必须定义服务应用程序的 ur l(在 CAS 服务器也必须声明)。 该url将被用来接收 CAS 服务票证。 例如: [http://application.examples.com/shiro-cas](http://application.examples.com/shiro-cas)
 
@@ -50,7 +50,7 @@ shiro-cas 模块是用来保护一个 [Jasig CAS](http://www.jasig.org/cas) 单�
 
 这样,当用户通过 CAS服务器使用有效的服务票证(身份验证)后， 被重定向到应用程序服务 url (/shiro-cas),这个过滤器接收服务票证,并创建一个 CasToken 可以被 CasRealm 使用。
 
-###CasRealm
+### CasRealm
 
 CasRealm 使用 CasFilter 创建的 CasToken 通过 CAS 对CAS服务器服务票证 查验，从而对用户进行身份验证
 
@@ -97,7 +97,7 @@ roleAttributeNames 定义属性的名称来自 CAS 响应定义角色给了身�
 
 permissionAttributeNames 定义属性的名称来自  CAS 响应它定义权限给身份验证的用户(权限由 comas 进行分隔 )。
 
-###CasSubjectFactory
+### CasSubjectFactory
 
 在 CAS 服务器,你可以“记住我”的支持。 这些信息是通过 SAML 验证或CAS 定制的验证。 
 反映在 Shiro CAS-remember 我地位,你必须定义一个特定的 CasSubjectFactory 在你的Shiro配置:
@@ -106,7 +106,7 @@ permissionAttributeNames 定义属性的名称来自  CAS 响应它定义权限�
 	casSubjectFactory = org.apache.shiro.cas.CasSubjectFactory
 	securityManager.subjectFactory = $casSubjectFactory
 
-###Security of the application应用程序的安全
+### 应用程序的安全
 
 最后,您必须定义您的应用程序的安全。
  
@@ -123,7 +123,7 @@ permissionAttributeNames 定义属性的名称来自  CAS 响应它定义权限�
 
 这样,如果你不验证和尝试访问 /保护/ * * url,您被重定向到CAS服务器进行身份验证。
 
-###Complete configuration sample 完整的配置样例
+### 完整的配置样例
 	
 	[main]
 	casFilter = org.apache.shiro.cas.CasFilter
@@ -144,6 +144,6 @@ permissionAttributeNames 定义属性的名称来自  CAS 响应它定义权限�
 	/protected/** = roles[ROLE_USER]
 	/** = anon
 
-##History 历史
+## 历史
 
 Version 1.2.0 : shiro-cas 模块第一个发布版本.

@@ -1,9 +1,9 @@
-16. Guice
-========================
+# 16. Guice
+
 
 Shiro Guice 集成是在 Shiro 1.2 添加的。 这个页面覆盖了 Shiro 融入 基于 Guice 的应用程序使用标准方法 Guice 的约定和机制。 阅读这个集成文档之前,你应该至少有点熟悉 Guice。
 
-##Overview 概述
+## 概述
 
 shiro-guice 提供了三个 Guice 模块可以包含在您的应用程序。
 
@@ -17,7 +17,7 @@ shiro-guice 提供了三个 Guice 模块可以包含在您的应用程序。
 	* 使用 [Guice AOP](http://code.google.com/p/google-guice/wiki/AOP) 实现Shiro AOP 注释。 这个模块主要是关心适应Shiro AnnotationMethodInterceptors 到 Guice 方法拦截器模型。
 	* 通常使用这个模块通过简单地安装它。 然而,如果你有你自己的 Shiro AnnotationMethodInterceptors ,他们可以很容易地注册通过扩展它。
 
-##Getting Started 开始
+## 开始
 
 最简单的配置是扩展 ShiroModule 安装您自己的 Realm 。
 	
@@ -49,7 +49,7 @@ shiro-guice 提供了三个 Guice 模块可以包含在您的应用程序。
 	 SecurityManager securityManager = injector.getInstance(SecurityManager.class);
 	 SecurityUtils.setSecurityManager(securityManager);
 
-##AOP
+## AOP
 
 Shiro 包括几个注释和执行授权对于通过 AOP 方法拦截器非常有用。 它还提供了一个简单的 API 编写 Shiro-specific 方法拦截器。 shiro-guice 支持这个的 ShiroAopModule 。
 
@@ -65,7 +65,7 @@ Shiro 包括几个注释和执行授权对于通过 AOP 方法拦截器非常有
 	            bindShiroInterceptor(new MyCustomAnnotationMethodInterceptor(resolver));
 	        }
     
-##Web
+## Web
 
 shiro-guice 的网络集成设计集成 Shiro 及其过滤范式与 Guice servlet 模块。 如果您正在使用 Shiro 在 web 环境中,并使用 Guice servlet 模块,那么你应该延长 ShiroWebModule 而不是 ShiroModule。 你的网络。 xml 应该设置 Guice servlet 模块的建议。
 	
@@ -115,7 +115,7 @@ shiro-guice,过滤器名称 Guice 的钥匙。 所有可用默认的 Shiro 过�
 
     ShiroWebModule.bindGuiceFilter(binder())
 
-##Properties 属性
+## 属性
 
 许多 Shiro 类暴露通过 setter 方法配置参数。 shiro-guice 注入这些如果找到一个绑定 @Named("shiro.{propName}")。 例如,设置会话超时,你可以做以下的事情。
 
@@ -123,7 +123,7 @@ shiro-guice,过滤器名称 Guice 的钥匙。 所有可用默认的 Shiro 过�
 
 如果这个范式对你不起作用,你也可以考虑使用提供者直接实例化对象和调用setter。
 
-##Injection of Shiro Objects 注入对象
+## 注入对象
 
 shiro-guice 使用 Guice TypeListener 对本地执行注射 Shiro 类(类的子目录 org.apache.shiro 但不是 org.apache.shiro.guice )。 然而, Guice 只考虑显式绑定类型作为候选人 TypeListeners ,所以如果你有一 个Shiro 对象,你想要注射,你必须显式声明它。 例如,设置 credentialsmatcher 领域,我们需要添加以下绑定:
 
@@ -131,12 +131,12 @@ shiro-guice 使用 Guice TypeListener 对本地执行注射 Shiro 类(类的子�
 	  bind(HashedCredentialsMatcher.class);
 	  bindConstant().annotatedWith(Names.named("shiro.hashAlgorithmName")).to(Md5Hash.ALGORITHM_NAME);
 
-##为文档加把手
+## 为文档加把手
 
 我们希望这篇文档可以帮助你使用 Apache Shiro 进行工作，社区一直在不断地完善和扩展文档，如果你希望帮助 Shiro 项目，请在你认为需要的地方考虑更正、扩展或添加文档，你提供的任何点滴帮助都将扩充社区并且提升 Shiro。
 
 提供你的文档的最简单的途径是将它发送到用户[论坛](http://shiro-user.582556.n2.nabble.com/)或[邮件列表](http://shiro.apache.org/mailing-lists.html)
 
-*译者注：*如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。
+*译者注：如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。*
 
  
