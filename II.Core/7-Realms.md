@@ -1,5 +1,4 @@
-7. Realms
-========================
+# 7. Realms
 
 Realm 是可以访问程序特定的安全数据如用户、角色、权限等的一个组件。Realm 会将这些程序特定的安全数据转换成一种 Shiro 可以理解的形式，Shiro 就可以依次提供容易理解的 [Subject](../IV. Auxiliary Support 辅助支持/14. Custom Subjects 自定义 Subject.md) 程序API而不管有多少数据源或者程序中你的数据如何组织。
 
@@ -9,11 +8,11 @@ Realm 通常和数据源是一对一的对应关系，如关系数据库，LDAP 
 
 因为这些数据源大多通常存储身份验证数据（如密码的凭证）以及授权数据（如角色或权限），每个 Shiro Realm 能够执行身份验证和授权操作。
 
-##Realm Configuration
+## Realm 配置
 
-如果使用 Shiro 的 ini 配置文件，你可以在[main]区域内像配置其它对象一样定义和引用Realms，但是 Realm 在 secrityManager上的配置有两种方式：明确方式和隐含方式。 
+如果使用 Shiro 的 ini 配置文件，你可以在[main]区域内像配置其它对象一样定义和引用Realms，但是 Realm 在 secrityManager上的配置有两种方式：显式方式和隐含方式。 
 
-###Explicit Assignment 明确指定(显式)
+### 显式指定
 
 在迄今所知的INI配置文件的相关知识中，这是一种显示的配置方式。在定义一个或多个Realm后，再将它们在securityManager上进行统一配置。
 
@@ -25,7 +24,7 @@ Realm 通常和数据源是一对一的对应关系，如关系数据库，LDAP 
 	
 	securityManager.realms = $fooRealm, $barRealm, $bazRealm
 
-明确设置是确定性的，你可以非常确切地知道哪个 realm 在使用并且知道它们执行的顺序。可以查看[认证](../II. Core 核心/5. Authentication 认证.md)章节的 Authentication Sequence 了解 Realm 的执行顺序的影响效果
+显式设置是确定性的，你可以非常确切地知道哪个 realm 在使用并且知道它们执行的顺序。可以查看[认证](../II. Core 核心/5. Authentication 认证.md)章节的 Authentication Sequence 了解 Realm 的执行顺序的影响效果
 
 ###Implicit Assignment隐含方式(隐式)
 
@@ -49,19 +48,19 @@ Realm 通常和数据源是一对一的对应关系，如关系数据库，LDAP 
 
 	securityManager.realms = $blahRealm, $fooRealm, $barRealm
 
-然而，实现隐式分配，只是 realm 定义的顺序直接影响到了它们在身份验证和授权尝试中的访问顺序。如果你改变它们定义的顺序，你将改变主要的[认证](../II. Core 核心/5. Authentication 认证.md)章节的 Authentication Sequence 的Authentication Sequence 是如何起作用的。由于这个原因，以及保证明确的行为，我们推荐使用显式分配而不是隐式分配。
+然而，实现隐式分配，只是 realm 定义的顺序直接影响到了它们在身份验证和授权尝试中的访问顺序。如果你改变它们定义的顺序，你将改变主要的[认证](../II. Core 核心/5. Authentication 认证.md)章节的 Authentication Sequence 的Authentication Sequence 是如何起作用的。由于这个原因，以及保证显式的行为，我们推荐使用显式分配而不是隐式分配。
 
-##Realm Authentication 
+## Realm 认证 
 
 当你理解了Shiro 的主要 [认证](https://github.com/waylau/apache-shiro-1.2.x-reference/blob/master/II.%20Core%20%E6%A0%B8%E5%BF%83/5.%20Authentication%20%E8%AE%A4%E8%AF%81.md) 工作流后，了解在一个授权尝试中当 Authenticator 与 Realm 交互时到底发生了什么是很重要的。
 
-###Supporting AuthenticationTokens
+### 支持AuthenticationTokens
 
 正如在认证流程中提到的，在一个 Realm 执行一个验证尝试之前，它的[supports](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/Realm.html#supports(org.apache.shiro.authc.AuthenticationToken))方法被调用。只有在返回值为 true 的时候它的getAuthenticationInfo(token) 方法才会执行。
 
 通常情况下，一个 realm 将检查提交的令牌类型（接口或类）确定自己是否可以处理它，例如，一个处理生物特性数据的Realm 可能一点也不理解 UsernamePasswordTokens，在这种情况下它将从支持函数中返回 false。
 
-###Handling supported AuthenticationTokens
+### 处理支持的AuthenticationTokens
 
 如果一个Realm支持提交的验证令牌，验证将调用 Realm 的[getAuthenticationInfo(token)](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/Realm.html#getAuthenticationInfo(org.apache.shiro.authc.AuthenticationToken)) 方法，这是Realm 使用后台数据进行验证的一次有效尝试，顺序执行以下动作：
 
@@ -85,7 +84,7 @@ Realm 通常和数据源是一对一的对应关系，如关系数据库，LDAP 
 *直接实现 [Realm](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/Realm.html) 接口也许需要时间并容易出错，大部分用户选择继承 [AuthorizingRealm](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/AuthorizingRealm.html) 虚拟类，这个类实现了常用的认证和授权工作流，这会节省你的时间而且不易出错。*
 
 
-###Credentials Matching 凭证匹配
+### 凭证匹配
 
 在上述 realm 认证工作流中，一个 Realm 必须较验 Subject 提交的凭证（如密码）是否与存储在数据中的凭证相匹配，如果匹配，验证成功，系统保留已认证的终端用户身份。
 
@@ -112,7 +111,7 @@ Shiro某些 CredentialsMatcher 实现可以使你开箱即用，比如 [SimpleCr
 	myRealm.credentialsMatcher = $customMatcher
 	...
 
-####Simple Equality Check 简单证明匹配
+#### 简单证明匹配
 
 所有 Shiro 的开箱即用 Realm 默认使用一个 [SimpleCredentialsMatcher](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/credential/SimpleCredentialsMatcher.html)， SimpleCredentialsMatcher 对存储的用户凭证和从 AuthenticationToken 提交的用户凭证直接执行相等检查。
 
@@ -120,7 +119,7 @@ Shiro某些 CredentialsMatcher 实现可以使你开箱即用，比如 [SimpleCr
 
 SimpleCredentialsMatcher 不仅仅对字符串执行相同对比，它可以对大多数常用类型，如字符串、字符数组、字节数组、文件和输入流等执行对比，查看 JavaDoc 获取更多的信息。
 
-####Hashing Credentials 哈希凭证：
+#### 哈希凭证
 
 取代将凭证按它们原始形式存储并执行原始数据的对比，存储终端用户的凭证（如密码）更安全的办法是在存储数据之前，先进行 hash 运算。
 
@@ -130,7 +129,7 @@ SimpleCredentialsMatcher 不仅仅对字符串执行相同对比，它可以对�
 
 Hashing 凭证以及 hash 迭代的好处超出了该 Realm 文档的范围，可以在[HashedCredentialsMatcher JavaDoc](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/credential/HashedCredentialsMatcher.html)更详细地了解这些主要内容。
 
-#####Hashing and Corresponding Matchers 哈希以及相符合的匹配
+##### 哈希以及相符合的匹配
 
 对于一个使用 Shiro 的程序，如何配置才能简单地做到这些？
 
@@ -179,26 +178,50 @@ Shiro 提供了多个 HashedCredentialsMatcher 子类实现，你必须在你的
 	myRealm.credentialsMatcher = $credentialsMatcher
 	...
 
-#####HSaltedAuthenticationInfo
+##### HSaltedAuthenticationInfo
 
 确保正常运行的最后一件要做的事情是你的Realm实现必须返回一个 [SaltedAuthenticationInfo](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authc/SaltedAuthenticationInfo.html) 实例而不是普通的AuthenticationInfo，SaltedAuthenticationInfo 接口确保你在创建用户帐户时使用的salt（如上面调用的 user.setPasswordSalt(salt);）能被 HashedCredentialsMatcher 引用。
 
 HashedCredentialsMatcher 需要使用 salt 来对提交的 AuthenticationToken 执行相同的 hashing 技术来对比提交的令牌是否与存储的数据相匹配，所以如果你对用户密码使用 salting（你应该这么做），确保你的 Realm 实现在返回 SaltedAuthenticationInfo 实例时引用它。
 
-###Disabling Authentication 禁用
+### 禁用认证
 
 如果有理由，你不希望某个 Realm 对某个资源执行验证（或者因为你只想 Realm 去执行授权检查），你可以完全禁用 Realm 的认证支持，方法就是在 Realm 的 supports 方法中始终返回 false,这样，你的 Realm 将在整个验证过程中不再被使用。 
 
 当然如果你想验证 Subject，至少要配置一个支持 AuthenticationTokens 的 Realm。
 
-##Realm Authorization
+## Realm 授权
 
-待定。
+SecurityManager将权限或角色检查任务委托给Authorizer，默认为ModularRealmAuthorizer。
 
-##为文档加把手
+### 基于角色的授权
+
+在Subject 上调用重载方法hasRoles或checkRoles方法之一时
+
+1. Subject 委托给SecurityManager以确定是否已分配给定角色
+2. 然后，SecurityManager委托给授权者
+3. 然后，Authorizer 一一引荐所有授权领域，直到找到分配给该主题的给定角色。如果没有任何领域授予主题，则返回false来拒绝访问
+4. 授权Realm AuthorizationInfo getRoles()方法以获取分配给Subject的所有角色
+5. 如果在AuthorizationInfo.getRoles调用返回的角色列表中找到给定的Role，则授予访问权限。
+
+
+### 基于权限的授权
+
+在Subject 上调用重载方法之一isPermitted()或checkPermission()方法时：
+
+1. Subject 将任务委派给SecurityManager授予或拒绝权限
+2. 然后，SecurityManager委托给授权者
+3. 然后，Authorizer 逐一引用所有授权者领域，直到授予权限为止
+4. 如果未由任何授权领域授予许可，则主题被拒绝该许可
+5. 授权Realm 执行以下操作以检查是否允许主题的一种。
+	* a. 首先，它通过在AuthorizationInfo上调用getObjectPermissions()和getStringPermissions方法并汇总结果来直接标识分配给Subject的所有权限。
+	* b. 如果注册了RolePermissionResolver，则可通过调用RolePermissionResolver.resolvePermissionsInRole()来基于分配给Subject的所有角色检索Permissions。
+	* c. 对于来自a的汇总权限。和b。调用implies()方法以检查这些权限中的任何一个是否隐含已检查的权限。请参阅WildcardPermission
+
+## 为文档加把手
 
 我们希望这篇文档可以帮助你使用 Apache Shiro 进行工作，社区一直在不断地完善和扩展文档，如果你希望帮助 Shiro 项目，请在你认为需要的地方考虑更正、扩展或添加文档，你提供的任何点滴帮助都将扩充社区并且提升 Shiro。
 
 提供你的文档的最简单的途径是将它发送到用户[论坛](http://shiro-user.582556.n2.nabble.com/)或[邮件列表](http://shiro.apache.org/mailing-lists.html)
 
-*译者注：*如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。
+*译者注：如果对本中文翻译有疑议的或发现勘误欢迎指正，[点此](https://github.com/waylau/apache-shiro-1.2.x-reference/issues)提问。*

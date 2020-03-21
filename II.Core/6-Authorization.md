@@ -1,18 +1,18 @@
-6. Authorization 授权
-========================
+# 6. Authorization 授权
 
-![Authorization](http://i1288.photobucket.com/albums/b484/waylau/apache-shiro/ShiroFeatures_Authorization_zps6a8bcd71.png)
+
+![Authorization](../images/ShiroFeatures_Authorization.png)
 授权，亦即访问控制，是管理资源访问的过程，换言之，也就是控制在一个程序中“谁”有权利访问“什么”。
 
 授权的例子有：是否允许这个用户查看这个页面，编辑数据，看到按钮，或者从这台打印机打印？这些决定是一个用户可以访问什么的决断。
 
-##Elements of Authorization 元素
+## Authorization 元素
 
 授权有三个核心元素，在 Shiro 中我们经常要用到它们：权限（permissions）、角色（roles）和用户（users）。
 
-###Permissions
+### 权限
 
-权限是 Apache Shiro 中安全策略最基本的元素，它们是一组关于行为的基本指令，以明确表示在一个程序中什么可以做。一个很好定义的权限指令必须描述资源以及当一个 Subject 与这些资源交互时什么动作可以执行。
+权限是 Apache Shiro 中安全策略最基本的元素，它们是一组关于行为的基本指令，以显示表示在一个程序中什么可以做。一个很好定义的权限指令必须描述资源以及当一个 Subject 与这些资源交互时什么动作可以执行。
  
 下面是一些权限指令的例子：
 
@@ -37,13 +37,13 @@
 
 我们稍后讨论 Shiro 如何判断一个 Subject 是否被允许。
 
-####Permission Granularity 权限粒度
+#### 权限粒度
 
 上面的权限示例都是针对资源（门、文件、客户等）指定的动作（打开、读、删除等），在一些场景中，他们也会指定非常细粒度的“实例级别”行为--例如,“删除”（delete）名为“Jsmith”（实例标识）的“用户”（资源类型），在 Shiro 中，你可以精确定义指令到你所能细化到的程度。
 
 我们在 Shiro 的 [Permissions](6.1. Permissions 权限.md) 文档中详细讨论权限粒度和权限指令的“级别”。
 
-###Roles
+### 角色
 
 角色是一个实体名，代表一组行为或职责，这些行为在程序中转换为你可以或者不能做的事情。角色通常赋给用户帐号，关联后，用户就可以“做”属于不同角色的事情。
 
@@ -59,15 +59,15 @@
 
 *对于简单程序这种方法可能适用（比如只有一个'admin'角色和'everyone else'角色），但复杂的程序中，这会成为你程序生命周期中一个主要的问题，会给你的软件带来很大的维护代价。*
 
-* 明确为角色指定权限：明确为角色指定权限本质上是一组权限指令的名称集，在这种形式下，程序（以及 Shiro）准确知道一个特定的角色是什么意思，因为它确切知道某行为是否可以执行，而不用去猜测特定的角色可以或不可以做什么。
+* 显示为角色指定权限：显示为角色指定权限本质上是一组权限指令的名称集，在这种形式下，程序（以及 Shiro）准确知道一个特定的角色是什么意思，因为它确切知道某行为是否可以执行，而不用去猜测特定的角色可以或不可以做什么。
 
-Shiro 团队提倡使用权限和明确为角色指定权限替代原始的将权限隐含于角色中的方法，这样你可以对程序安全提供更强的控制。
+Shiro 团队提倡使用权限和显示为角色指定权限替代原始的将权限隐含于角色中的方法，这样你可以对程序安全提供更强的控制。
 
 *基于资源的访问控制*
 
-*读一下这个文章：[新的RBAC：基于资源的权限管理(Resource-Based Access Control)](http://www.waylau.com/new-rbac-resource-based-access-control/)，这篇文章深入讨论了使用权限和明确为角色指定权限代替旧的将权限隐含于角色中方法的好处（以及对源代码的影响）。*
+*读一下这个文章：[新的RBAC：基于资源的权限管理(Resource-Based Access Control)](http://www.waylau.com/new-rbac-resource-based-access-control/)，这篇文章深入讨论了使用权限和显示为角色指定权限代替旧的将权限隐含于角色中方法的好处（以及对源代码的影响）。*
 
-###Users用户
+### 用户
 
 一个用户本质上是程序中的“谁”，如同我们前面提到的，Subject 实际上是 shiro 的“用户”。
 
@@ -79,7 +79,7 @@ Shiro 团队提倡使用权限和明确为角色指定权限替代原始的将�
 
 *最终，是 [Realm](7. Realms.md)  与你的数据源（RDBMS,LDAP等）做交流，Realm 用来告知Shiro 是否角色或权限是否存在，你可以完全控制你的授权模型如何创建和定义。*
 
-##Authorizing Subjects 授权对象
+## 授权对象
 
 在 Shiro 中执行授权可以有三种途径：
 
@@ -88,15 +88,15 @@ Shiro 团队提倡使用权限和明确为角色指定权限替代原始的将�
 * JSP/GSP 标签--你可以基于角色和权限控制 JSP 或 GSP 页面输出内容。
 
  
-###Programmatic Authorization 程序中检查授权
+### 编程方式授权
 
 直接在程序中为当前 Subject 实例检查授权可能是最简单也最常用的方法。
 
-####Role-Based Authorization 基于角色的授权
+#### 基于角色的授权
 
 如果你要基于简单/传统的角色名进行访问控制，你可以执行角色检查：
 
-#####Role Checks 角色检查
+##### 角色检查
 
 如果你想简单地检查一下当前Subject是否拥有一个角色，你可以在一个实例上调用 hasRole* 方法。
 
@@ -131,7 +131,7 @@ Shiro 团队提倡使用权限和明确为角色指定权限替代原始的将�
 </tbody>
 </table>
 
-##### Role Assertions 角色判断
+##### 角色判断
 
 还有另一个方法检测 Subjet 是否是指定为某个角色，你可以在的代码执行之前简单判断他们是否是所要求的角色，如果 Subject 不是所要求的角色， [AuthorizationException](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/AuthorizationException.html) 异常将被抛出，如果是所要求的角色，判断将安静地执行并按期望顺序执行下面的逻辑。
 
@@ -167,15 +167,15 @@ Shiro 团队提倡使用权限和明确为角色指定权限替代原始的将�
 </tbody>
 </table>
 
-####Permission-Based Authorization 基于权限的授权
+#### 基于权限的授权
 
 就像我们上面在角色概述中提到的，通过基于权限的授权执行访问控制是更好的方法。基于权限的授权，因为其与程序功能（以及程序核心资源上的行为）紧密联系，基于权限授权的源代码在程序功能改变时才需要改变，而与安全策略无关。这意味着与同样基于角色的授权相比，对代码的影响更少。
 
-#####Permission Checks 权限检查
+##### 权限检查
 
 如果你希望检查一个 Subject 是否允许做某件事情，你可以调用isPermitted* 方法的变形，有两种主要方式检查授权--基于对象的权限实例和基于字符串的权限表示。
 
-#####Object-based Permission Checks 基于对象的权限检查
+##### 基于对象的权限检查
 
 执行权限检查的一种方法是实例化一个Shiro的[org.apache.shiro.authz.Permission](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Permission.html)接口并且将它传递给接收权限实例的*isPermitted 方法。
 
@@ -197,7 +197,7 @@ Shiro 团队提倡使用权限和明确为角色指定权限替代原始的将�
 
 * 希望编译期类型安全；
 * 希望确保正确地引用和使用的权限；
-* 希望对权限判断逻辑（称作权限隐含逻辑，基于权限接口的 [implies](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Permission.html#implies(org.apache.shiro.authz.Permission))方法）执行方式进行明确控制；
+* 希望对权限判断逻辑（称作权限隐含逻辑，基于权限接口的 [implies](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Permission.html#implies(org.apache.shiro.authz.Permission))方法）执行方式进行显示控制；
 * 希望确保权限正确地反映程序资源（例如，在一个对象域模型上创建一个对象时，权限类可能自动产生）。
 
 下面是你可以根据需要调用的函数：
@@ -221,7 +221,7 @@ Shiro 团队提倡使用权限和明确为角色指定权限替代原始的将�
 </tbody>
 </table>
 
-#####String-based permission checks 基于字符串的权限检查
+##### 基于字符串的权限检查
 
 虽然基于对象的权限检查很有用（编译期类型安全，对行为担保，定制隐含逻辑等），但在许多程序里有时候感觉有点笨重，另一种选择是用普通的字符串来代表权限。
 
@@ -278,7 +278,7 @@ WildcardPermission 令牌形式和构成选项将在 Shiro 的 [Permission](6.1.
 </tbody>
 </table>
 
-####Permission Assertions 权限判断
+#### 权限判断
 
 另一种检查 Subject 是否被允许做某件事的方法是，在逻辑执行之前简单判断他们是否具备所需的权限，如果不允许，[AuthorizationException](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/AuthorizationException.html)异常被抛出，如果是允许的，判断将安静地执行并按期望顺序执行下面的逻辑。
 
@@ -327,11 +327,11 @@ WildcardPermission 令牌形式和构成选项将在 Shiro 的 [Permission](6.1.
 </tbody>
 </table>
 
-###Annotation-based Authorization 基于注解的授权
+### 基于注解的授权
 
 如果你更喜欢基于注解的授权控制，除了 Subject 的 API 之外，Shiro提供了一个 Java 5 的注解集。
 
-####Configuration 配置
+#### 配置
 
 在你使用 JAVA 的注解之前，你需要在程序中启动 AOP 支持，因为有许多AOP 框架，所以很不幸，在这里并没有标准的在程序中启用 AOP 的方法。
 
@@ -341,7 +341,7 @@ WildcardPermission 令牌形式和构成选项将在 Shiro 的 [Permission](6.1.
 
 关于Guice，你可以查看我们的 [Guice Integration](../V. Integration 整合/16. Guice.md)文档；
 
-####RequiresAuthentication 注解
+#### RequiresAuthentication 注解
 
 [RequiresAuthentication](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresAuthentication.html) 注解表示在访问或调用被注解的类/实例/方法时，要求 Subject 在当前的 session中已经被验证。
 
@@ -365,7 +365,7 @@ WildcardPermission 令牌形式和构成选项将在 Shiro 的 [Permission](6.1.
 	    ...
 	}
 
-####RequiresGuest 注解
+#### RequiresGuest 注解
 
 [RequiresGuest](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresGuest.html) 注解表示要求当前Subject是一个“guest(访客)”，也就是，在访问或调用被注解的类/实例/方法时，他们没有被认证或者在被前一个Session 记住。
 
@@ -392,7 +392,7 @@ WildcardPermission 令牌形式和构成选项将在 Shiro 的 [Permission](6.1.
 	    ...
 	}
 
-####RequiresPermissions 注解
+#### RequiresPermissions 注解
 
 [RequiresPermissions](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresPermissions.html) 注解表示要求当前Subject在执行被注解的方法时具备一个或多个对应的权限。
 
@@ -417,7 +417,7 @@ WildcardPermission 令牌形式和构成选项将在 Shiro 的 [Permission](6.1.
 	    ...
 	}
 
-####RequiresRoles  注解
+#### RequiresRoles  注解
 
 [RequiresRoles](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresRoles.html) 注解表示要求当前Subject在执行被注解的方法时具备所有的角色，否则将抛出 AuthorizationException 异常。
 
@@ -441,7 +441,7 @@ WildcardPermission 令牌形式和构成选项将在 Shiro 的 [Permission](6.1.
 	    ...
 	}
 
-####RequiresUser 注解
+#### RequiresUser 注解
 
 [RequiresUser](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/annotation/RequiresUser.html)* 注解表示要求在访问或调用被注解的类/实例/方法时，当前 Subject 是一个程序用户，“程序用户”是一个已知身份的 Subject，或者在当前 Session 中被验证过或者在以前的 Session 中被记住过。
 
@@ -468,17 +468,17 @@ WildcardPermission 令牌形式和构成选项将在 Shiro 的 [Permission](6.1.
 	    ...
 	}
 
-###JSP TagLib Authorization 标签库授权
+### JSP 标签库授权
 
 Shiro 提供了一个标签库来控制 JSP/GSP 页面输出，这将在 [Web](../III. Web Applications/10. Web.md) 文档中的 JSP/GSP 标签库中讨论
 
-##Authorization Sequence 授权序列
+## 授权序列
 
 现在我们已经看到如何对当前 Subject 执行授权，让我们了解一下当一个授权命令调用时 Shiro 内部发生了什么事情。
 
-我们仍使用前面[Architecture](../I. Overview 总览/3. Architecture 架构.md)章节里的架构图，在左侧仅仅与授权相关的组件是高亮的，每一个数字代表授权操作中的一个步骤：
+我们仍使用前面Architecture章节里的架构图，在左侧仅仅与授权相关的组件是高亮的，每一个数字代表授权操作中的一个步骤：
 
-![授权序列](http://i1288.photobucket.com/albums/b484/waylau/apache-shiro/ShiroAuthorizationSequence_zpsd16bbb64.png)
+![授权序列](../images/ShiroAuthorizationSequence.png)
 
 **第1步：**程序或框架代码调用一个 Subject 的`hasRole*`、`checkRole*`、 `isPermitted*`或者 `checkPermission*`方法，传递所需的权限或角色。
 
@@ -488,7 +488,7 @@ Shiro 提供了一个标签库来控制 JSP/GSP 页面输出，这将在 [Web](.
 
 **第4步:**，检查每一个被配置的 Realm 是否实现相同的 [Authorizer](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Authorizer.html)接口，如果是，Realm 自己的各 `hasRole*`、`checkRole*`、 `isPermitted*` 或 `checkPermission*` 方法被调用。
 
-###ModularRealmAuthorizer
+### ModularRealmAuthorizer
 
 前面提到过，Shiro SecurityManager 默认使用 [ModularRealmAuthorizer](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/ModularRealmAuthorizer.html) 实例，ModularRealmAuthorizer 实例同等支持用一个 Realm 的程序和用多个 Realm 的程序。
 
@@ -498,17 +498,17 @@ Shiro 提供了一个标签库来控制 JSP/GSP 页面输出，这将在 [Web](.
 
 1.1.如果 Realm 函数的结果是一个 exception，该 exception 衍生自一个 Subject 调用者的 AuthorizationException，就切断授权过程，剩余的授权 Realm 将不在执行。
 
-1.2.如果 Realm 的方法是一个 `hasRole*` 或 `isPermitted*`，并且返回真，则真值立即被返回而且剩余的 Realm 被短路，这种做法作为一种性能增强，在一个 Realm 判断允许后，隐含认为这个 Subject 被允许。它支持最安全的安全策略：默认情况下所有都被禁止，明确指定允许的事情。
+1.2.如果 Realm 的方法是一个 `hasRole*` 或 `isPermitted*`，并且返回真，则真值立即被返回而且剩余的 Realm 被短路，这种做法作为一种性能增强，在一个 Realm 判断允许后，隐含认为这个 Subject 被允许。它支持最安全的安全策略：默认情况下所有都被禁止，显示指定允许的事情。
 
 2.如果 Realm 没有实现 Authorizer 接口，将被忽略。
 
-###Realm Authorization Order 授权顺序
+### Realm 授权顺序
 
 需要指出非常重要的一点，就如同验证（authentication）一样，ModularRealmAuthorizer 按迭代（iteration）顺序与 Realm 交互。
 
 ModularRealmAuthorizer 拥有 SecurityManager 配置的 Realm 实例的入口，当执行一个授权操作时，它将在整个集合中进行迭代（iteration），对于每一个实现 Authorizer 接口的 Realm，调用Realm 各自的 Authorizer 方法（如 hasRole*、 checkRole*、 isPermitted*或 checkPermission*）。
 
-###Configuring a global PermissionResolver 配置全局的 PermissionResolver
+### 配置全局的 PermissionResolver
 
 当执行一个基于字符串的权限检查时，大部分 Shiro 默认的 Realm 将会在执行[权限](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/Permission.html)隐含逻辑之前首先把这个字符串转换成一个常用的权限实例。
 
@@ -531,7 +531,7 @@ ModularRealmAuthorizer 拥有 SecurityManager 配置的 Realm 实例的入口，
 
 *如果你想配置一个全局的 PermissionResolver，每一个会读取这个PermissionResolver 配置的 Realm 必须实现[PermissionResolverAware](http://shiro.apache.org/static/current/apidocs/src-html/org/apache/shiro/authz/permission/PermissionResolverAware.html) 接口，这确保被配置 PermissionResolver 的实例可以传递给支持这种配置的每一个 Realm。*
 
-如果你不想使用一个全局的 PermissionResolver 或者你不想被PermissionResolverAware 接口麻烦，你可以明确地为单个的 Realm 配置 PermissionResolver 接口（可看作是JavaBean的setPermissionResolver 方法）：
+如果你不想使用一个全局的 PermissionResolver 或者你不想被PermissionResolverAware 接口麻烦，你可以显示地为单个的 Realm 配置 PermissionResolver 接口（可看作是JavaBean的setPermissionResolver 方法）：
 
 	permissionResolver = com.foo.bar.authz.MyPermissionResolver
 	
@@ -539,17 +539,17 @@ ModularRealmAuthorizer 拥有 SecurityManager 配置的 Realm 实例的入口，
 	realm.permissionResolver = $permissionResolver
 	...
 
-###Configuring a global RolePermissionResolver 配置全局的RolePermissionResolver
+### 配置全局的RolePermissionResolver
 
 与 PermissionResolver 类似，[RolePermissionResolver](http://shiro.apache.org/static/current/apidocs/org/apache/shiro/authz/permission/RolePermissionResolver.html) 有能力表示执行权限检查的 Realm 所需的权限实例。
 
 最主要的不同在于接收的字符串是一个角色名，而不是一个权限字符串。
 
-RolePermissionResolver 被 Realm 在需要时用来转换一个角色名到一组明确的权限实例。
+RolePermissionResolver 被 Realm 在需要时用来转换一个角色名到一组显示的权限实例。
 
 这是非常有用的，它支持那些遗留的或者不灵活的没有权限概念的数据源。
 
-例如，许多 LDAP 目录存储角色名称（或组名）但不支持角色名和权限的联合，因为它没有权限的概念。一个使用 shiro 的程序可以使用存储于 LDAP 的角色名，但需要实现一个 RolePermissionResolver 来转换 LDAP 名到一组确切的权限中以执行明确的访问控制，权限的联合将被存储于其它的数据存储中，比如说本地数据库。
+例如，许多 LDAP 目录存储角色名称（或组名）但不支持角色名和权限的联合，因为它没有权限的概念。一个使用 shiro 的程序可以使用存储于 LDAP 的角色名，但需要实现一个 RolePermissionResolver 来转换 LDAP 名到一组确切的权限中以执行显示的访问控制，权限的联合将被存储于其它的数据存储中，比如说本地数据库。
 
 因为这种将角色名转换为权限的概念是特定的，Shiro 默认的 Realm 没有使用它们。 
 
@@ -574,7 +574,7 @@ shiro.ini
 	realm.rolePermissionResolver = $rolePermissionResolver
 	...
 
-###Custom Authorizer 定制Authorizer
+### 定制Authorizer
 
 如果你的程序使用多于一个 Realm 来执行授权而 ModularRealmAuthorizer 默认的简单迭代（iteration）、短路授权的行为不能满足你的需求，你可以创建自己的 Authorizer 并配置给相应的 SecurityManager。
 
