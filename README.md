@@ -1,7 +1,7 @@
 apache-shiro-reference《Apache Shiro 参考手册》
 ============================
 
-![logo](http://i1288.photobucket.com/albums/b484/waylau/waylau%20blog/apache-shiro-logo_zpsbce4a426.png)
+![logo](images/apache-shiro-logo.png)
 
 Chinese translation of  [Apache Shiro Reference Manual](http://shiro.apache.org/reference) and the other article collection. 
 The laset version of Apache Shiro is 1.5.x. You can also see the demos of the reference at <https://github.com/waylau/apache-shiro-1.2.x-reference-demos>.There is also a GitBook version of the book: <http://waylau.gitbooks.io/apache-shiro-1-2-x-reference> or <https://www.waylau.com/apache-shiro-1.2.x-reference/>.
